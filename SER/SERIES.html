@@ -238,13 +238,21 @@ li{
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-auto-rows: minmax(150px, auto);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
     grid-column-gap: 7px;
     grid-row-gap: 25px;
     grid-auto-flow: dense;
     height: 60%;
 }
+
+@media (max-width: 300px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-auto-rows: minmax(100px, auto);
+    }
+}
+
 
 @media (max-width: 768px) {
     .grid-container {
@@ -288,7 +296,7 @@ body::before{
 	z-index: -1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     body {
         font-size: 0.7rem;
     }
@@ -301,7 +309,7 @@ body::before{
 
 /* cuadro que esta debajo de la imagen */
 .grid-items{
-    width: 90%, height: 85%;
+    width: 90%;
     height: 90%;
     align-items: center;
     justify-content: center;
@@ -311,7 +319,7 @@ body::before{
 /* borde del cuadro donde va imagen */
 ul {
     border: solid #fff00 1px;
-    height: 105%;
+    height: 100%;
     border-radius: 5px;
     padding: 4px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -327,22 +335,22 @@ ul {
 
 .iconos {
     width: 150px;
-    height: 200px;
+    height: 170px;
     border-radius: 5%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .iconos {
         width:100px;
-        height: 150px;
+        height: 120px;
         border-radius: 5%;
     }
 }
 
 @media (min-width: 1024px) {
     .iconos {
-        width: 200px;
-        height: 350px;
+        width: 250px;
+        height: 270px;
         border-radius: 5%;
     }
 }
