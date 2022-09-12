@@ -1,0 +1,310 @@
+body {
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #111), color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);
+    background: -o-linear-gradient(#444, #111);
+    background: linear-gradient(#444, #111);
+}
+
+.menu {
+    width: 100%;
+    padding: 15px 0 0 0;
+    list-style: none;
+    background: #111;
+    text-align: center;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #111), color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);
+    background: -o-linear-gradient(#444, #111);
+    background: -ms-linear-gradient(#444, #111);
+    background: linear-gradient(#444, #111);
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -moz-box-shadow: 0 2px 1px #9c9c9c;
+    -webkit-box-shadow: 0 2px 1px #9c9c9c;
+    box-shadow: 0 2px 1px #9c9c9c;
+    display: inline-block;
+}
+
+.menu li {
+    display: inline-block;
+    width: 30%;
+    padding: auto;
+    padding: 0 0 10px 0;
+    /* position: relative; */
+}
+
+ul {
+    width: 500px;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+
+.menu a {
+    color: #999;
+    text-transform: uppercase;
+    font: bold 25px/25px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+}
+
+.menu :hover {
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba)); */
+    color: rgb(7, 36, 141);
+}
+
+.menu img {
+    width: 7%;
+    height: 7%;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+	
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	
+	
+}
+/*Cards*/
+.container-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+	max-width: 1100px;
+	margin: auto;
+	
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+	background:black;
+}
+.card{
+	width: 95%;
+	margin: 10px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:rgb(0, 0, 0);
+	box-shadow: 0px 1px 10px rgba(255, 252, 252, 0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+	
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 80%;
+	height: 310px;
+}
+.card .contenido-card{
+	
+	
+	text-align: center;
+	
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+/*Fin-Cards*/
+.menu{
+	list-style: none;
+	
+	
+	margin: auto;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 20px;
+	text-align: center;
+	
+	}
+	
+	
+	.menu1{
+	  list-style: none;
+	  padding: 2px;
+	  -moz-border-radius: 50px;
+	  border-radius: 50px;
+	  width: 100%;
+	  height: 75px;
+	  max-width: 1000px;
+	  margin: auto;
+	  font-family: Georgia, 'Times New Roman', Times, serif;
+	  font-size: 15px;
+	  text-align: center;
+	  background: rgb(255, 255, 255);
+	background: radial-gradient(circle, rgb(55, 55, 56) 14%, rgb(85, 83, 84) 93%);
+	  
+	}
+	
+	.menu1 li a{
+          font-size: 20px;
+          text-decoration: none;
+          color: rgb(32 251 1);
+	  padding: 20px;
+	  display: block;
+	}
+	
+	.menu1 li{
+	  display: inline-block;
+	  text-align: center;
+	  padding: 10px;
+	}
+
+
+
+	
+.button {
+	border: 2px solid rgb(202, 23, 23);
+	border-radius: 5px;
+	box-shadow: 0 0 0.05em rgb(202, 23, 23);
+	color: #ffffff;
+	background: #000;
+	padding: 5px;
+	margin: auto;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	text-align: center;
+  }
+  
+  
+  .flexsearch--wrapper {
+	height: auto;
+	width: auto;
+	max-width: 90%;
+	overflow: hidden;
+	background: transparent;
+	margin: 0;
+	position: static;
+  }
+  
+  .flexsearch--form {
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .flexsearch--input-wrapper {
+	padding: 0 66px 0 0;
+	/* Right padding for submit button width */
+	overflow: hidden;
+  }
+  
+  .flexsearch--input {
+	width: 100%;
+  }
+  
+  /***********************
+   * Configurable Styles *
+   ***********************/
+  .flexsearch {
+	padding: 0 25px 0 200px;
+	/* Padding for other horizontal elements */
+  
+  }
+  
+  .flexsearch--input {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 40px;
+	/* float: right;
+   width: auto; */
+	padding: 0 46px 0 10px;
+	border-color: #888;
+	border-radius: 35px;
+	/* (height/2) + border-width */
+	border-style: solid;
+	border-width: 5px;
+	margin-top: 15px;
+	color: #333;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 26px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+  }
+  
+  .flexsearch--submit {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+	padding: 0;
+	border: none;
+	margin-top: 10px;
+	/* margin-top + border-width */
+	margin-right: 5px;
+	/* border-width */
+	background: transparent;
+	color: #888;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 40px;
+	line-height: 60px;
+  }
+  
+  .flexsearch--input:focus {
+	outline: none;
+	border-color: #333;
+  }
+  
+  .flexsearch--input:focus.flexsearch--submit {
+	color: #333;
+  }
+  
+  .flexsearch--submit:hover {
+	color: #333;
+	cursor: pointer;
+  }
+  
+  ::-webkit-input-placeholder {
+	color: #888;
+  }
+  
+  input:-moz-placeholder {
+	color: #888
+  }
+  
+  .filtro {
+	display: none;
+  }
+  
+  
