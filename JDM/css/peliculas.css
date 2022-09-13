@@ -177,6 +177,12 @@ ul {
     left: -12px;
 }
 
+.OPCION {
+    POSITION: absolute;
+    TOP: 25.8REM;
+    RIGHT: 3.6REM;
+}
+
 .card:hover .front {
     transform: perspective(600px) rotateY(180deg);
 }
