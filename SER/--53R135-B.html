@@ -1,0 +1,510 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SERIE</title>
+<!-- Responsive viewport -->
+<meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css"/>
+<style type="text/css">
+
+*{margin:0;padding:0;box-sizing:border-box;text-transform:capitalize;
+TEXT-DECORATION: NONE;}
+body{background:#000;}
+
+ 
+body {
+
+    max-height: 100%;
+
+    margin: 0 auto;
+}
+
+.heading{color:#444;font-size:40px;text-align:center;padding:10px;}
+
+.container{    HEIGHT: 20EM;display:grid;grid-template-columns:2fr 1fr;gap:15px;align-items:flex-start;padding:5px 1%;}
+
+.container .main-video{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;padding:2px;}
+
+.container .main-video video{
+width:100%;
+border-radius:5px;}
+
+.container .main-video .title{
+color:#fff;font-size:23px;padding-top:15px;padding-bottom:15px;}
+
+.container .video-list{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;height:100%;overflow-y:scroll;}
+
+.container .video-list::-webkit-scrollbar{
+width:7px;}
+
+.container .video-list::-webkit-scrollbar-track{
+background:#000;border-radius:50px;}
+
+.container .video-list::-webkit-scrollbar-thumb{
+background:#00a7ad;border-radius:50px;}
+
+.container .video-list .vid video{
+width:100px;border-radius:5px;}
+
+.container .video-list .vid{
+background:#000;display:flex;align-items:center;gap:15px;border-radius:5px;margin:10px;padding:10px;border:1px solid rgba(0,0,0,.1);cursor:pointer;}
+
+.container .video-list .vid:hover{
+background:#000;}
+
+.container .video-list .vid.active{
+background:#00a7ad;}
+
+.container .video-list .vid.active .title{
+color:#000;}
+
+.container .video-list .vid .title{
+color:#00fd01;font-size:17px;}
+
+@media (max-width: 999px){
+.container{grid-template-columns:1.5fr 2fr;padding:10px;}}
+
+@media (max-width: 480px){
+.container{grid-template-columns:1fr;height:1000PX;}}
+
+ img {
+    WIDTH: 30%;
+    BORDER-RADIUS: 5PX;
+}
+
+
+
+
+.title2 {
+color: #09ff00;
+    font-size: 17px;
+    POSITION: relative;
+    TOP: -7EM;
+    LEFT: 115PX;
+}
+
+nav {
+    max-width: auto;
+    margin: auto;
+    background-color: #335;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.menu-horizontal {
+    position: relative;
+    z-index: 5;
+    list-style:none;
+    display:flex;
+flex-wrap: wrap;
+    justify-content: CENTER;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu-horizontal > li:hover{
+    background-color: red;
+
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+background-color: rgba(0, 0, 0, .5)
+
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+
+}
+
+.menu-vertical li:hover{
+    background-color: green;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: yellow;
+    padding: 5px 5px 5px 10px;
+    text-decoration:none;
+
+}
+
+.menu-horizontal li .active {
+background: #ff0000;
+    box-shadow: 0 0 5px #ff0000, 0 0 30px #ff000000, 0 0 30px #ff0000;
+    transition-delay: 0.1s;
+</style>
+</head>
+
+
+
+<body>
+
+
+
+<nav>
+
+      <!--   RESALTAR    class="active"     -->
+
+
+
+  <ul class="menu-horizontal">
+      <li>
+      <a class="active"> SERIES LETRA B </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>    -->
+ 
+      </li> 
+
+      <!--   ################################ PARA AGREGAR MENU EN CABECERA CON LINKS POR EJEMPLO DE ( OK.RU ) 
+
+      <li>
+      <a></a></li> 
+
+
+      <li>
+      <a href="#">TEMPORADA 2</a>
+         <ul class="menu-vertical">
+
+ 
+<li><a href="	## LINK ##	" target="_blank">CAP 1</a></li>
+<li><a href="	## LINK ##	" target="_blank">CAP 2</a></li>
+
+      </li>
+
+        ##################################################################### -->
+
+
+         </ul> 
+
+</nav>
+  
+
+
+
+
+
+
+
+<div class="container">
+<div class="main-video">
+<div class="video">
+<video class='js-player' poster=" https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/03/14/15841914561512.jpg " controls autoplay>
+<source src="https://www.youtube.com/embed/J8pOtl3fze8" type="application/x-mpegURL">
+</video>
+
+<!--<video src="" poster="" controls muted autoplay></video> -->
+<h3 class="title"> 
+
+   ## TITULO ## 
+
+ <br><strong style=" font-size: 90%; color:#ffe000;"> 
+
+    ## SINOPSIS ## 
+
+ </strong>  </h3></div></div>
+
+
+<div class="video-list">
+<div class="vid active">
+
+
+<video src="	https://archive.org/download/trailer-b-4j-0-s-0sp-3ch-4-1/Trailer%20B4j0%20S0sp3ch4%201.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Bajo sospecha T1	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/bajosospechatemporada1episodio1/Bajo%20sospecha%20Temporada%201%20Episodio%201.mp4	 "poster="	https://es.web.img2.acsta.net/c_310_420/pictures/15/05/27/13/32/384328.jpg	"></video> <h3 class="title">	Bajo sospecha T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/bajosospechatemporada1episodio1/Bajo%20sospecha%20Temporada%201%20Episodio%202.mp4	 "poster="	https://es.web.img2.acsta.net/c_310_420/pictures/15/05/27/13/32/384328.jpg	"></video> <h3 class="title">	Bajo sospecha T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/bajosospechatemporada1episodio1/Bajo%20sospecha%20Temporada%201%20Episodio%203.mp4	 "poster="	https://es.web.img2.acsta.net/c_310_420/pictures/15/05/27/13/32/384328.jpg	"></video> <h3 class="title">	Bajo sospecha T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/bajosospechatemporada1episodio1/Bajo%20sospecha%20Temporada%201%20Episodio%204.mp4	 "poster="	https://es.web.img2.acsta.net/c_310_420/pictures/15/05/27/13/32/384328.jpg	"></video> <h3 class="title">	Bajo sospecha T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/bajosospechatemporada1episodio1/Bajo%20sospecha%20Temporada%201%20Episodio%205.mp4	 "poster="	https://es.web.img2.acsta.net/c_310_420/pictures/15/05/27/13/32/384328.jpg	"></video> <h3 class="title">	Bajo sospecha T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/bajosospechatemporada1episodio1/Bajo%20sospecha%20Temporada%201%20Episodio%206.mp4	 "poster="	https://es.web.img2.acsta.net/c_310_420/pictures/15/05/27/13/32/384328.jpg	"></video> <h3 class="title">	Bajo sospecha T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/bajosospechatemporada1episodio1/Bajo%20sospecha%20Temporada%201%20Episodio%207.mp4	 "poster="	https://es.web.img2.acsta.net/c_310_420/pictures/15/05/27/13/32/384328.jpg	"></video> <h3 class="title">	Bajo sospecha T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/bajosospechatemporada1episodio1/Bajo%20sospecha%20Temporada%201%20Episodio%208.mp4	 "poster="	https://es.web.img2.acsta.net/c_310_420/pictures/15/05/27/13/32/384328.jpg	"></video> <h3 class="title">	Bajo sospecha T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+
+<div class="vid"> <video src="	https://archive.org/download/trailer-b-4rb-4r-05/trailer%20B4rb4r05.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Barbaros	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/barbaren/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/10/13/16/41/4615183.jpg	"></video> <h3 class="title">	Barbaros	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/barbaren/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/10/13/16/41/4615183.jpg	"></video> <h3 class="title">	Barbaros	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/barbaren/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/10/13/16/41/4615183.jpg	"></video> <h3 class="title">	Barbaros	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/barbaren/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/10/13/16/41/4615183.jpg	"></video> <h3 class="title">	Barbaros	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/barbaren/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/10/13/16/41/4615183.jpg	"></video> <h3 class="title">	Barbaros	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/barbaren/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/10/13/16/41/4615183.jpg	"></video> <h3 class="title">	Barbaros	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+
+<div class="vid"> <video src="	https://archive.org/download/trailer-b-4ym-4x/trailer%20B4ym4x.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Baymax	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/03_20220630_20220630/01.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/05/23/10/29/3226014.jpg	"></video> <h3 class="title">	Baymax	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/03_20220630_20220630/02.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/05/23/10/29/3226014.jpg	"></video> <h3 class="title">	Baymax	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/03_20220630_20220630/03.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/05/23/10/29/3226014.jpg	"></video> <h3 class="title">	Baymax	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/03_20220630_20220630/04.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/05/23/10/29/3226014.jpg	"></video> <h3 class="title">	Baymax	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/03_20220630_20220630/05.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/05/23/10/29/3226014.jpg	"></video> <h3 class="title">	Baymax	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/03_20220630_20220630/06.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/05/23/10/29/3226014.jpg	"></video> <h3 class="title">	Baymax	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+
+<div class="vid"> <video src="	https://archive.org/download/trailer-b-3773-r-th-1-ng-5-1/trailer%20B3773R%20TH1NG5%201.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Better Things: Mejores cosas T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/16/08/05/17/20/074019.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/16/08/05/17/20/074019.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/16/08/05/17/20/074019.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/16/08/05/17/20/074019.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/16/08/05/17/20/074019.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/16/08/05/17/20/074019.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_01_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/16/08/05/17/20/074019.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_01_e_08.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/16/08/05/17/20/074019.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_01_e_09.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/16/08/05/17/20/074019.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_01_e_10.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/16/08/05/17/20/074019.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_02_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/08/28/10/23/199216.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_02_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/08/28/10/23/199216.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_02_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/08/28/10/23/199216.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_02_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/08/28/10/23/199216.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_02_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/08/28/10/23/199216.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_02_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/08/28/10/23/199216.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_02_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/08/28/10/23/199216.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_02_e_08.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/08/28/10/23/199216.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_02_e_09.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/08/28/10/23/199216.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_02_e_10.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/08/28/10/23/199216.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_03_e_01.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/02/15/10/00/3318234.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_03_e_02.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/02/15/10/00/3318234.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_03_e_03.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/02/15/10/00/3318234.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_03_e_04.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/02/15/10/00/3318234.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_03_e_05.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/02/15/10/00/3318234.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_03_e_06.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/02/15/10/00/3318234.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_03_e_07.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/02/15/10/00/3318234.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_03_e_08.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/02/15/10/00/3318234.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_03_e_09.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/02/15/10/00/3318234.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_03_e_10.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/02/15/10/00/3318234.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_03_e_11.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/02/15/10/00/3318234.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 11	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_03_e_12.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/02/15/10/00/3318234.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 12	</strong>  </h3></div>
+
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_04_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/02/21/09/47/0008070.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T4 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_04_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/02/21/09/47/0008070.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T4 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_04_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/02/21/09/47/0008070.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T4 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_04_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/02/21/09/47/0008070.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T4 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_04_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/02/21/09/47/0008070.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T4 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_04_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/02/21/09/47/0008070.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T4 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_04_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/02/21/09/47/0008070.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T4 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_04_e_08.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/02/21/09/47/0008070.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T4 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_04_e_09.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/02/21/09/47/0008070.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T4 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/better_things/s_04_e_10.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/02/21/09/47/0008070.jpg	"></video> <h3 class="title">	Better Things: Mejores cosas T4 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+
+<div class="vid"> <video src="	https://archive.org/download/trailer-b-13nv-3n-1d-0s-4-3d-3n/trailer%20B13nv3n1d0s%204%203d3n.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Bienvenidos a Edén	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20220605_20220605/01.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/12/00/58/3734814.jpg	"></video> <h3 class="title">	Bienvenidos a Edén	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20220605_20220605/02.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/12/00/58/3734814.jpg	"></video> <h3 class="title">	Bienvenidos a Edén	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20220605_20220605/03.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/12/00/58/3734814.jpg	"></video> <h3 class="title">	Bienvenidos a Edén	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20220605_20220605/04.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/12/00/58/3734814.jpg	"></video> <h3 class="title">	Bienvenidos a Edén	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/08_20220605_202206/05.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/12/00/58/3734814.jpg	"></video> <h3 class="title">	Bienvenidos a Edén	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/08_20220605_202206/06.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/12/00/58/3734814.jpg	"></video> <h3 class="title">	Bienvenidos a Edén	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/08_20220605_202206/07.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/12/00/58/3734814.jpg	"></video> <h3 class="title">	Bienvenidos a Edén	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/08_20220605_202206/08.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/12/00/58/3734814.jpg	"></video> <h3 class="title">	Bienvenidos a Edén	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+
+<div class="vid"> <video src="	https://archive.org/download/trailer-b-10h-4ck-3r-5-1/trailer%20B10h4ck3r5%201.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Biohackers T1	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/biohackers/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/07/22/09/31/3364903.jpg	"></video> <h3 class="title">	Biohackers T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/biohackers/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/07/22/09/31/3364903.jpg	"></video> <h3 class="title">	Biohackers T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/biohackers/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/07/22/09/31/3364903.jpg	"></video> <h3 class="title">	Biohackers T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/biohackers/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/07/22/09/31/3364903.jpg	"></video> <h3 class="title">	Biohackers T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/biohackers/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/07/22/09/31/3364903.jpg	"></video> <h3 class="title">	Biohackers T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/biohackers/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/07/22/09/31/3364903.jpg	"></video> <h3 class="title">	Biohackers T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+
+<div class="vid"> <video src="	https://archive.org/download/trailer-b-10h-4ck-3r-5-1/trailer%20B10h4ck3r5%202.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Biohackers T2	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/biohackers/s_02_e_01.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/21/07/09/04/21/0700965.jpg	"></video> <h3 class="title">	Biohackers T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/biohackers/s_02_e_02.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/21/07/09/04/21/0700965.jpg	"></video> <h3 class="title">	Biohackers T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/biohackers/s_02_e_03.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/21/07/09/04/21/0700965.jpg	"></video> <h3 class="title">	Biohackers T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/biohackers/s_02_e_04.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/21/07/09/04/21/0700965.jpg	"></video> <h3 class="title">	Biohackers T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/biohackers/s_02_e_05.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/21/07/09/04/21/0700965.jpg	"></video> <h3 class="title">	Biohackers T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/biohackers/s_02_e_06.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/21/07/09/04/21/0700965.jpg	"></video> <h3 class="title">	Biohackers T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+
+<div class="vid"> <video src="	https://archive.org/download/trailer-bl-4ck-b-1rd/trailer%20Bl4ck%20B1rd.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Black Bird: Confesiones de un asesino	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/black_bird/s_01_e_01.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/22/06/08/17/05/1271212.jpg	"></video> <h3 class="title">	Black Bird: Confesiones de un asesino	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/black_bird/s_01_e_02.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/22/06/08/17/05/1271212.jpg	"></video> <h3 class="title">	Black Bird: Confesiones de un asesino	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/black_bird/s_01_e_03.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/22/06/08/17/05/1271212.jpg	"></video> <h3 class="title">	Black Bird: Confesiones de un asesino	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/black_bird/s_01_e_04.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/22/06/08/17/05/1271212.jpg	"></video> <h3 class="title">	Black Bird: Confesiones de un asesino	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/black_bird/s_01_e_05.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/22/06/08/17/05/1271212.jpg	"></video> <h3 class="title">	Black Bird: Confesiones de un asesino	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/black_bird/s_01_e_06.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/22/06/08/17/05/1271212.jpg	"></video> <h3 class="title">	Black Bird: Confesiones de un asesino	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+
+<div class="vid"> <video src="	https://archive.org/download/trailer-b-14-ck-5-umm-3-r/trailer%20B14CK%205UMM3R.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Black Summer	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/black_summer/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/06/21/09/58/0668101.jpg	"></video> <h3 class="title">	Black Summer	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/black_summer/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/06/21/09/58/0668101.jpg	"></video> <h3 class="title">	Black Summer	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/black_summer/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/06/21/09/58/0668101.jpg	"></video> <h3 class="title">	Black Summer	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/black_summer/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/06/21/09/58/0668101.jpg	"></video> <h3 class="title">	Black Summer	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/black_summer/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/06/21/09/58/0668101.jpg	"></video> <h3 class="title">	Black Summer	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/black_summer/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/06/21/09/58/0668101.jpg	"></video> <h3 class="title">	Black Summer	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/black_summer/s_01_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/06/21/09/58/0668101.jpg	"></video> <h3 class="title">	Black Summer	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/black_summer/s_01_e_08.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/06/21/09/58/0668101.jpg	"></video> <h3 class="title">	Black Summer	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+
+<div class="vid"> <video src="	https://archive.org/download/trailer-b-00-b-1tch/trailer%20B00%20B1tch.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Boo bitch	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220714_20220714_1649/01.mp4	 "poster="	https://mx.web.img3.acsta.net/pictures/22/06/21/12/44/4755474.jpg	"></video> <h3 class="title">	Boo bitch	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220714_20220714_1649/02.mp4	 "poster="	https://mx.web.img3.acsta.net/pictures/22/06/21/12/44/4755474.jpg	"></video> <h3 class="title">	Boo bitch	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220714_20220714_1649/03.mp4	 "poster="	https://mx.web.img3.acsta.net/pictures/22/06/21/12/44/4755474.jpg	"></video> <h3 class="title">	Boo bitch	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220714_20220714_1649/04.mp4	 "poster="	https://mx.web.img3.acsta.net/pictures/22/06/21/12/44/4755474.jpg	"></video> <h3 class="title">	Boo bitch	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220714_20220714_1649/05.mp4	 "poster="	https://mx.web.img3.acsta.net/pictures/22/06/21/12/44/4755474.jpg	"></video> <h3 class="title">	Boo bitch	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220714_20220714_1649/06.mp4	 "poster="	https://mx.web.img3.acsta.net/pictures/22/06/21/12/44/4755474.jpg	"></video> <h3 class="title">	Boo bitch	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220714_20220714_1649/07.mp4	 "poster="	https://mx.web.img3.acsta.net/pictures/22/06/21/12/44/4755474.jpg	"></video> <h3 class="title">	Boo bitch	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220714_20220714_1649/08.mp4	 "poster="	https://mx.web.img3.acsta.net/pictures/22/06/21/12/44/4755474.jpg	"></video> <h3 class="title">	Boo bitch	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+
+<div class="vid"> <video src="	https://archive.org/download/trailer-br-4qu-3ur-5/trailer%20br4qu3ur5.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Braqueurs: Atracadores	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/braqueurs/s_01_e_01.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/08/04/13/46/5417027.jpg	"></video> <h3 class="title">	Braqueurs: Atracadores	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/braqueurs/s_01_e_02.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/08/04/13/46/5417027.jpg	"></video> <h3 class="title">	Braqueurs: Atracadores	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/braqueurs/s_01_e_03.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/08/04/13/46/5417027.jpg	"></video> <h3 class="title">	Braqueurs: Atracadores	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/braqueurs/s_01_e_04.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/08/04/13/46/5417027.jpg	"></video> <h3 class="title">	Braqueurs: Atracadores	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/braqueurs/s_01_e_05.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/08/04/13/46/5417027.jpg	"></video> <h3 class="title">	Braqueurs: Atracadores	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/braqueurs/s_01_e_06.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/08/04/13/46/5417027.jpg	"></video> <h3 class="title">	Braqueurs: Atracadores	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+
+<div class="vid"> <video src="	https://archive.org/download/trailer-br-1dg-3rt-0n-1/trailer%20Br1dg3rt0n%201.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Bridgerton T1	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/bridgerton/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/11/04/12/03/4756219.jpg	"></video> <h3 class="title">	Bridgerton T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/bridgerton/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/11/04/12/03/4756219.jpg	"></video> <h3 class="title">	Bridgerton T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/bridgerton/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/11/04/12/03/4756219.jpg	"></video> <h3 class="title">	Bridgerton T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/bridgerton/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/11/04/12/03/4756219.jpg	"></video> <h3 class="title">	Bridgerton T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/bridgerton/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/11/04/12/03/4756219.jpg	"></video> <h3 class="title">	Bridgerton T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/bridgerton/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/11/04/12/03/4756219.jpg	"></video> <h3 class="title">	Bridgerton T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/bridgerton/s_01_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/11/04/12/03/4756219.jpg	"></video> <h3 class="title">	Bridgerton T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/bridgerton/s_01_e_08.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/11/04/12/03/4756219.jpg	"></video> <h3 class="title">	Bridgerton T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+
+<div class="vid"> <video src="	https://archive.org/download/trailer-br-1dg-3rt-0n-1/trailer%20Br1dg3rt0n%202.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Bridgerton T2	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/08_20220408_20220408_2056/01.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/03/10/12/40/4798734.jpg	"></video> <h3 class="title">	Bridgerton T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/08_20220408_20220408_2056/02.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/03/10/12/40/4798734.jpg	"></video> <h3 class="title">	Bridgerton T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/08_20220408_20220408_2056/03.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/03/10/12/40/4798734.jpg	"></video> <h3 class="title">	Bridgerton T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/08_20220408_20220408_2056/04.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/03/10/12/40/4798734.jpg	"></video> <h3 class="title">	Bridgerton T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/08_20220408_20220408_2056/05.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/03/10/12/40/4798734.jpg	"></video> <h3 class="title">	Bridgerton T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/08_20220408_20220408_2056/06.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/03/10/12/40/4798734.jpg	"></video> <h3 class="title">	Bridgerton T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/08_20220408_20220408_2056/07.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/03/10/12/40/4798734.jpg	"></video> <h3 class="title">	Bridgerton T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/08_20220408_20220408_2056/08.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/03/10/12/40/4798734.jpg	"></video> <h3 class="title">	Bridgerton T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+
+<div class="vid"> <video src="	http://51.81.208.167/series2022/BUNKER/S01E01.mkv	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2021/12/w1280/9BBCnlWri0fthxEZdRpLaRWfLEl.jpg	"></video> <h3 class="title">	Bunker	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://51.81.208.167/series2022/BUNKER/S01E02.mkv	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2021/12/w1280/9BBCnlWri0fthxEZdRpLaRWfLEl.jpg	"></video> <h3 class="title">	Bunker	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://51.81.208.167/series2022/BUNKER/S01E03.mkv	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2021/12/w1280/9BBCnlWri0fthxEZdRpLaRWfLEl.jpg	"></video> <h3 class="title">	Bunker	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://51.81.208.167/series2022/BUNKER/S01E04.mkv	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2021/12/w1280/9BBCnlWri0fthxEZdRpLaRWfLEl.jpg	"></video> <h3 class="title">	Bunker	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://51.81.208.167/series2022/BUNKER/S01E05.mkv	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2021/12/w1280/9BBCnlWri0fthxEZdRpLaRWfLEl.jpg	"></video> <h3 class="title">	Bunker	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://51.81.208.167/series2022/BUNKER/S01E06.mkv	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2021/12/w1280/9BBCnlWri0fthxEZdRpLaRWfLEl.jpg	"></video> <h3 class="title">	Bunker	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://51.81.208.167/series2022/BUNKER/S01E07.mkv	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2021/12/w1280/9BBCnlWri0fthxEZdRpLaRWfLEl.jpg	"></video> <h3 class="title">	Bunker	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://51.81.208.167/series2022/BUNKER/S01E08.mkv	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2021/12/w1280/9BBCnlWri0fthxEZdRpLaRWfLEl.jpg	"></video> <h3 class="title">	Bunker	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+
+<div class="vid"> <video src="	https://archive.org/download/trailer-busc-4nd-0-4-4l-45k-4/trailer%20Busc4nd0%204%204l45k4.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Buscando a Alaska	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20211020_202110/01.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/19/10/28/01/19/4091995.jpg	"></video> <h3 class="title">	Buscando a Alaska	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20211020_202110/02.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/19/10/28/01/19/4091995.jpg	"></video> <h3 class="title">	Buscando a Alaska	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20211020_202110/03.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/19/10/28/01/19/4091995.jpg	"></video> <h3 class="title">	Buscando a Alaska	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20211020_202110/04.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/19/10/28/01/19/4091995.jpg	"></video> <h3 class="title">	Buscando a Alaska	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/07_20211020_20211020_2043/05.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/19/10/28/01/19/4091995.jpg	"></video> <h3 class="title">	Buscando a Alaska	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/07_20211020_20211020_2043/06.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/19/10/28/01/19/4091995.jpg	"></video> <h3 class="title">	Buscando a Alaska	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/07_20211020_20211020_2043/07.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/19/10/28/01/19/4091995.jpg	"></video> <h3 class="title">	Buscando a Alaska	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/07_20211020_20211020_2043/08.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/19/10/28/01/19/4091995.jpg	"></video> <h3 class="title">	Buscando a Alaska	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+
+
+                           <!-- 
+
+
+
+<div class="vid"> <h3 class="title">	<br><strong style=" font-size: 200%; color:#07eefc;">	TEMPORADA 2	</strong>  </h3></div>
+
+<div class="vid"> <a href="	## LINK ##	" target="_blank"><img src="	## LINK IMAGEN ##	"/> <h3 class="title2"> CAP 01 <br><strong style="  color: #07eefc">  TEMPORADA 2          </h3></a></div>
+<div class="vid"> <a href="	## LINK ##	" target="_blank"><img src="	## LINK IMAGEN ##	"/> <h3 class="title2"> CAP 02 <br><strong style="  color: #07eefc">  TEMPORADA 2          </h3></a></div>
+<div class="vid"> <a href="	## LINK ##	" target="_blank"><img src="	## LINK IMAGEN ##	"/> <h3 class="title2"> CAP 03 <br><strong style="  color: #07eefc">  TEMPORADA 2          </h3></a></div>
+
+
+                            -->
+
+
+
+
+
+    <!--    ###############################################   MOLDE PARA AGREGAR CANALES O PELICULAS 
+
+
+<div class="vid"> <video src="  ## LINK ##   " poster="  ## IMAGEN ##  "></video> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<div class="vid"> <video src="  ## LINK ##   " poster="  ## IMAGEN ##  "></video> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<div class="vid"> <video src="  ## LINK ##   " poster="  ## IMAGEN ##  "></video> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<div class="vid"> <video src="  ## LINK ##   " poster="  ## IMAGEN ##  "></video> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<div class="vid"> <video src="  ## LINK ##   " poster="  ## IMAGEN ##  "></video> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+               ################################ PARA AGREGAR MENU EN CABECERA CON LINKS POR EJEMPLO DE ( OK.RU ) O SIN EXTENSION
+
+
+<div class="vid"> <h3 class="title">	<br><strong style=" font-size: 200%; color:#07eefc;">	TEMPORADA 2	</strong>  </h3></div>
+
+<div class="vid"> <a href=" ## LINK ## " target="_blank"><img src=" ## IMAGEN ## "/> <h3 class="title2"> CAP 01 <br><strong style="  color: #07eefc">  TEMPORADA 1          </h3></a></div>
+<div class="vid"> <a href=" ## LINK ## " target="_blank"><img src=" ## IMAGEN ## "/> <h3 class="title2"> CAP 02 <br><strong style="  color: #07eefc">  TEMPORADA 1          </h3></a></div>
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+ ===========================  para agregar mas temporadas  =============================
+
+
+<div class="vid"> <h3 class="title">	<br><strong style=" font-size: 200%; color:#07eefc;">	TEMPORADA 2	</strong>  </h3></div>
+
+
+<div class="vid"> <video src="	## link ##	 "muted poster=" ## imagen ##	"></video> <h3 class="title">	Cap. 1	<br><strong style=" font-size: 100%; color:#07eefc;">	TEMPORADA 2	</strong>  </h3></div>
+
+
+
+
+<div class="vid"> <h3 class="title">	<br><strong style=" font-size: 200%; color:#fc07ea;">	TEMPORADA 3	</strong>  </h3></div>
+
+
+<div class="vid"> <video src="	## link ##  "muted poster=" ## imagen ## "></video> <h3 class="title">	Cap. 1	<br><strong style=" font-size: 100%; color:#fc07ea;">  TEMPORADA 3	</strong>  </h3></div>
+
+
+
+
+
+
+        #########################################################################################################    -->
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script type="text/javascript">
+let listVideo = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video video');
+let title = document.querySelector('.main-video .title');
+
+listVideo.forEach(video =>{
+  video.onclick = () =>{
+    listVideo.forEach(vid => vid.classList.remove('active'));
+    video.classList.add('active');
+    if(video.classList.contains('active')){
+      let src = video.children[0].getAttribute('src');
+      mainVideo.src = src;
+      let text = video.children[1].innerHTML;
+      title.innerHTML = text;
+    };
+  };
+});
+</script>
+<script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+<script>//<![CDATA[
+const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+//]]></script>
+</body>
+</html>
