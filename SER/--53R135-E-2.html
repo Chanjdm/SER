@@ -1,0 +1,836 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SERIE</title>
+<!-- Responsive viewport -->
+<meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css"/>
+<style type="text/css">
+
+*{margin:0;padding:0;box-sizing:border-box;text-transform:capitalize;
+TEXT-DECORATION: NONE;}
+body{background:#000;}
+
+ 
+body {
+
+    max-height: 100%;
+
+    margin: 0 auto;
+}
+
+.heading{color:#444;font-size:40px;text-align:center;padding:10px;}
+
+.container{    HEIGHT: 20EM;display:grid;grid-template-columns:2fr 1fr;gap:15px;align-items:flex-start;padding:5px 1%;}
+
+.container .main-video{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;padding:2px;}
+
+.container .main-video video{
+width:100%;
+border-radius:5px;}
+
+.container .main-video .title{
+color:#fff;font-size:23px;padding-top:15px;padding-bottom:15px;}
+
+.container .video-list{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;height:100%;overflow-y:scroll;}
+
+.container .video-list::-webkit-scrollbar{
+width:7px;}
+
+.container .video-list::-webkit-scrollbar-track{
+background:#000;border-radius:50px;}
+
+.container .video-list::-webkit-scrollbar-thumb{
+background:#00a7ad;border-radius:50px;}
+
+.container .video-list .vid video{
+width:100px;border-radius:5px;}
+
+.container .video-list .vid{
+background:#000;display:flex;align-items:center;gap:15px;border-radius:5px;margin:10px;padding:10px;border:1px solid rgba(0,0,0,.1);cursor:pointer;}
+
+.container .video-list .vid:hover{
+background:#000;}
+
+.container .video-list .vid.active{
+background:#00a7ad;}
+
+.container .video-list .vid.active .title{
+color:#000;}
+
+.container .video-list .vid .title{
+color:#00fd01;font-size:17px;}
+
+@media (max-width: 999px){
+.container{grid-template-columns:1.5fr 2fr;padding:10px;}}
+
+@media (max-width: 480px){
+.container{grid-template-columns:1fr;height:1000PX;}}
+
+ img {
+    WIDTH: 30%;
+    BORDER-RADIUS: 5PX;
+}
+
+
+
+
+.title2 {
+color: #09ff00;
+    font-size: 17px;
+    POSITION: relative;
+    TOP: -7EM;
+    LEFT: 115PX;
+}
+
+nav {
+    max-width: auto;
+    margin: auto;
+    background-color: #335;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.menu-horizontal {
+    position: relative;
+    z-index: 5;
+    list-style:none;
+    display:flex;
+flex-wrap: wrap;
+    justify-content: CENTER;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu-horizontal > li:hover{
+    color:#00fd01;
+    background-color: red;
+
+}
+
+.menu-vertical {
+    color: yellow;
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 250px;
+    background-color: #000000de;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+
+}
+
+.menu-vertical li:hover{
+    background-color: green;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: yellow;
+    padding: 5px 5px 5px 10px;
+    text-decoration:none;
+
+}
+
+.menu-horizontal li .active {
+background: #ff0000;
+    box-shadow: 0 0 5px #ff0000, 0 0 30px #ff000000, 0 0 30px #ff0000;
+    transition-delay: 0.1s;
+</style>
+</head>
+
+
+
+<body>
+
+
+
+<nav>
+
+      <!--   RESALTAR    class="active"     -->
+
+
+
+  <ul class="menu-horizontal">
+      <li>
+      <a class="active"> SERIES LETRA E - 2 </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>    -->
+             </ul>
+
+  <ul class="menu-horizontal">
+      </li> 
+
+
+
+ <li><a> 	El juego del calamar	  </a></li>
+ <li><a> 	El juicio	  </a></li>
+ <li><a> 	El legado de Jupiter	  </a></li>
+ <li><a> 	El libro de Boba Fett	  </a></li>
+ <li><a> 	El mandaloriano T1 T2 	  </a></li>
+ <li><a> 	El marginal T1	T2 T3 </a></li>
+
+ <li><a> 	El novato	  </a></li>
+ <li><a> 	El Presidente	  </a></li>
+ <li><a> 	El refugio	  </a></li>
+ <li><a> 	El Reino	  </a></li>
+ <li><a> 	El residente T1 T2 T3(SUB)	  </a></li>
+ <li><a> 	El robo del siglo	  </a></li>
+ <li><a> 	El señor de los anillos: Los anillos de poder	  </a></li>
+ <li><a> 	El tercer día	  </a></li>
+ <li><a> 	El tiempo que te doy	  </a></li>
+ <li><a> 	El ultimo autobus	  </a></li>
+ <li><a> 	El vecino T1 T2  </a></li>
+ <li><a> 	El verano que me enamore	  </a></li>
+ <li><a> 	Emily en Paris T2	  </a></li>
+ <li><a> 	Engañame si puedes T1 T2 T3  </a></li>
+ <li><a> 	En la cienaga	  </a></li>
+ <li><a> 	En los boxes	  </a></li>
+ <li><a> 	Entrenador de elite	  </a></li>
+ <li><a> 	Equinox	  </a></li>
+ <li><a> 	Escuela para señoritas de Al Rawabi	  </a></li>
+ <li><a> 	Esta mierda me supera	  </a></li>
+ <li><a> 	Estamos muertos	  </a></li>
+ <li><a> 	Euphoria T1 T2  </a></li>
+ <li><a> 	Evil: Maligno T1	  </a></li>
+
+
+
+
+
+
+
+
+      <!--   ################################ PARA AGREGAR MENU EN CABECERA CON LINKS POR EJEMPLO DE ( OK.RU ) 
+
+      <li>
+      <a></a></li> 
+
+
+      <li>
+      <a href="#">TEMPORADA 2</a>
+         <ul class="menu-vertical">
+
+ 
+<li><a href="	## LINK ##	" target="_blank">CAP 1</a></li>
+<li><a href="	## LINK ##	" target="_blank">CAP 2</a></li>
+
+      </li>
+
+        ##################################################################### -->
+
+
+         </ul> 
+
+</nav>
+  
+
+
+
+
+
+
+
+<div class="container">
+<div class="main-video">
+<div class="video">
+<video class='js-player' poster=" https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/03/14/15841914561512.jpg " controls autoplay>
+<source src="https://www.youtube.com/embed/J8pOtl3fze8" type="application/x-mpegURL">
+</video>
+
+<!--<video src="" poster="" controls muted autoplay></video> -->
+<h3 class="title"> 
+
+  SERIES LETRA E - 2
+
+ <br><strong style=" font-size: 90%; color:#ffe000;"> 
+
+   <!--   ## SINOPSIS ##    -->
+
+ </strong>  </h3></div></div>
+
+
+<div class="video-list">
+<div class="vid active">
+<video src="	https://archive.org/download/trailer-3l-ju-3g-0-d-3l-c-4l-4m-4r/trailer%203l%20ju3g0%20d3l%20c4l4m4r.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El juego del calamar	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_juego_del_calamar/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/09/29/12/02/1288399.jpg	"></video> <h3 class="title">	El juego del calamar	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_juego_del_calamar/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/09/29/12/02/1288399.jpg	"></video> <h3 class="title">	El juego del calamar	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_juego_del_calamar/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/09/29/12/02/1288399.jpg	"></video> <h3 class="title">	El juego del calamar	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_juego_del_calamar/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/09/29/12/02/1288399.jpg	"></video> <h3 class="title">	El juego del calamar	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_juego_del_calamar/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/09/29/12/02/1288399.jpg	"></video> <h3 class="title">	El juego del calamar	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_juego_del_calamar/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/09/29/12/02/1288399.jpg	"></video> <h3 class="title">	El juego del calamar	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_juego_del_calamar/s_01_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/09/29/12/02/1288399.jpg	"></video> <h3 class="title">	El juego del calamar	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_juego_del_calamar/s_01_e_08.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/09/29/12/02/1288399.jpg	"></video> <h3 class="title">	El juego del calamar	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_juego_del_calamar/s_01_e_09.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/09/29/12/02/1288399.jpg	"></video> <h3 class="title">	El juego del calamar	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-ju-1c-10/trailer%203l%20ju1c10.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El juicio	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/il_processo/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/04/08/18/50/5591284.jpg	"></video> <h3 class="title">	El juicio	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/il_processo/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/04/08/18/50/5591284.jpg	"></video> <h3 class="title">	El juicio	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/il_processo/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/04/08/18/50/5591284.jpg	"></video> <h3 class="title">	El juicio	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/il_processo/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/04/08/18/50/5591284.jpg	"></video> <h3 class="title">	El juicio	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/il_processo/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/04/08/18/50/5591284.jpg	"></video> <h3 class="title">	El juicio	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/il_processo/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/04/08/18/50/5591284.jpg	"></video> <h3 class="title">	El juicio	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/il_processo/s_01_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/04/08/18/50/5591284.jpg	"></video> <h3 class="title">	El juicio	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/il_processo/s_01_e_08.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/04/08/18/50/5591284.jpg	"></video> <h3 class="title">	El juicio	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-l-3g-4d-0-d-3-jup-1t-3r/trailer%203l%20l3g4d0%20d3%20Jup1t3r.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El legado de Jupiter	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/jupiters_legacy/s_01_e_01.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/21/04/07/10/26/5189851.jpg	"></video> <h3 class="title">	El legado de Jupiter	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/jupiters_legacy/s_01_e_02.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/21/04/07/10/26/5189851.jpg	"></video> <h3 class="title">	El legado de Jupiter	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/jupiters_legacy/s_01_e_03.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/21/04/07/10/26/5189851.jpg	"></video> <h3 class="title">	El legado de Jupiter	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/jupiters_legacy/s_01_e_04.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/21/04/07/10/26/5189851.jpg	"></video> <h3 class="title">	El legado de Jupiter	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/jupiters_legacy/s_01_e_05.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/21/04/07/10/26/5189851.jpg	"></video> <h3 class="title">	El legado de Jupiter	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/jupiters_legacy/s_01_e_06.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/21/04/07/10/26/5189851.jpg	"></video> <h3 class="title">	El legado de Jupiter	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/jupiters_legacy/s_01_e_07.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/21/04/07/10/26/5189851.jpg	"></video> <h3 class="title">	El legado de Jupiter	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/jupiters_legacy/s_01_e_08.mkv	 "poster="	https://mx.web.img3.acsta.net/pictures/21/04/07/10/26/5189851.jpg	"></video> <h3 class="title">	El legado de Jupiter	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-l-1br-0-d-3-b-0b-4-f-377/trailer%203l%20L1br0%20d3%20B0b4%20F377.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El libro de Boba Fett	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_book_of_boba_fett/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/02/09/22/1915017.jpg	"></video> <h3 class="title">	El libro de Boba Fett	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_book_of_boba_fett/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/02/09/22/1915017.jpg	"></video> <h3 class="title">	El libro de Boba Fett	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_book_of_boba_fett/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/02/09/22/1915017.jpg	"></video> <h3 class="title">	El libro de Boba Fett	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_book_of_boba_fett/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/02/09/22/1915017.jpg	"></video> <h3 class="title">	El libro de Boba Fett	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_book_of_boba_fett/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/02/09/22/1915017.jpg	"></video> <h3 class="title">	El libro de Boba Fett	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_book_of_boba_fett/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/02/09/22/1915017.jpg	"></video> <h3 class="title">	El libro de Boba Fett	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_book_of_boba_fett/s_01_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/02/09/22/1915017.jpg	"></video> <h3 class="title">	El libro de Boba Fett	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-m-4nd-4l-0r-14n-0-1/trailer%203l%20M4nd4l0r14n0%201.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El mandaloriano T1	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_01_e_01.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/10/29/09/01/2094959.jpg	"></video> <h3 class="title">	El mandaloriano T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_01_e_02.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/10/29/09/01/2094959.jpg	"></video> <h3 class="title">	El mandaloriano T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_01_e_03.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/10/29/09/01/2094959.jpg	"></video> <h3 class="title">	El mandaloriano T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_01_e_04.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/10/29/09/01/2094959.jpg	"></video> <h3 class="title">	El mandaloriano T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_01_e_05.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/10/29/09/01/2094959.jpg	"></video> <h3 class="title">	El mandaloriano T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_01_e_06.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/10/29/09/01/2094959.jpg	"></video> <h3 class="title">	El mandaloriano T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_01_e_07.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/10/29/09/01/2094959.jpg	"></video> <h3 class="title">	El mandaloriano T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_01_e_08.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/19/10/29/09/01/2094959.jpg	"></video> <h3 class="title">	El mandaloriano T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-m-4nd-4l-0r-14n-0-1/trailer%203l%20M4nd4l0r14n0%202.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El mandaloriano T2	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_02_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/09/15/17/06/1295785.jpg	"></video> <h3 class="title">	El mandaloriano T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_02_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/09/15/17/06/1295785.jpg	"></video> <h3 class="title">	El mandaloriano T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_02_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/09/15/17/06/1295785.jpg	"></video> <h3 class="title">	El mandaloriano T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_02_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/09/15/17/06/1295785.jpg	"></video> <h3 class="title">	El mandaloriano T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_02_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/09/15/17/06/1295785.jpg	"></video> <h3 class="title">	El mandaloriano T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_02_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/09/15/17/06/1295785.jpg	"></video> <h3 class="title">	El mandaloriano T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_02_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/09/15/17/06/1295785.jpg	"></video> <h3 class="title">	El mandaloriano T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_mandalorian/s_02_e_08.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/09/15/17/06/1295785.jpg	"></video> <h3 class="title">	El mandaloriano T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-m-4rg-1n-4l-1/trailer%203l%20M4rg1n4l%201.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El marginal T1	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/02/20/08/59/547853.jpg	"></video> <h3 class="title">	El marginal T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/02/20/08/59/547853.jpg	"></video> <h3 class="title">	El marginal T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/02/20/08/59/547853.jpg	"></video> <h3 class="title">	El marginal T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/02/20/08/59/547853.jpg	"></video> <h3 class="title">	El marginal T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/02/20/08/59/547853.jpg	"></video> <h3 class="title">	El marginal T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/02/20/08/59/547853.jpg	"></video> <h3 class="title">	El marginal T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_01_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/02/20/08/59/547853.jpg	"></video> <h3 class="title">	El marginal T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_01_e_08.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/02/20/08/59/547853.jpg	"></video> <h3 class="title">	El marginal T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_01_e_09.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/02/20/08/59/547853.jpg	"></video> <h3 class="title">	El marginal T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_01_e_10.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/02/20/08/59/547853.jpg	"></video> <h3 class="title">	El marginal T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_01_e_11.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/02/20/08/59/547853.jpg	"></video> <h3 class="title">	El marginal T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 11	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_01_e_12.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/02/20/08/59/547853.jpg	"></video> <h3 class="title">	El marginal T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 12	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_01_e_13.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/02/20/08/59/547853.jpg	"></video> <h3 class="title">	El marginal T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 13	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-m-4rg-1n-4l-1/trailer%203l%20M4rg1n4l%202.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El marginal T2	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_02_e_01.mkv	 "poster="	https://flxt.tmsimg.com/assets/p13373467_b_v8_ae.jpg	"></video> <h3 class="title">	El marginal T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_02_e_02.mkv	 "poster="	https://flxt.tmsimg.com/assets/p13373467_b_v8_ae.jpg	"></video> <h3 class="title">	El marginal T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_02_e_03.mkv	 "poster="	https://flxt.tmsimg.com/assets/p13373467_b_v8_ae.jpg	"></video> <h3 class="title">	El marginal T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_02_e_04.mkv	 "poster="	https://flxt.tmsimg.com/assets/p13373467_b_v8_ae.jpg	"></video> <h3 class="title">	El marginal T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_02_e_05.mkv	 "poster="	https://flxt.tmsimg.com/assets/p13373467_b_v8_ae.jpg	"></video> <h3 class="title">	El marginal T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_02_e_06.mkv	 "poster="	https://flxt.tmsimg.com/assets/p13373467_b_v8_ae.jpg	"></video> <h3 class="title">	El marginal T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_02_e_07.mkv	 "poster="	https://flxt.tmsimg.com/assets/p13373467_b_v8_ae.jpg	"></video> <h3 class="title">	El marginal T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_02_e_08.mkv	 "poster="	https://flxt.tmsimg.com/assets/p13373467_b_v8_ae.jpg	"></video> <h3 class="title">	El marginal T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-m-4rg-1n-4l-1/trailer%203l%20M4rg1n4l%203.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El marginal T3	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_03_e_01.mkv	 "poster="	https://shahed4u.vip/wp-content/uploads/2021/07/5e1369ac92fb7-384x550.png	"></video> <h3 class="title">	El marginal T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_03_e_02.mkv	 "poster="	https://shahed4u.vip/wp-content/uploads/2021/07/5e1369ac92fb7-384x550.png	"></video> <h3 class="title">	El marginal T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_03_e_03.mkv	 "poster="	https://shahed4u.vip/wp-content/uploads/2021/07/5e1369ac92fb7-384x550.png	"></video> <h3 class="title">	El marginal T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_03_e_04.mkv	 "poster="	https://shahed4u.vip/wp-content/uploads/2021/07/5e1369ac92fb7-384x550.png	"></video> <h3 class="title">	El marginal T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_marginal/s_03_e_05.mkv	 "poster="	https://shahed4u.vip/wp-content/uploads/2021/07/5e1369ac92fb7-384x550.png	"></video> <h3 class="title">	El marginal T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20221224_20221224_1839/01.mp4	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2022/12/w1280/mLbFg0u2DPYuB5CILzwWk3kdI8b.jpg	"></video> <h3 class="title">	El novato	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20221224_20221224_1839/02.mp4	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2022/12/w1280/mLbFg0u2DPYuB5CILzwWk3kdI8b.jpg	"></video> <h3 class="title">	El novato	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20221224_20221224_1839/03.mp4	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2022/12/w1280/mLbFg0u2DPYuB5CILzwWk3kdI8b.jpg	"></video> <h3 class="title">	El novato	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20221224_20221224_1839/04.mp4	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2022/12/w1280/mLbFg0u2DPYuB5CILzwWk3kdI8b.jpg	"></video> <h3 class="title">	El novato	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20221224_20221224_1839/05.mp4	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2022/12/w1280/mLbFg0u2DPYuB5CILzwWk3kdI8b.jpg	"></video> <h3 class="title">	El novato	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20221224_20221224_1839/06.mp4	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2022/12/w1280/mLbFg0u2DPYuB5CILzwWk3kdI8b.jpg	"></video> <h3 class="title">	El novato	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20221224_20221224_1839/07.mp4	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2022/12/w1280/mLbFg0u2DPYuB5CILzwWk3kdI8b.jpg	"></video> <h3 class="title">	El novato	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20221224_20221224_1839/08.mp4	 "poster="	https://www.lavanguardia.com/peliculas-series/images/serie/poster/2022/12/w1280/mLbFg0u2DPYuB5CILzwWk3kdI8b.jpg	"></video> <h3 class="title">	El novato	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-pr-3s-1d-3nt-3/trailer%203l%20Pr3s1d3nt3.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El Presidente	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_presidente/s_01_e_01.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/05/13/17/09/5151015.jpg	"></video> <h3 class="title">	El Presidente	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_presidente/s_01_e_02.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/05/13/17/09/5151015.jpg	"></video> <h3 class="title">	El Presidente	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_presidente/s_01_e_03.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/05/13/17/09/5151015.jpg	"></video> <h3 class="title">	El Presidente	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_presidente/s_01_e_04.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/05/13/17/09/5151015.jpg	"></video> <h3 class="title">	El Presidente	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_presidente/s_01_e_05.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/05/13/17/09/5151015.jpg	"></video> <h3 class="title">	El Presidente	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_presidente/s_01_e_06.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/05/13/17/09/5151015.jpg	"></video> <h3 class="title">	El Presidente	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_presidente/s_01_e_07.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/05/13/17/09/5151015.jpg	"></video> <h3 class="title">	El Presidente	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_presidente/s_01_e_08.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/05/13/17/09/5151015.jpg	"></video> <h3 class="title">	El Presidente	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-r-3fug-10/trailer%203l%20R3fug10.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El refugio	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/el.-refugio.-1x-01.-dual.-1080p-lat/El.Refugio.1x01.Dual.1080p-lat.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/05/23/04/24/0969386.jpg	"></video> <h3 class="title">	El refugio	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/el.-refugio.-1x-02.-dual.-1080p-lat/El.Refugio.1x02.Dual.1080p-lat.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/05/23/04/24/0969386.jpg	"></video> <h3 class="title">	El refugio	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/el.-refugio.-1x-03.-dual.-1080p-lat/El.Refugio.1x03.Dual.1080p-lat.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/05/23/04/24/0969386.jpg	"></video> <h3 class="title">	El refugio	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/el.-refugio.-1x-04.-dual.-1080p-lat/El.Refugio.1x04.Dual.1080p-lat.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/05/23/04/24/0969386.jpg	"></video> <h3 class="title">	El refugio	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/el.-refugio.-1x-05.-dual.-1080p-lat/El.Refugio.1x05.Dual.1080p-lat.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/05/23/04/24/0969386.jpg	"></video> <h3 class="title">	El refugio	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/el.-refugio.-1x-06.-dual.-1080p-lat/El.Refugio.1x06.Dual.1080p-lat.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/05/23/04/24/0969386.jpg	"></video> <h3 class="title">	El refugio	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-r-31n-0_202209/trailer%203l%20R31n0.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El Reino	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_reino/s_01_e_01.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/08/04/12/14/4668713.jpg	"></video> <h3 class="title">	El Reino	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_reino/s_01_e_02.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/08/04/12/14/4668713.jpg	"></video> <h3 class="title">	El Reino	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_reino/s_01_e_03.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/08/04/12/14/4668713.jpg	"></video> <h3 class="title">	El Reino	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_reino/s_01_e_04.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/08/04/12/14/4668713.jpg	"></video> <h3 class="title">	El Reino	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_reino/s_01_e_05.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/08/04/12/14/4668713.jpg	"></video> <h3 class="title">	El Reino	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_reino/s_01_e_06.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/08/04/12/14/4668713.jpg	"></video> <h3 class="title">	El Reino	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_reino/s_01_e_07.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/08/04/12/14/4668713.jpg	"></video> <h3 class="title">	El Reino	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_reino/s_01_e_08.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/08/04/12/14/4668713.jpg	"></video> <h3 class="title">	El Reino	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-r-351d-3nt-3/trailer%203l%20R351d3nt3.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/12/05/16/43/5900069.jpg	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/12/05/16/43/5900069.jpg	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/12/05/16/43/5900069.jpg	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/12/05/16/43/5900069.jpg	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/12/05/16/43/5900069.jpg	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/12/05/16/43/5900069.jpg	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_01_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/12/05/16/43/5900069.jpg	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_01_e_08.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/12/05/16/43/5900069.jpg	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_01_e_09.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/12/05/16/43/5900069.jpg	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_01_e_10.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/12/05/16/43/5900069.jpg	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_01_e_11.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/12/05/16/43/5900069.jpg	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 11	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_01_e_12.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/12/05/16/43/5900069.jpg	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 12	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_01_e_13.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/12/05/16/43/5900069.jpg	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 13	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_01_e_14.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/17/12/05/16/43/5900069.jpg	"></video> <h3 class="title">	El residente T1 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 14	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_08.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_09.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_10.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_11.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 11	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_12.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 12	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_13.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 13	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_14.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 14	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_15.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 15	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_16.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 16	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_17.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 17	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_18.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 18	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_19.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 19	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_20.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 20	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_21.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 21	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_22.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 22	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_02_e_23.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/18/08/20/10/09/0789315.jpg	"></video> <h3 class="title">	El residente T2 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 23	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_08.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_09.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_10.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_11.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 11	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_12.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 12	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_13.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 13	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_14.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 14	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_15.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 15	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_16.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 16	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_17.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 17	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_18.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 18	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_resident/s_03_e_19.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/09/10/21/17/4299481.jpg	"></video> <h3 class="title">	El residente T3 (SUB)	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 19	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-r-0b-0-d-3l-s-1gl-0/trailer%203l%20r0b0%20d3l%20s1gl0.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El robo del siglo	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_robo_del_siglo/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/08/09/01/46/4136909.jpg	"></video> <h3 class="title">	El robo del siglo	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_robo_del_siglo/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/08/09/01/46/4136909.jpg	"></video> <h3 class="title">	El robo del siglo	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_robo_del_siglo/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/08/09/01/46/4136909.jpg	"></video> <h3 class="title">	El robo del siglo	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_robo_del_siglo/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/08/09/01/46/4136909.jpg	"></video> <h3 class="title">	El robo del siglo	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_robo_del_siglo/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/08/09/01/46/4136909.jpg	"></video> <h3 class="title">	El robo del siglo	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_robo_del_siglo/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/08/09/01/46/4136909.jpg	"></video> <h3 class="title">	El robo del siglo	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-s-3n-0r-d-3-l-0s-4n-1ll-05/trailer%203l%20s3n0r%20d3%20l0s%204n1ll05.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El robo del siglo	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lord_of_the_rings_the_rings_of_power/s_01_e_01.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/22/02/15/16/01/2694773.jpg	"></video> <h3 class="title">	El señor de los anillos: Los anillos de poder	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lord_of_the_rings_the_rings_of_power/s_01_e_02.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/22/02/15/16/01/2694773.jpg	"></video> <h3 class="title">	El señor de los anillos: Los anillos de poder	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/03_20220909_20220909_1426/03.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/02/15/16/01/2694773.jpg	"></video> <h3 class="title">	El señor de los anillos: Los anillos de poder	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20220916_20220916/04.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/02/15/16/01/2694773.jpg	"></video> <h3 class="title">	El señor de los anillos: Los anillos de poder	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/05_20220923_20220923_1924/05.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/02/15/16/01/2694773.jpg	"></video> <h3 class="title">	El señor de los anillos: Los anillos de poder	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/06_20220930/06.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/02/15/16/01/2694773.jpg	"></video> <h3 class="title">	El señor de los anillos: Los anillos de poder	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/07_20221007_20221007/07.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/02/15/16/01/2694773.jpg	"></video> <h3 class="title">	El señor de los anillos: Los anillos de poder	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/08_20221014/08.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/02/15/16/01/2694773.jpg	"></video> <h3 class="title">	El señor de los anillos: Los anillos de poder	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-t-3rc-3r-d-14/trailer%203l%20t3rc3r%20d14.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El tercer día	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_third_day/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/09/15/09/27/2231334.jpg	"></video> <h3 class="title">	El tercer día	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_third_day/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/09/15/09/27/2231334.jpg	"></video> <h3 class="title">	El tercer día	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_third_day/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/09/15/09/27/2231334.jpg	"></video> <h3 class="title">	El tercer día	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_third_day/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/09/15/09/27/2231334.jpg	"></video> <h3 class="title">	El tercer día	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_third_day/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/09/15/09/27/2231334.jpg	"></video> <h3 class="title">	El tercer día	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_third_day/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/09/15/09/27/2231334.jpg	"></video> <h3 class="title">	El tercer día	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-t-13mp-0-qu-3-t-3-d-0y/trailer%203l%20t13mp0%20qu3%20t3%20d0y.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El tiempo que te doy	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20211029_20211029/01.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/21/09/28/12/47/0075355.jpg	"></video> <h3 class="title">	El tiempo que te doy	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20211029_20211029/02.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/21/09/28/12/47/0075355.jpg	"></video> <h3 class="title">	El tiempo que te doy	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20211029_20211029/03.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/21/09/28/12/47/0075355.jpg	"></video> <h3 class="title">	El tiempo que te doy	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20211029_20211029/04.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/21/09/28/12/47/0075355.jpg	"></video> <h3 class="title">	El tiempo que te doy	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20211029_20211029/05.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/21/09/28/12/47/0075355.jpg	"></video> <h3 class="title">	El tiempo que te doy	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20211029_20211029/06.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/21/09/28/12/47/0075355.jpg	"></video> <h3 class="title">	El tiempo que te doy	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20211029_20211029/07.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/21/09/28/12/47/0075355.jpg	"></video> <h3 class="title">	El tiempo que te doy	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20211029_20211029/08.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/21/09/28/12/47/0075355.jpg	"></video> <h3 class="title">	El tiempo que te doy	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20211029_20211029/09.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/21/09/28/12/47/0075355.jpg	"></video> <h3 class="title">	El tiempo que te doy	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20211029_20211029/10.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/21/09/28/12/47/0075355.jpg	"></video> <h3 class="title">	El tiempo que te doy	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20220408/01.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/04/01/00/29/3326945.jpg	"></video> <h3 class="title">	El ultimo autobus	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20220408/02.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/04/01/00/29/3326945.jpg	"></video> <h3 class="title">	El ultimo autobus	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20220408/03.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/04/01/00/29/3326945.jpg	"></video> <h3 class="title">	El ultimo autobus	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20220408/04.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/04/01/00/29/3326945.jpg	"></video> <h3 class="title">	El ultimo autobus	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20220408/05.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/04/01/00/29/3326945.jpg	"></video> <h3 class="title">	El ultimo autobus	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20220408/06.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/04/01/00/29/3326945.jpg	"></video> <h3 class="title">	El ultimo autobus	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20220408/07.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/04/01/00/29/3326945.jpg	"></video> <h3 class="title">	El ultimo autobus	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20220408/08.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/04/01/00/29/3326945.jpg	"></video> <h3 class="title">	El ultimo autobus	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20220408/09.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/04/01/00/29/3326945.jpg	"></video> <h3 class="title">	El ultimo autobus	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20220408/10.mp4	 "poster="	https://es.web.img2.acsta.net/pictures/22/04/01/00/29/3326945.jpg	"></video> <h3 class="title">	El ultimo autobus	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-v-3c-1n-0-1/trailer%203l%20v3c1n0%201.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El vecino T1	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/11/18/09/18/3405843.jpg	"></video> <h3 class="title">	El vecino T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/11/18/09/18/3405843.jpg	"></video> <h3 class="title">	El vecino T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/11/18/09/18/3405843.jpg	"></video> <h3 class="title">	El vecino T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/11/18/09/18/3405843.jpg	"></video> <h3 class="title">	El vecino T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/11/18/09/18/3405843.jpg	"></video> <h3 class="title">	El vecino T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/11/18/09/18/3405843.jpg	"></video> <h3 class="title">	El vecino T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_01_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/11/18/09/18/3405843.jpg	"></video> <h3 class="title">	El vecino T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_01_e_08.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/11/18/09/18/3405843.jpg	"></video> <h3 class="title">	El vecino T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_01_e_09.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/11/18/09/18/3405843.jpg	"></video> <h3 class="title">	El vecino T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_01_e_10.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/11/18/09/18/3405843.jpg	"></video> <h3 class="title">	El vecino T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-v-3c-1n-0-1/trailer%203l%20v3c1n0%202.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El vecino T2	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_02_e_01.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/05/07/11/36/2427908.jpg	"></video> <h3 class="title">	El vecino T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_02_e_02.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/05/07/11/36/2427908.jpg	"></video> <h3 class="title">	El vecino T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_02_e_03.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/05/07/11/36/2427908.jpg	"></video> <h3 class="title">	El vecino T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_02_e_04.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/05/07/11/36/2427908.jpg	"></video> <h3 class="title">	El vecino T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_02_e_05.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/05/07/11/36/2427908.jpg	"></video> <h3 class="title">	El vecino T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_02_e_06.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/05/07/11/36/2427908.jpg	"></video> <h3 class="title">	El vecino T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_02_e_07.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/05/07/11/36/2427908.jpg	"></video> <h3 class="title">	El vecino T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/el_vecino/s_02_e_08.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/21/05/07/11/36/2427908.jpg	"></video> <h3 class="title">	El vecino T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3l-v-3r-4n-0-3n-qu-3-m-3-3n-4m-0r-3/trailer%203l%20v3r4n0%203n%20qu3%20m3%203n4m0r3.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	El verano que me enamore	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_summer_i_turned_pretty/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/29/08/33/1080891.jpg	"></video> <h3 class="title">	El verano que me enamore	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_summer_i_turned_pretty/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/29/08/33/1080891.jpg	"></video> <h3 class="title">	El verano que me enamore	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_summer_i_turned_pretty/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/29/08/33/1080891.jpg	"></video> <h3 class="title">	El verano que me enamore	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_summer_i_turned_pretty/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/29/08/33/1080891.jpg	"></video> <h3 class="title">	El verano que me enamore	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_summer_i_turned_pretty/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/29/08/33/1080891.jpg	"></video> <h3 class="title">	El verano que me enamore	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_summer_i_turned_pretty/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/29/08/33/1080891.jpg	"></video> <h3 class="title">	El verano que me enamore	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/the_summer_i_turned_pretty/s_01_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/22/04/29/08/33/1080891.jpg	"></video> <h3 class="title">	El verano que me enamore	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3m-1ly-3n-p-4r-15-2/trailer%203m1ly%203n%20p4r15%202.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Emily en Paris T2	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20211222_20211222_1856/01.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/19/12/18/1742388.jpg	"></video> <h3 class="title">	Emily en Paris T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20211222_20211222_1856/02.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/19/12/18/1742388.jpg	"></video> <h3 class="title">	Emily en Paris T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20211222_20211222_1856/03.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/19/12/18/1742388.jpg	"></video> <h3 class="title">	Emily en Paris T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20211222_20211222_1856/04.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/19/12/18/1742388.jpg	"></video> <h3 class="title">	Emily en Paris T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20211222_20211222_1856/05.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/19/12/18/1742388.jpg	"></video> <h3 class="title">	Emily en Paris T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20211222_20211222_1918/06.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/19/12/18/1742388.jpg	"></video> <h3 class="title">	Emily en Paris T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20211222_20211222_1918/07.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/19/12/18/1742388.jpg	"></video> <h3 class="title">	Emily en Paris T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20211222_20211222_1918/08.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/19/12/18/1742388.jpg	"></video> <h3 class="title">	Emily en Paris T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20211222_20211222_1918/09.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/19/12/18/1742388.jpg	"></video> <h3 class="title">	Emily en Paris T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20211222_20211222_1918/10.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/21/11/19/12/18/1742388.jpg	"></video> <h3 class="title">	Emily en Paris T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-m-13nt-3m-3-s-1-pu-3d-35/trailer%20M13nt3m3%20s1%20pu3d35.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Engañame si puedes T1	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_01_e_01.mkv	 "poster="	https://m.media-amazon.com/images/I/41ddpZxzFnL.jpg	"></video> <h3 class="title">	Engañame si puedes T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_01_e_02.mkv	 "poster="	https://m.media-amazon.com/images/I/41ddpZxzFnL.jpg	"></video> <h3 class="title">	Engañame si puedes T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_01_e_03.mkv	 "poster="	https://m.media-amazon.com/images/I/41ddpZxzFnL.jpg	"></video> <h3 class="title">	Engañame si puedes T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_01_e_04.mkv	 "poster="	https://m.media-amazon.com/images/I/41ddpZxzFnL.jpg	"></video> <h3 class="title">	Engañame si puedes T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_01_e_05.mkv	 "poster="	https://m.media-amazon.com/images/I/41ddpZxzFnL.jpg	"></video> <h3 class="title">	Engañame si puedes T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_01_e_06.mkv	 "poster="	https://m.media-amazon.com/images/I/41ddpZxzFnL.jpg	"></video> <h3 class="title">	Engañame si puedes T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_01_e_07.mkv	 "poster="	https://m.media-amazon.com/images/I/41ddpZxzFnL.jpg	"></video> <h3 class="title">	Engañame si puedes T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_01_e_08.mkv	 "poster="	https://m.media-amazon.com/images/I/41ddpZxzFnL.jpg	"></video> <h3 class="title">	Engañame si puedes T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_01_e_09.mkv	 "poster="	https://m.media-amazon.com/images/I/41ddpZxzFnL.jpg	"></video> <h3 class="title">	Engañame si puedes T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_01_e_10.mkv	 "poster="	https://m.media-amazon.com/images/I/41ddpZxzFnL.jpg	"></video> <h3 class="title">	Engañame si puedes T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_01_e_11.mkv	 "poster="	https://m.media-amazon.com/images/I/41ddpZxzFnL.jpg	"></video> <h3 class="title">	Engañame si puedes T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 11	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_01_e_12.mkv	 "poster="	https://m.media-amazon.com/images/I/41ddpZxzFnL.jpg	"></video> <h3 class="title">	Engañame si puedes T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 12	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_01_e_13.mkv	 "poster="	https://m.media-amazon.com/images/I/41ddpZxzFnL.jpg	"></video> <h3 class="title">	Engañame si puedes T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 13	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_01.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_02.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_03.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_04.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_05.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_06.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_07.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_08.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_09.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_10.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_11.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 11	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_12.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 12	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_13.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 13	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_14.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 14	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_15.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 15	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_16.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 16	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_17.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 17	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_18.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 18	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_19.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 19	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_20.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 20	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_21.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 21	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_02_e_22.mkv	 "poster="	https://m.media-amazon.com/images/I/81Ta0EDW++L._SY445_.jpg	"></video> <h3 class="title">	Engañame si puedes T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 22	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_03_e_01.mkv	 "poster="	https://m.media-amazon.com/images/I/81nCWM9TBDL._SL1500_.jpg	"></video> <h3 class="title">	Engañame si puedes T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_03_e_02.mkv	 "poster="	https://m.media-amazon.com/images/I/81nCWM9TBDL._SL1500_.jpg	"></video> <h3 class="title">	Engañame si puedes T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_03_e_03.mkv	 "poster="	https://m.media-amazon.com/images/I/81nCWM9TBDL._SL1500_.jpg	"></video> <h3 class="title">	Engañame si puedes T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_03_e_04.mkv	 "poster="	https://m.media-amazon.com/images/I/81nCWM9TBDL._SL1500_.jpg	"></video> <h3 class="title">	Engañame si puedes T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_03_e_05.mkv	 "poster="	https://m.media-amazon.com/images/I/81nCWM9TBDL._SL1500_.jpg	"></video> <h3 class="title">	Engañame si puedes T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_03_e_06.mkv	 "poster="	https://m.media-amazon.com/images/I/81nCWM9TBDL._SL1500_.jpg	"></video> <h3 class="title">	Engañame si puedes T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_03_e_07.mkv	 "poster="	https://m.media-amazon.com/images/I/81nCWM9TBDL._SL1500_.jpg	"></video> <h3 class="title">	Engañame si puedes T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_03_e_08.mkv	 "poster="	https://m.media-amazon.com/images/I/81nCWM9TBDL._SL1500_.jpg	"></video> <h3 class="title">	Engañame si puedes T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_03_e_09.mkv	 "poster="	https://m.media-amazon.com/images/I/81nCWM9TBDL._SL1500_.jpg	"></video> <h3 class="title">	Engañame si puedes T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_03_e_10.mkv	 "poster="	https://m.media-amazon.com/images/I/81nCWM9TBDL._SL1500_.jpg	"></video> <h3 class="title">	Engañame si puedes T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_03_e_11.mkv	 "poster="	https://m.media-amazon.com/images/I/81nCWM9TBDL._SL1500_.jpg	"></video> <h3 class="title">	Engañame si puedes T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 11	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_03_e_12.mkv	 "poster="	https://m.media-amazon.com/images/I/81nCWM9TBDL._SL1500_.jpg	"></video> <h3 class="title">	Engañame si puedes T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 12	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/lie_to_me/s_03_e_13.mkv	 "poster="	https://m.media-amazon.com/images/I/81nCWM9TBDL._SL1500_.jpg	"></video> <h3 class="title">	Engañame si puedes T3	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 13	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3n-l-4-c-13n-4g-4/trailer%203n%20l4%20c13n4g4.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	En la cienaga	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/rojst/s_01_e_01.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/03/17/12/36/2596674.jpg	"></video> <h3 class="title">	En la cienaga	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/rojst/s_01_e_02.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/03/17/12/36/2596674.jpg	"></video> <h3 class="title">	En la cienaga	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/rojst/s_01_e_03.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/03/17/12/36/2596674.jpg	"></video> <h3 class="title">	En la cienaga	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/rojst/s_01_e_04.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/03/17/12/36/2596674.jpg	"></video> <h3 class="title">	En la cienaga	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/rojst/s_01_e_05.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/03/17/12/36/2596674.jpg	"></video> <h3 class="title">	En la cienaga	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3n-l-05-b-0x-35/trailer%203n%20l05%20b0x35.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	En los boxes	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/th-3.-cr-3w.-01301/Th3.Cr3w.%2401301.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/21/02/26/09/27/2042545.jpg	"></video> <h3 class="title">	En los boxes	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/th-3.-cr-3w.-01301/Th3.Cr3w.%2401302.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/21/02/26/09/27/2042545.jpg	"></video> <h3 class="title">	En los boxes	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/th-3.-cr-3w.-01301/Th3.Cr3w.%2401303.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/21/02/26/09/27/2042545.jpg	"></video> <h3 class="title">	En los boxes	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="	https://es.web.img3.acsta.net/pictures/21/02/26/09/27/2042545.jpg	"></video> <h3 class="title">	En los boxes	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	#EXTINF:-1 tvg-logo="https://es.web.img3.acsta.net/pictures/21/02/26/09/27/2042545.jpg" group-title="En los boxes",Cap. 05	 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	#EXTINF:-1 tvg-logo="https://es.web.img3.acsta.net/pictures/21/02/26/09/27/2042545.jpg" group-title="En los boxes",Cap. 06	 "poster="	https://archive.org/download/th-3.-cr-3w.-01301/Th3.Cr3w.%2401305.mp4	"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	#EXTINF:-1 tvg-logo="https://es.web.img3.acsta.net/pictures/21/02/26/09/27/2042545.jpg" group-title="En los boxes",Cap. 07	 "poster="	https://archive.org/download/th-3.-cr-3w.-01301/Th3.Cr3w.%2401306.mp4	"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	#EXTINF:-1 tvg-logo="https://es.web.img3.acsta.net/pictures/21/02/26/09/27/2042545.jpg" group-title="En los boxes",Cap. 08	 "poster="	https://archive.org/download/th-3.-cr-3w.-01307_202102/Th3.Cr3w.%2401307.mp4	"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	#EXTINF:-1 tvg-logo="https://es.web.img3.acsta.net/pictures/21/02/26/09/27/2042545.jpg" group-title="En los boxes",Cap. 09	 "poster="	https://archive.org/download/th-3.-cr-3w.-01307_202102/Th3.Cr3w.%2401308.mp4	"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	#EXTINF:-1 tvg-logo="https://es.web.img3.acsta.net/pictures/21/02/26/09/27/2042545.jpg" group-title="En los boxes",Cap. 10	 "poster="	https://archive.org/download/th-3.-cr-3w.-01307_202102/Th3.Cr3w.%2401309.mp4	"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="	https://archive.org/download/th-3.-cr-3w.-01307_202102/Th3.Cr3w.%2401310.mp4	"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3ntr-3n-4d-0r-d-3-3l-1t-3/trailer%203ntr3n4d0r%20d3%203l1t3.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	<br><strong style=" font-size: 90%; color:#fffc00;">	Entrenador de elite	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20210714_20210714_0916/01.mp4	 "poster="	https://mx.web.img3.acsta.net/r_1280_720/pictures/21/02/25/11/30/3596237.jpg	"></video> <h3 class="title">	Entrenador de elite	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20210714_20210714_0916/02.mp4	 "poster="	https://mx.web.img3.acsta.net/r_1280_720/pictures/21/02/25/11/30/3596237.jpg	"></video> <h3 class="title">	Entrenador de elite	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20210714_20210714_0916/03.mp4	 "poster="	https://mx.web.img3.acsta.net/r_1280_720/pictures/21/02/25/11/30/3596237.jpg	"></video> <h3 class="title">	Entrenador de elite	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20210714_20210714_0916/04.mp4	 "poster="	https://mx.web.img3.acsta.net/r_1280_720/pictures/21/02/25/11/30/3596237.jpg	"></video> <h3 class="title">	Entrenador de elite	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20210714_20210714_0916/05.mp4	 "poster="	https://mx.web.img3.acsta.net/r_1280_720/pictures/21/02/25/11/30/3596237.jpg	"></video> <h3 class="title">	Entrenador de elite	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20210714_20210714_0916/06.mp4	 "poster="	https://mx.web.img3.acsta.net/r_1280_720/pictures/21/02/25/11/30/3596237.jpg	"></video> <h3 class="title">	Entrenador de elite	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20210714_20210714_0916/07.mp4	 "poster="	https://mx.web.img3.acsta.net/r_1280_720/pictures/21/02/25/11/30/3596237.jpg	"></video> <h3 class="title">	Entrenador de elite	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20210714_20210714_0916/08.mp4	 "poster="	https://mx.web.img3.acsta.net/r_1280_720/pictures/21/02/25/11/30/3596237.jpg	"></video> <h3 class="title">	Entrenador de elite	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20210714_20210714_0916/09.mp4	 "poster="	https://mx.web.img3.acsta.net/r_1280_720/pictures/21/02/25/11/30/3596237.jpg	"></video> <h3 class="title">	Entrenador de elite	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/10_20210714_20210714_0916/10.mp4	 "poster="	https://mx.web.img3.acsta.net/r_1280_720/pictures/21/02/25/11/30/3596237.jpg	"></video> <h3 class="title">	Entrenador de elite	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3qu-1n-0x/trailer%203qu1n0x.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Equinox	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/equinox/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/11/23/09/17/3207462.jpg	"></video> <h3 class="title">	Equinox	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/equinox/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/11/23/09/17/3207462.jpg	"></video> <h3 class="title">	Equinox	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/equinox/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/11/23/09/17/3207462.jpg	"></video> <h3 class="title">	Equinox	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/equinox/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/11/23/09/17/3207462.jpg	"></video> <h3 class="title">	Equinox	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/equinox/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/11/23/09/17/3207462.jpg	"></video> <h3 class="title">	Equinox	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/equinox/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/20/11/23/09/17/3207462.jpg	"></video> <h3 class="title">	Equinox	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-4l-r-4w-4bi/trailer%204l%20r4w4bi.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Escuela para señoritas de Al Rawabi	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/alrawabi_school_for_girls/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/r_1280_720/pictures/21/05/11/13/40/0212404.jpg	"></video> <h3 class="title">	Escuela para señoritas de Al Rawabi	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/alrawabi_school_for_girls/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/r_1280_720/pictures/21/05/11/13/40/0212404.jpg	"></video> <h3 class="title">	Escuela para señoritas de Al Rawabi	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/alrawabi_school_for_girls/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/r_1280_720/pictures/21/05/11/13/40/0212404.jpg	"></video> <h3 class="title">	Escuela para señoritas de Al Rawabi	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/alrawabi_school_for_girls/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/r_1280_720/pictures/21/05/11/13/40/0212404.jpg	"></video> <h3 class="title">	Escuela para señoritas de Al Rawabi	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/alrawabi_school_for_girls/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/r_1280_720/pictures/21/05/11/13/40/0212404.jpg	"></video> <h3 class="title">	Escuela para señoritas de Al Rawabi	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/alrawabi_school_for_girls/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/r_1280_720/pictures/21/05/11/13/40/0212404.jpg	"></video> <h3 class="title">	Escuela para señoritas de Al Rawabi	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3st-4-m-13rd-4-m-3-sup-3r-4/trailer%203st4%20m13rd4%20m3%20sup3r4.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Esta mierda me supera	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/i_am_not_okay_with_this/s_01_e_01.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/02/10/17/30/1901472.jpg	"></video> <h3 class="title">	Esta mierda me supera	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/i_am_not_okay_with_this/s_01_e_02.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/02/10/17/30/1901472.jpg	"></video> <h3 class="title">	Esta mierda me supera	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/i_am_not_okay_with_this/s_01_e_03.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/02/10/17/30/1901472.jpg	"></video> <h3 class="title">	Esta mierda me supera	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/i_am_not_okay_with_this/s_01_e_04.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/02/10/17/30/1901472.jpg	"></video> <h3 class="title">	Esta mierda me supera	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/i_am_not_okay_with_this/s_01_e_05.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/02/10/17/30/1901472.jpg	"></video> <h3 class="title">	Esta mierda me supera	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/i_am_not_okay_with_this/s_01_e_06.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/02/10/17/30/1901472.jpg	"></video> <h3 class="title">	Esta mierda me supera	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/i_am_not_okay_with_this/s_01_e_07.mkv	 "poster="	https://es.web.img2.acsta.net/pictures/20/02/10/17/30/1901472.jpg	"></video> <h3 class="title">	Esta mierda me supera	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-35t-4m-05-mu-3rt-05/trailer%2035t4m05%20mu3rt05.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Estamos muertos	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220206/01.mp4	 "poster="	https://mx.web.img2.acsta.net/pictures/22/01/14/19/22/2108595.png	"></video> <h3 class="title">	Estamos muertos	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/02_20220206/02.mp4	 "poster="	https://mx.web.img2.acsta.net/pictures/22/01/14/19/22/2108595.png	"></video> <h3 class="title">	Estamos muertos	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/03_20220206/03.mp4	 "poster="	https://mx.web.img2.acsta.net/pictures/22/01/14/19/22/2108595.png	"></video> <h3 class="title">	Estamos muertos	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/04_20220206_20220206/04.mp4	 "poster="	https://mx.web.img2.acsta.net/pictures/22/01/14/19/22/2108595.png	"></video> <h3 class="title">	Estamos muertos	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220206_202202/01.mp4	 "poster="	https://mx.web.img2.acsta.net/pictures/22/01/14/19/22/2108595.png	"></video> <h3 class="title">	Estamos muertos	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220206_20220206/01.mp4	 "poster="	https://mx.web.img2.acsta.net/pictures/22/01/14/19/22/2108595.png	"></video> <h3 class="title">	Estamos muertos	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220206_20220206_0135/01.mp4	 "poster="	https://mx.web.img2.acsta.net/pictures/22/01/14/19/22/2108595.png	"></video> <h3 class="title">	Estamos muertos	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220206_20220206_0140/01.mp4	 "poster="	https://mx.web.img2.acsta.net/pictures/22/01/14/19/22/2108595.png	"></video> <h3 class="title">	Estamos muertos	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220206_20220206_0155/01.mp4	 "poster="	https://mx.web.img2.acsta.net/pictures/22/01/14/19/22/2108595.png	"></video> <h3 class="title">	Estamos muertos	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220206_20220206_0205/01.mp4	 "poster="	https://mx.web.img2.acsta.net/pictures/22/01/14/19/22/2108595.png	"></video> <h3 class="title">	Estamos muertos	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220206_20220206_0210/01.mp4	 "poster="	https://mx.web.img2.acsta.net/pictures/22/01/14/19/22/2108595.png	"></video> <h3 class="title">	Estamos muertos	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 11	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/01_20220206_20220206_0216/01.mp4	 "poster="	https://mx.web.img2.acsta.net/pictures/22/01/14/19/22/2108595.png	"></video> <h3 class="title">	Estamos muertos	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 12	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3uph-0r-14-1/trailer%203uph0r14%201.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Euphoria T1	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/euphoria/s_01_e_01.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/06/18/12/06/4123858.jpg	"></video> <h3 class="title">	Euphoria T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/euphoria/s_01_e_02.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/06/18/12/06/4123858.jpg	"></video> <h3 class="title">	Euphoria T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/euphoria/s_01_e_03.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/06/18/12/06/4123858.jpg	"></video> <h3 class="title">	Euphoria T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/euphoria/s_01_e_04.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/06/18/12/06/4123858.jpg	"></video> <h3 class="title">	Euphoria T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/euphoria/s_01_e_05.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/06/18/12/06/4123858.jpg	"></video> <h3 class="title">	Euphoria T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/euphoria/s_01_e_06.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/06/18/12/06/4123858.jpg	"></video> <h3 class="title">	Euphoria T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/euphoria/s_01_e_07.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/06/18/12/06/4123858.jpg	"></video> <h3 class="title">	Euphoria T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/euphoria/s_01_e_08.mkv	 "poster="	https://es.web.img3.acsta.net/pictures/19/06/18/12/06/4123858.jpg	"></video> <h3 class="title">	Euphoria T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/eut-2-3/eut1%20%289%29.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/19/06/18/12/06/4123858.jpg	"></video> <h3 class="title">	Euphoria T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/eut-2-3/eut1%20%2810%29.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/19/06/18/12/06/4123858.jpg	"></video> <h3 class="title">	Euphoria T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3uph-0r-14-1/trailer%203uph0r14%202.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Euphoria T2	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/eut-2-3/eut2%20%281%29.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/01/26/16/02/1350380.jpg	"></video> <h3 class="title">	Euphoria T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/eut-2-3/eut2%20%282%29.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/01/26/16/02/1350380.jpg	"></video> <h3 class="title">	Euphoria T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/eut-2-3/eut2%20%283%29.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/01/26/16/02/1350380.jpg	"></video> <h3 class="title">	Euphoria T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/eut-2-3/eut2%20%284%29.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/01/26/16/02/1350380.jpg	"></video> <h3 class="title">	Euphoria T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/eut-2-3/eut2%20%285%29.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/01/26/16/02/1350380.jpg	"></video> <h3 class="title">	Euphoria T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/eut-2-3/eut2%20%286%29.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/01/26/16/02/1350380.jpg	"></video> <h3 class="title">	Euphoria T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/eut-2-3/eut2%20%287%29.mp4	 "poster="	https://es.web.img3.acsta.net/pictures/22/01/26/16/02/1350380.jpg	"></video> <h3 class="title">	Euphoria T2	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="		 "poster="		"></video> <h3 class="title">		<br><strong style=" font-size: 90%; color:#fffc00;">		</strong>  </h3></div>
+<div class="vid"> <video src="	https://archive.org/download/trailer-3v-1l/trailer%203v1l.mp4	 "poster="	https://cdn141.picsart.com/302055082210211.png	"></video> <h3 class="title">	Evil: Maligno T1	<br><strong style=" font-size: 90%; color:#fffc00;">	TRAILER	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/evil/s_01_e_01.mkv	 "poster="	https://m.media-amazon.com/images/I/71+P3BOkyRL._AC_SY679_.jpg	"></video> <h3 class="title">	Evil: Maligno T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 01	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/evil/s_01_e_02.mkv	 "poster="	https://m.media-amazon.com/images/I/71+P3BOkyRL._AC_SY679_.jpg	"></video> <h3 class="title">	Evil: Maligno T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 02	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/evil/s_01_e_03.mkv	 "poster="	https://m.media-amazon.com/images/I/71+P3BOkyRL._AC_SY679_.jpg	"></video> <h3 class="title">	Evil: Maligno T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 03	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/evil/s_01_e_04.mkv	 "poster="	https://m.media-amazon.com/images/I/71+P3BOkyRL._AC_SY679_.jpg	"></video> <h3 class="title">	Evil: Maligno T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 04	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/evil/s_01_e_05.mkv	 "poster="	https://m.media-amazon.com/images/I/71+P3BOkyRL._AC_SY679_.jpg	"></video> <h3 class="title">	Evil: Maligno T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 05	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/evil/s_01_e_06.mkv	 "poster="	https://m.media-amazon.com/images/I/71+P3BOkyRL._AC_SY679_.jpg	"></video> <h3 class="title">	Evil: Maligno T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 06	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/evil/s_01_e_07.mkv	 "poster="	https://m.media-amazon.com/images/I/71+P3BOkyRL._AC_SY679_.jpg	"></video> <h3 class="title">	Evil: Maligno T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 07	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/evil/s_01_e_08.mkv	 "poster="	https://m.media-amazon.com/images/I/71+P3BOkyRL._AC_SY679_.jpg	"></video> <h3 class="title">	Evil: Maligno T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 08	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/evil/s_01_e_09.mkv	 "poster="	https://m.media-amazon.com/images/I/71+P3BOkyRL._AC_SY679_.jpg	"></video> <h3 class="title">	Evil: Maligno T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 09	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/evil/s_01_e_10.mkv	 "poster="	https://m.media-amazon.com/images/I/71+P3BOkyRL._AC_SY679_.jpg	"></video> <h3 class="title">	Evil: Maligno T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 10	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/evil/s_01_e_11.mkv	 "poster="	https://m.media-amazon.com/images/I/71+P3BOkyRL._AC_SY679_.jpg	"></video> <h3 class="title">	Evil: Maligno T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 11	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/evil/s_01_e_12.mkv	 "poster="	https://m.media-amazon.com/images/I/71+P3BOkyRL._AC_SY679_.jpg	"></video> <h3 class="title">	Evil: Maligno T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 12	</strong>  </h3></div>
+<div class="vid"> <video src="	http://vods.tuxchannel.tv/series/evil/s_01_e_13.mkv	 "poster="	https://m.media-amazon.com/images/I/71+P3BOkyRL._AC_SY679_.jpg	"></video> <h3 class="title">	Evil: Maligno T1	<br><strong style=" font-size: 90%; color:#fffc00;">	Cap. 13	</strong>  </h3></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                           <!-- 
+
+
+
+<div class="vid"> <h3 class="title">	<br><strong style=" font-size: 200%; color:#07eefc;">	TEMPORADA 2	</strong>  </h3></div>
+
+<div class="vid"> <a href="	## LINK ##	" target="_blank"><img src="	## LINK IMAGEN ##	"/> <h3 class="title2"> CAP 01 <br><strong style="  color: #07eefc">  TEMPORADA 2          </h3></a></div>
+<div class="vid"> <a href="	## LINK ##	" target="_blank"><img src="	## LINK IMAGEN ##	"/> <h3 class="title2"> CAP 02 <br><strong style="  color: #07eefc">  TEMPORADA 2          </h3></a></div>
+<div class="vid"> <a href="	## LINK ##	" target="_blank"><img src="	## LINK IMAGEN ##	"/> <h3 class="title2"> CAP 03 <br><strong style="  color: #07eefc">  TEMPORADA 2          </h3></a></div>
+
+
+                            -->
+
+
+
+
+
+    <!--    ###############################################   MOLDE PARA AGREGAR CANALES O PELICULAS 
+
+
+<div class="vid"> <video src="  ## LINK ##   " poster="  ## IMAGEN ##  "></video> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<div class="vid"> <video src="  ## LINK ##   " poster="  ## IMAGEN ##  "></video> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<div class="vid"> <video src="  ## LINK ##   " poster="  ## IMAGEN ##  "></video> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<div class="vid"> <video src="  ## LINK ##   " poster="  ## IMAGEN ##  "></video> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<div class="vid"> <video src="  ## LINK ##   " poster="  ## IMAGEN ##  "></video> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+               ################################ PARA AGREGAR MENU EN CABECERA CON LINKS POR EJEMPLO DE ( OK.RU ) O SIN EXTENSION
+
+
+<div class="vid"> <h3 class="title">	<br><strong style=" font-size: 200%; color:#07eefc;">	TEMPORADA 2	</strong>  </h3></div>
+
+<div class="vid"> <a href=" ## LINK ## " target="_blank"><img src=" ## IMAGEN ## "/> <h3 class="title2"> CAP 01 <br><strong style="  color: #07eefc">  TEMPORADA 1          </h3></a></div>
+<div class="vid"> <a href=" ## LINK ## " target="_blank"><img src=" ## IMAGEN ## "/> <h3 class="title2"> CAP 02 <br><strong style="  color: #07eefc">  TEMPORADA 1          </h3></a></div>
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+ ===========================  para agregar mas temporadas  =============================
+
+
+<div class="vid"> <h3 class="title">	<br><strong style=" font-size: 200%; color:#07eefc;">	TEMPORADA 2	</strong>  </h3></div>
+
+
+<div class="vid"> <video src="	## link ##	 "muted poster=" ## imagen ##	"></video> <h3 class="title">	Cap. 1	<br><strong style=" font-size: 100%; color:#07eefc;">	TEMPORADA 2	</strong>  </h3></div>
+
+
+
+
+<div class="vid"> <h3 class="title">	<br><strong style=" font-size: 200%; color:#fc07ea;">	TEMPORADA 3	</strong>  </h3></div>
+
+
+<div class="vid"> <video src="	## link ##  "muted poster=" ## imagen ## "></video> <h3 class="title">	Cap. 1	<br><strong style=" font-size: 100%; color:#fc07ea;">  TEMPORADA 3	</strong>  </h3></div>
+
+
+
+
+
+
+        #########################################################################################################    -->
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script type="text/javascript">
+let listVideo = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video video');
+let title = document.querySelector('.main-video .title');
+
+listVideo.forEach(video =>{
+  video.onclick = () =>{
+    listVideo.forEach(vid => vid.classList.remove('active'));
+    video.classList.add('active');
+    if(video.classList.contains('active')){
+      let src = video.children[0].getAttribute('src');
+      mainVideo.src = src;
+      let text = video.children[1].innerHTML;
+      title.innerHTML = text;
+    };
+  };
+});
+</script>
+<script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+<script>//<![CDATA[
+const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+//]]></script>
+</body>
+</html>
