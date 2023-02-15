@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CANALES LOBO</title>
+<!-- Responsive viewport -->
+<meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css"/>
+<style type="text/css">
+
+*{margin:0;padding:0;box-sizing:border-box;text-transform:capitalize;}
+body{background:#000;}
+
+
+
+
+
+body {
+
+    max-height: 100%;
+
+    margin: 0 auto;
+}
+
+.heading{color:#444;font-size:40px;text-align:center;padding:10px;}
+
+.container{    HEIGHT: 20EM;display:grid;grid-template-columns:1.5fr 1.5fr;gap:15px;align-items:flex-start;padding:5px 1%;}
+
+.container .main-video{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;padding:2px;}
+
+.container .main-video video{
+width:100%;
+border-radius:5px;}
+
+.container .main-video .title{
+color:#fff;font-size:23px;padding-top:15px;padding-bottom:15px;}
+
+.container .video-list{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;height:100%;overflow-y:scroll;}
+
+.container .video-list::-webkit-scrollbar{
+width:7px;}
+
+.container .video-list::-webkit-scrollbar-track{
+background:#000;border-radius:50px;}
+
+.container .video-list::-webkit-scrollbar-thumb{
+background:#00a7ad;border-radius:50px;}
+
+.container .video-list .vid video{
+width:100px;border-radius:5px;
+
+}
+
+.container .video-list .vid img{
+    border-radius:5px;
+    width: 100px;
+}
+
+h9{
+    position: absolute;
+    margin: -5px 8px 0px 3px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.container .video-list .vid {
+    background: #0980fc63;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+.container .video-list .vid:hover{
+background:#000;}
+
+.container .video-list .vid.active{
+background:#00a7ad;}
+
+.container .video-list .vid.active .title{
+color:#000;}
+
+.container .video-list .vid .title{
+color:#00fd01;font-size:17px;}
+
+.container .video-list .vid .title2{
+position: absolute;
+    right: 13px;
+    left: 127px;
+    top: 190px;
+    color: #00fd01;
+    font-size: 75%;
+}
+
+
+
+@media (max-width: 1390px){
+.container{grid-template-columns:2fr 1fr;padding:10px;}
+.container .video-list .vid .title {
+    color: #00fd01;
+    font-size: 90%;
+}
+
+
+}
+
+@media (max-width: 480px){
+.container{grid-template-columns:1fr;height:600px;}
+.container .video-list .vid .title {
+    color: #00fd01;
+    font-size: 80%;
+
+}
+
+}
+
+
+
+
+nav {
+    max-width: auto;
+    margin: auto;
+    background-color: #335;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.menu-horizontal {
+    position: relative;
+    z-index: 5;
+    list-style:none;
+    display:flex;
+flex-wrap: wrap;
+    justify-content: CENTER;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu-horizontal > li:hover{
+    background-color: red;
+
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+background-color: rgba(0, 0, 0, .5)
+
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+
+}
+
+.menu-vertical li:hover{
+    background-color: green;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: yellow;
+    padding: 5px 5px 5px 10px;
+    text-decoration:none;
+
+}
+
+.menu-horizontal li .active {
+    background: #ff0000;
+    box-shadow: 0 0 10px #ff0000, 0 0 60px #ff0000, 0 0 80px #ff0000;
+    transition-delay: 0.1s;
+}
+
+</style>
+</head>
+
+
+
+<body>
+
+<nav>
+
+      <!--   RESALTAR    class="active"     -->
+
+  <ul class="menu-horizontal">
+      <li>
+      <a href="./A">PELICULAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+       <li>
+      <a href="https://chanjdm.github.io/JDM/L3TR45/C4N41CU1TUR4">CANALES TOTALPLAY</a>
+         <ul class="menu-vertical">
+            <li><a href="https://chanjdm.github.io/JDM/L3TR45/C4N41CU1TUR4HD">HD</a></li>
+
+
+         </ul>
+      </li>
+
+       <li>
+      <a class="active">CANALES LOBO </a>
+      <!--     <ul class="menu-vertical">
+            <li><a href="./C4N41CU1TUR4HD">HD</a></li>
+
+
+         </ul>   -->
+      </li>
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0NIÑ.html">  NIÑOS </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a https://chanjdm.github.io/SER/SER/10B0CIN.html>  CINE</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0DEP.html">  DEPORTES  </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0ENT.html">  ENTRETENIMIENTO  </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->  
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0LOC.html">  LOCALES </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0MUS.html">  MUSICA </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a class="active">  CULTURA </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0NOT.html">  NOTICIAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B02ME.html">  2 MEGAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </ul>
+
+
+</nav>
+
+
+<div class="container">
+<div class="main-video">
+<div class="video">
+<video class='js-player' poster="https://chanjdm.github.io/JDM/jdmflix.jpg" controls muted autoplay>
+<source src="https://www.udrop.com/file/6goa/1x1" type="application/x-mpegURL">
+</video>
+
+
+<!--<video src="" poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r48KQZbrv_w2zeTpEMqrIE0BysJMnmdydw&usqp=CAU" controls muted autoplay>-->
+<h3 class="title">CANALES LOBO</h3></div></div>
+
+                 
+   <!-- PARA AGREGAR MAS PELICULAS 
+<a href=" ## LINK ## " target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r48KQZbrv_w2zeTpEMqrIE0BysJMnmdydw&usqp=CAU"> <h3 class="title"> ### <br><strong style=" font-size: 90%; color:#fc0707;">		</strong>  </h3></div>           ########## -->
+
+
+<div class="video-list">
+<div class="vid active">
+
+
+
+<video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10408	 "poster="	http://l3d.us:25461/images/37288e62601868f21fc4f7a49f23e4e5.png	"></video> <h3 class="title">	Animal Planet	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10407	 "poster="	http://l3d.us:25461/images/37288e62601868f21fc4f7a49f23e4e5.png	"></video> <h3 class="title">	Animal Planet HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/147960	 "poster="	http://l3d.us:25461/images/37288e62601868f21fc4f7a49f23e4e5.png	"></video> <h3 class="title">	Animal Planet FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10409	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Discovery_Channel_-_Logo_2019.svg/2560px-Discovery_Channel_-_Logo_2019.svg.png	"></video> <h3 class="title">	Discovery Channel	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10410	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Discovery_Channel_-_Logo_2019.svg/2560px-Discovery_Channel_-_Logo_2019.svg.png	"></video> <h3 class="title">	Discovery Channel HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/148703	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Discovery_Channel_-_Logo_2019.svg/2560px-Discovery_Channel_-_Logo_2019.svg.png	"></video> <h3 class="title">	Discovery Channel FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183442	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Discovery_Channel_-_Logo_2019.svg/2560px-Discovery_Channel_-_Logo_2019.svg.png	"></video> <h3 class="title">	Discovery Channel CO	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183443	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Discovery_Channel_-_Logo_2019.svg/2560px-Discovery_Channel_-_Logo_2019.svg.png	"></video> <h3 class="title">	Discovery Channel CO FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183445	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Discovery_Channel_-_Logo_2019.svg/2560px-Discovery_Channel_-_Logo_2019.svg.png	"></video> <h3 class="title">	Discovery Channel CL HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/26760	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Discovery_Channel_-_Logo_2019.svg/2560px-Discovery_Channel_-_Logo_2019.svg.png	"></video> <h3 class="title">	Discovery en Español	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/197236	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Discovery_Channel_-_Logo_2019.svg/2560px-Discovery_Channel_-_Logo_2019.svg.png	"></video> <h3 class="title">	Discovery en Español HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183441	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Discovery_Familia_logo_%283%29.svg/640px-Discovery_Familia_logo_%283%29.svg.png	"></video> <h3 class="title">	Discovery Familia	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183440	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Discovery_Familia_logo_%283%29.svg/640px-Discovery_Familia_logo_%283%29.svg.png	"></video> <h3 class="title">	Discovery Familia HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10419	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Discovery_Home_%26_Health_logo.svg/1200px-Discovery_Home_%26_Health_logo.svg.png	"></video> <h3 class="title">	Discovery H&H	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10420	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Discovery_Home_%26_Health_logo.svg/1200px-Discovery_Home_%26_Health_logo.svg.png	"></video> <h3 class="title">	Discovery H&H HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/148704	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Discovery_Home_%26_Health_logo.svg/1200px-Discovery_Home_%26_Health_logo.svg.png	"></video> <h3 class="title">	Discovery H&H FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10427	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/1200px-InvestigationDiscoveryLogo2020.svg.png	"></video> <h3 class="title">	Discovery Investigation	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10428	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/1200px-InvestigationDiscoveryLogo2020.svg.png	"></video> <h3 class="title">	Discovery Investigation HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/148705	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/1200px-InvestigationDiscoveryLogo2020.svg.png	"></video> <h3 class="title">	Discovery Investigation FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10412	 "poster="	https://upload.wikimedia.org/wikipedia/en/6/6d/Discovery_Science_Canada_2011.PNG	"></video> <h3 class="title">	Discovery SCI	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/84538	 "poster="	https://upload.wikimedia.org/wikipedia/en/6/6d/Discovery_Science_Canada_2011.PNG	"></video> <h3 class="title">	Discovery SCI HQ	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10426	 "poster="	http://l3d.us:25461/images/c02e20b3a5e776914050a01c27e07146.png	"></video> <h3 class="title">	Discovery Theater	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10425	 "poster="	http://l3d.us:25461/images/c02e20b3a5e776914050a01c27e07146.png	"></video> <h3 class="title">	Discovery Theater HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/148706	 "poster="	http://l3d.us:25461/images/c02e20b3a5e776914050a01c27e07146.png	"></video> <h3 class="title">	Discovery Theater FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10417	 "poster="	http://l3d.us:25461/images/c5e6bf72241158f09aa30e9c966269a3.png	"></video> <h3 class="title">	Discovery Turbo	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10418	 "poster="	http://l3d.us:25461/images/c5e6bf72241158f09aa30e9c966269a3.png	"></video> <h3 class="title">	Discovery Turbo HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/148707	 "poster="	http://l3d.us:25461/images/c5e6bf72241158f09aa30e9c966269a3.png	"></video> <h3 class="title">	Discovery Turbo FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10416	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/World_Discovery_HD_logo.svg/1200px-World_Discovery_HD_logo.svg.png	"></video> <h3 class="title">	Discovery World	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10415	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/World_Discovery_HD_logo.svg/1200px-World_Discovery_HD_logo.svg.png	"></video> <h3 class="title">	Discovery World HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/148708	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/World_Discovery_HD_logo.svg/1200px-World_Discovery_HD_logo.svg.png	"></video> <h3 class="title">	Discovery World FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/12255	 "poster="	http://l3d.us:25461/images/c81b0147c1bafa607d2c3f8e080cbdad.png	"></video> <h3 class="title">	El Gourmet	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/12256	 "poster="	http://l3d.us:25461/images/c81b0147c1bafa607d2c3f8e080cbdad.png	"></video> <h3 class="title">	El Gourmet HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/148709	 "poster="	http://l3d.us:25461/images/c81b0147c1bafa607d2c3f8e080cbdad.png	"></video> <h3 class="title">	El Gourmet FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10421	 "poster="	http://l3d.us:25461/images/5382b51ca47c88d283e818ad2d1e3aca.png	"></video> <h3 class="title">	Food Network	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10429	 "poster="	http://l3d.us:25461/images/5382b51ca47c88d283e818ad2d1e3aca.png	"></video> <h3 class="title">	Food Network HQ	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/148710	 "poster="	http://l3d.us:25461/images/5382b51ca47c88d283e818ad2d1e3aca.png	"></video> <h3 class="title">	Food Network FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154074	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/History2_logo_%282022%29.svg/800px-History2_logo_%282022%29.svg.png	"></video> <h3 class="title">	H2	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/16080	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/History2_logo_%282022%29.svg/800px-History2_logo_%282022%29.svg.png	"></video> <h3 class="title">	H2 HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154075	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/History2_logo_%282022%29.svg/800px-History2_logo_%282022%29.svg.png	"></video> <h3 class="title">	H2 FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/182836	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/HGTV_US_Logo_2015.svg/1200px-HGTV_US_Logo_2015.svg.png	"></video> <h3 class="title">	HGTV	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145512	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/HGTV_US_Logo_2015.svg/1200px-HGTV_US_Logo_2015.svg.png	"></video> <h3 class="title">	HGTV HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10423	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/1200px-History_%282021%29.svg.png	"></video> <h3 class="title">	History	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10424	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/1200px-History_%282021%29.svg.png	"></video> <h3 class="title">	History HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/148711	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/1200px-History_%282021%29.svg.png	"></video> <h3 class="title">	History FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/197235	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/1200px-History_%282021%29.svg.png	"></video> <h3 class="title">	History en Español HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/192976	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/1200px-History_%282021%29.svg.png	"></video> <h3 class="title">	History en Español FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10413	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/2560px-Natgeologo.svg.png	"></video> <h3 class="title">	Nat Geo	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10414	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/2560px-Natgeologo.svg.png	"></video> <h3 class="title">	Nat Geo HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/148712	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/2560px-Natgeologo.svg.png	"></video> <h3 class="title">	Nat Geo FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/197240	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/2560px-Natgeologo.svg.png	"></video> <h3 class="title">	Nat Geo Mundo HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/76314	 "poster="	http://l3d.us:25461/images/0e450d1e32291326bded0e1a8b9b4c20.png	"></video> <h3 class="title">	Sundance TV	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10431	 "poster="	http://l3d.us:25461/images/017a544acb713ac3b4c46402c94a07fc.png	"></video> <h3 class="title">	TLC	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10432	 "poster="	http://l3d.us:25461/images/017a544acb713ac3b4c46402c94a07fc.png	"></video> <h3 class="title">	TLC HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/148714	 "poster="	http://l3d.us:25461/images/017a544acb713ac3b4c46402c94a07fc.png	"></video> <h3 class="title">	TLC FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/201149	 "poster="	https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_Tv_UNAM.png	"></video> <h3 class="title">	TV Unam	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10433	 "poster="	http://l3d.us:25461/images/e619e2a095631a2c6e9085638ed8eb84.png	"></video> <h3 class="title">	Wobi	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10434	 "poster="	http://l3d.us:25461/images/e619e2a095631a2c6e9085638ed8eb84.png	"></video> <h3 class="title">	Wobi HD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/148715	 "poster="	http://l3d.us:25461/images/e619e2a095631a2c6e9085638ed8eb84.png	"></video> <h3 class="title">	Wobi FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	CULTURA	</strong>  </h3></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--    ###############################################   MOLDE PARA AGREGAR CANALES O PELICULAS 
+
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+
+
+
+
+
+        #########################################################################################################    -->
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script type="text/javascript">
+let listVideo = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video video');
+let title = document.querySelector('.main-video .title');
+
+listVideo.forEach(video =>{
+  video.onclick = () =>{
+    listVideo.forEach(vid => vid.classList.remove('active'));
+    video.classList.add('active');
+    if(video.classList.contains('active')){
+      let src = video.children[0].getAttribute('src');
+      mainVideo.src = src;
+      let text = video.children[1].innerHTML;
+      title.innerHTML = text;
+    };
+  };
+});
+</script>
+<script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+<script>//<![CDATA[
+const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+//]]></script>
+</body>
+</html>

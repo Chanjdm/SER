@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CANALES LOBO</title>
+<!-- Responsive viewport -->
+<meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css"/>
+<style type="text/css">
+
+*{margin:0;padding:0;box-sizing:border-box;text-transform:capitalize;}
+body{background:#000;}
+
+
+
+
+
+body {
+
+    max-height: 100%;
+
+    margin: 0 auto;
+}
+
+.heading{color:#444;font-size:40px;text-align:center;padding:10px;}
+
+.container{    HEIGHT: 20EM;display:grid;grid-template-columns:1.5fr 1.5fr;gap:15px;align-items:flex-start;padding:5px 1%;}
+
+.container .main-video{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;padding:2px;}
+
+.container .main-video video{
+width:100%;
+border-radius:5px;}
+
+.container .main-video .title{
+color:#fff;font-size:23px;padding-top:15px;padding-bottom:15px;}
+
+.container .video-list{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;height:100%;overflow-y:scroll;}
+
+.container .video-list::-webkit-scrollbar{
+width:7px;}
+
+.container .video-list::-webkit-scrollbar-track{
+background:#000;border-radius:50px;}
+
+.container .video-list::-webkit-scrollbar-thumb{
+background:#00a7ad;border-radius:50px;}
+
+.container .video-list .vid video{
+width:100px;border-radius:5px;
+
+}
+
+.container .video-list .vid img{
+    border-radius:5px;
+    width: 100px;
+}
+
+h9{
+    position: absolute;
+    margin: -5px 8px 0px 3px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.container .video-list .vid {
+    background: #0980fc63;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+.container .video-list .vid:hover{
+background:#000;}
+
+.container .video-list .vid.active{
+background:#00a7ad;}
+
+.container .video-list .vid.active .title{
+color:#000;}
+
+.container .video-list .vid .title{
+color:#00fd01;font-size:17px;}
+
+.container .video-list .vid .title2{
+position: absolute;
+    right: 13px;
+    left: 127px;
+    top: 190px;
+    color: #00fd01;
+    font-size: 75%;
+}
+
+
+
+@media (max-width: 1390px){
+.container{grid-template-columns:2fr 1fr;padding:10px;}
+.container .video-list .vid .title {
+    color: #00fd01;
+    font-size: 90%;
+}
+
+
+}
+
+@media (max-width: 480px){
+.container{grid-template-columns:1fr;height:600px;}
+.container .video-list .vid .title {
+    color: #00fd01;
+    font-size: 80%;
+
+}
+
+}
+
+
+
+
+nav {
+    max-width: auto;
+    margin: auto;
+    background-color: #335;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.menu-horizontal {
+    position: relative;
+    z-index: 5;
+    list-style:none;
+    display:flex;
+flex-wrap: wrap;
+    justify-content: CENTER;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu-horizontal > li:hover{
+    background-color: red;
+
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+background-color: rgba(0, 0, 0, .5)
+
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+
+}
+
+.menu-vertical li:hover{
+    background-color: green;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: yellow;
+    padding: 5px 5px 5px 10px;
+    text-decoration:none;
+
+}
+
+.menu-horizontal li .active {
+    background: #ff0000;
+    box-shadow: 0 0 10px #ff0000, 0 0 60px #ff0000, 0 0 80px #ff0000;
+    transition-delay: 0.1s;
+}
+
+</style>
+</head>
+
+
+
+<body>
+
+<nav>
+
+      <!--   RESALTAR    class="active"     -->
+
+  <ul class="menu-horizontal">
+      <li>
+      <a href="./A">PELICULAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+       <li>
+      <a href="https://chanjdm.github.io/JDM/L3TR45/C4N41CU1TUR4">CANALES TOTALPLAY</a>
+         <ul class="menu-vertical">
+            <li><a href="https://chanjdm.github.io/JDM/L3TR45/C4N41CU1TUR4HD">HD</a></li>
+
+
+         </ul>
+      </li>
+
+       <li>
+      <a class="active">CANALES LOBO </a>
+      <!--     <ul class="menu-vertical">
+            <li><a href="./C4N41CU1TUR4HD">HD</a></li>
+
+
+         </ul>   -->
+      </li>
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0NIÑ.html">  NIÑOS </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a https://chanjdm.github.io/SER/SER/10B0CIN.html>  CINE</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0DEP.html">  DEPORTES  </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0ENT.html">  ENTRETENIMIENTO  </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->  
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0LOC.html">  LOCALES </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a class="active">  MUSICA </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0CUL.html">  CULTURA </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0NOT.html">  NOTICIAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B02ME.html">  2 MEGAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </ul>
+
+
+</nav>
+
+
+<div class="container">
+<div class="main-video">
+<div class="video">
+<video class='js-player' poster="https://chanjdm.github.io/JDM/jdmflix.jpg" controls muted autoplay>
+<source src="https://www.udrop.com/file/6goa/1x1" type="application/x-mpegURL">
+</video>
+
+
+<!--<video src="" poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r48KQZbrv_w2zeTpEMqrIE0BysJMnmdydw&usqp=CAU" controls muted autoplay>-->
+<h3 class="title">CANALES LOBO</h3></div></div>
+
+                 
+   <!-- PARA AGREGAR MAS PELICULAS 
+<a href=" ## LINK ## " target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r48KQZbrv_w2zeTpEMqrIE0BysJMnmdydw&usqp=CAU"> <h3 class="title"> ### <br><strong style=" font-size: 90%; color:#fc0707;">		</strong>  </h3></div>           ########## -->
+
+
+<div class="video-list">
+<div class="vid active">
+
+
+
+<video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098858	 "poster="	https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT2oLkw91USsjFFgg0AE236fMYMVE8s4D39uqxKSq29r8nnvD2x&usqp=CAU	"></video> <h3 class="title">	 ALTERNATIVE	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098834	 "poster="	http://l3d.us:25461/images/967e1375546a25085abedd96e2601bec.png	"></video> <h3 class="title">	  BANDAMAX	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145667	 "poster="	http://l3d.us:25461/images/967e1375546a25085abedd96e2601bec.png	"></video> <h3 class="title">	 Bandamax HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098841	 "poster="	http://l3d.us:25461/images/53bcafeb158fa548c65e58283ae5b779.png	"></video> <h3 class="title">	  Flash TV HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098856	 "poster="		"></video> <h3 class="title">	  MC Rock	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098824	 "poster="	http://l3d.us:25461/images/9a07c47a338c20d610962717dbe57ce6.png	"></video> <h3 class="title">	  MTV Yo! HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098861	 "poster="	http://l3d.us:25461/images/842f02ce7ade4b154a966104315e23bf.png	"></video> <h3 class="title">	  Pop Hits HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098842	 "poster="	http://l3d.us:25461/images/2304f2a07df0e789aa29f1ddf2726042.png	"></video> <h3 class="title">	  RETRO PLUS HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098831	 "poster="	http://l3d.us:25461/images/859b00aec8885efc83d1541b52a1220d.png	"></video> <h3 class="title">	  TELEHIT URBANO	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098852	 "poster="	http://l3d.us:25461/images/d00330649ecd367051b7fda35c60b3ca.png	"></video> <h3 class="title">	  VEVO 80S SD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098857	 "poster="	http://l3d.us:25461/images/294799735550c33d2f93f8c3961c499e.png	"></video> <h3 class="title">	  VEVO Metal	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098847	 "poster="	http://l3d.us:25461/images/9e9be9d4d12e3359484020974124be15.png	"></video> <h3 class="title">	  VEVO R&B HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098846	 "poster="	http://l3d.us:25461/images/f452c53df950ed55c66dc89470659fbd.png	"></video> <h3 class="title">	  VEVO REGUETÓN Y TRAP HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098838	 "poster="	https://static.wikia.nocookie.net/logopedia/images/b/b1/Concert2015.png/revision/latest/scale-to-width-down/656?cb=20180110160123	"></video> <h3 class="title">	 Concert Channel (CO)	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098865	 "poster="	http://l3d.us:25461/images/842f02ce7ade4b154a966104315e23bf.png	"></video> <h3 class="title">	 Hit List HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098837	 "poster="	http://l3d.us:25461/images/b7be8e32859d845f7b7043c47f43ae8b.png	"></video> <h3 class="title">	 HTV 	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098864	 "poster="	http://l3d.us:25461/images/842f02ce7ade4b154a966104315e23bf.png	"></video> <h3 class="title">	 Indie HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098840	 "poster="	http://l3d.us:25461/images/e9c08a9ed2c22feba9dcc1f23daf0f38.png	"></video> <h3 class="title">	 LA MEGA	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098867	 "poster="	http://l3d.us:25461/images/842f02ce7ade4b154a966104315e23bf.png	"></video> <h3 class="title">	 MC ROCK	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098868	 "poster="	http://l3d.us:25461/images/842f02ce7ade4b154a966104315e23bf.png	"></video> <h3 class="title">	 Mexicana	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098821	 "poster="	http://l3d.us:25461/images/88eaac40b27c1b47df9a3f7b7d71e3e3.png	"></video> <h3 class="title">	 MTV HD 	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098823	 "poster="	http://l3d.us:25461/images/5d7d041cecf284df57547ed17fbf370a.png	"></video> <h3 class="title">	 MTV hits	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098822	 "poster="	http://l3d.us:25461/images/b7951f9081fefcff7b2f917eeb0c6aac.png	"></video> <h3 class="title">	 MTV LIVE 	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098860	 "poster="	http://l3d.us:25461/images/842f02ce7ade4b154a966104315e23bf.png	"></video> <h3 class="title">	 Pop & Country HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098843	 "poster="	http://l3d.us:25461/images/dd4e720ca92c57f95c97509bc357d93d.png	"></video> <h3 class="title">	 Quiero Musica 	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2106731	 "poster="	http://l3d.us:25461/images/d6348004da1bbb8343a924421efc7806.png	"></video> <h3 class="title">	 Rolas SAD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098830	 "poster="	http://l3d.us:25461/images/5825f3b2cd0eedb0fc8ff03f93d58143.png	"></video> <h3 class="title">	 TELEHIT PLUS HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098833	 "poster="	http://l3d.us:25461/images/10767d205507fd4e7ae492292fdd0820.png	"></video> <h3 class="title">	 Teleritmo	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145672	 "poster="	http://l3d.us:25461/images/10767d205507fd4e7ae492292fdd0820.png	"></video> <h3 class="title">	 Teleritmo HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098855	 "poster="	http://l3d.us:25461/images/4b5778029a86cdfb2163357e9cae9083.png	"></video> <h3 class="title">	 VEVO 00S HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098853	 "poster="	http://l3d.us:25461/images/a3e0a01e59a050e07c7e8592cd4ec703.png	"></video> <h3 class="title">	 VEVO 70S HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098851	 "poster="	http://l3d.us:25461/images/d08e0bb55ad782d50a807027e94c5bde.png	"></video> <h3 class="title">	 VEVO 90S HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098850	 "poster="	http://l3d.us:25461/images/987f605b0b8c79b76f45f73bd465a6ac.png	"></video> <h3 class="title">	 VEVO LATINO HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098848	 "poster="	http://l3d.us:25461/images/a32b5d0fa77bd5b0ff8c328804bac2d2.png	"></video> <h3 class="title">	 VEVO POP HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098828	 "poster="	http://l3d.us:25461/images/a04e4bc3a8f4c9b09c1412dffbf7242c.png	"></video> <h3 class="title">	 VH1 Classic	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098827	 "poster="	http://l3d.us:25461/images/a04e4bc3a8f4c9b09c1412dffbf7242c.png	"></video> <h3 class="title">	 VH1 FHD 	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098836	 "poster="	http://l3d.us:25461/images/77fb534c73679ddb543437d0b3db77c4.png	"></video> <h3 class="title">	 VIDEO ROLA	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2098845	 "poster="	http://l3d.us:25461/images/4ad17df7c0556b1bcb0e6a0a9638124a.png	"></video> <h3 class="title">	 XL MUSICA TV HD	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145661	 "poster="	http://l3d.us:25461/images/a04e4bc3a8f4c9b09c1412dffbf7242c.png	"></video> <h3 class="title">	 MTV 80s	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145708	 "poster="		"></video> <h3 class="title">	 MTV 90s	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145545	 "poster="		"></video> <h3 class="title">	 Much Music	<br><strong style=" font-size: 90%; color:#fffc00;">	MUSICA	</strong>  </h3></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--    ###############################################   MOLDE PARA AGREGAR CANALES O PELICULAS 
+
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+
+
+
+
+
+        #########################################################################################################    -->
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script type="text/javascript">
+let listVideo = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video video');
+let title = document.querySelector('.main-video .title');
+
+listVideo.forEach(video =>{
+  video.onclick = () =>{
+    listVideo.forEach(vid => vid.classList.remove('active'));
+    video.classList.add('active');
+    if(video.classList.contains('active')){
+      let src = video.children[0].getAttribute('src');
+      mainVideo.src = src;
+      let text = video.children[1].innerHTML;
+      title.innerHTML = text;
+    };
+  };
+});
+</script>
+<script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+<script>//<![CDATA[
+const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+//]]></script>
+</body>
+</html>

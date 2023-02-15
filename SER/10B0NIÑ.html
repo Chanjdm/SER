@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CANALES LOBO</title>
+<!-- Responsive viewport -->
+<meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css"/>
+<style type="text/css">
+
+*{margin:0;padding:0;box-sizing:border-box;text-transform:capitalize;}
+body{background:#000;}
+
+
+
+
+
+body {
+
+    max-height: 100%;
+
+    margin: 0 auto;
+}
+
+.heading{color:#444;font-size:40px;text-align:center;padding:10px;}
+
+.container{    HEIGHT: 20EM;display:grid;grid-template-columns:1.5fr 1.5fr;gap:15px;align-items:flex-start;padding:5px 1%;}
+
+.container .main-video{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;padding:2px;}
+
+.container .main-video video{
+width:100%;
+border-radius:5px;}
+
+.container .main-video .title{
+color:#fff;font-size:23px;padding-top:15px;padding-bottom:15px;}
+
+.container .video-list{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;height:100%;overflow-y:scroll;}
+
+.container .video-list::-webkit-scrollbar{
+width:7px;}
+
+.container .video-list::-webkit-scrollbar-track{
+background:#000;border-radius:50px;}
+
+.container .video-list::-webkit-scrollbar-thumb{
+background:#00a7ad;border-radius:50px;}
+
+.container .video-list .vid video{
+width:100px;border-radius:5px;
+
+}
+
+.container .video-list .vid img{
+    border-radius:5px;
+    width: 100px;
+}
+
+h9{
+    position: absolute;
+    margin: -5px 8px 0px 3px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.container .video-list .vid {
+    background: #0980fc63;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+.container .video-list .vid:hover{
+background:#000;}
+
+.container .video-list .vid.active{
+background:#00a7ad;}
+
+.container .video-list .vid.active .title{
+color:#000;}
+
+.container .video-list .vid .title{
+color:#00fd01;font-size:17px;}
+
+.container .video-list .vid .title2{
+position: absolute;
+    right: 13px;
+    left: 127px;
+    top: 190px;
+    color: #00fd01;
+    font-size: 75%;
+}
+
+
+
+@media (max-width: 1390px){
+.container{grid-template-columns:2fr 1fr;padding:10px;}
+.container .video-list .vid .title {
+    color: #00fd01;
+    font-size: 90%;
+}
+
+
+}
+
+@media (max-width: 480px){
+.container{grid-template-columns:1fr;height:600px;}
+.container .video-list .vid .title {
+    color: #00fd01;
+    font-size: 80%;
+
+}
+
+}
+
+
+
+
+nav {
+    max-width: auto;
+    margin: auto;
+    background-color: #335;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.menu-horizontal {
+    position: relative;
+    z-index: 5;
+    list-style:none;
+    display:flex;
+flex-wrap: wrap;
+    justify-content: CENTER;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu-horizontal > li:hover{
+    background-color: red;
+
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+background-color: rgba(0, 0, 0, .5)
+
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+
+}
+
+.menu-vertical li:hover{
+    background-color: green;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: yellow;
+    padding: 5px 5px 5px 10px;
+    text-decoration:none;
+
+}
+
+.menu-horizontal li .active {
+    background: #ff0000;
+    box-shadow: 0 0 10px #ff0000, 0 0 60px #ff0000, 0 0 80px #ff0000;
+    transition-delay: 0.1s;
+}
+
+</style>
+</head>
+
+
+
+<body>
+
+<nav>
+
+      <!--   RESALTAR    class="active"     -->
+
+  <ul class="menu-horizontal">
+      <li>
+      <a href="./A">PELICULAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+       <li>
+      <a href="https://chanjdm.github.io/JDM/L3TR45/C4N41CU1TUR4">CANALES TOTALPLAY</a>
+         <ul class="menu-vertical">
+            <li><a href="https://chanjdm.github.io/JDM/L3TR45/C4N41CU1TUR4HD">HD</a></li>
+
+
+         </ul>
+      </li>
+
+       <li>
+      <a class="active">CANALES LOBO </a>
+      <!--     <ul class="menu-vertical">
+            <li><a href="./C4N41CU1TUR4HD">HD</a></li>
+
+
+         </ul>   -->
+      </li>
+
+      <li>
+      <a  class="active" >  NIÑOS </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a https://chanjdm.github.io/SER/SER/10B0CIN.html>  CINE</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0DEP.html">  DEPORTES  </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0ENT.html">  ENTRETENIMIENTO  </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->  
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0LOC.html">  LOCALES </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0MUS.html">  MUSICA </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0CUL.html">  CULTURA </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0NOT.html">  NOTICIAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B02ME.html">  2 MEGAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </ul>
+
+
+</nav>
+
+
+<div class="container">
+<div class="main-video">
+<div class="video">
+<video class='js-player' poster="https://chanjdm.github.io/JDM/jdmflix.jpg" controls muted autoplay>
+<source src="https://www.udrop.com/file/6goa/1x1" type="application/x-mpegURL">
+</video>
+
+
+<!--<video src="" poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r48KQZbrv_w2zeTpEMqrIE0BysJMnmdydw&usqp=CAU" controls muted autoplay>-->
+<h3 class="title">CANALES LOBO</h3></div></div>
+
+                 
+   <!-- PARA AGREGAR MAS PELICULAS 
+<a href=" ## LINK ## " target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r48KQZbrv_w2zeTpEMqrIE0BysJMnmdydw&usqp=CAU"> <h3 class="title"> ### <br><strong style=" font-size: 90%; color:#fc0707;">		</strong>  </h3></div>           ########## -->
+
+
+<div class="video-list">
+<div class="vid active">
+
+
+<video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154076	 "poster="	http://l3d.us:25461/images/db971d6fe3e9fd1e5adebcf0a59b4b5d.png	"></video> <h3 class="title">	Baby First	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10984	 "poster="	http://l3d.us:25461/images/db971d6fe3e9fd1e5adebcf0a59b4b5d.png	"></video> <h3 class="title">	Baby First HQ	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154077	 "poster="	http://l3d.us:25461/images/db971d6fe3e9fd1e5adebcf0a59b4b5d.png	"></video> <h3 class="title">	Baby First FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10978	 "poster="	http://l3d.us:25461/images/ff50bb104dee48930cef8e3bbc57eed7.png	"></video> <h3 class="title">	Baby TV	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154078	 "poster="	http://l3d.us:25461/images/ff50bb104dee48930cef8e3bbc57eed7.png	"></video> <h3 class="title">	Baby TV HQ	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10970	 "poster="	http://l3d.us:25461/images/e91988481f1a443ff256a53afaefd339.png	"></video> <h3 class="title">	Cartoonito | Boomerang	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10981	 "poster="	http://l3d.us:25461/images/e91988481f1a443ff256a53afaefd339.png	"></video> <h3 class="title">	Cartoonito | Boomerang HD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154079	 "poster="	http://l3d.us:25461/images/e91988481f1a443ff256a53afaefd339.png	"></video> <h3 class="title">	Cartoonito Boomerang FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10969	 "poster="	http://l3d.us:25461/images/4a4105154f355a3f9a069aa5709d5af2.png	"></video> <h3 class="title">	Cartoon Network	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10980	 "poster="	http://l3d.us:25461/images/4a4105154f355a3f9a069aa5709d5af2.png	"></video> <h3 class="title">	Cartoon Network HD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154080	 "poster="	http://l3d.us:25461/images/4a4105154f355a3f9a069aa5709d5af2.png	"></video> <h3 class="title">	Cartoon Network FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10966	 "poster="	http://l3d.us:25461/images/47affc2830f35d11d5f0753bc20a580a.png	"></video> <h3 class="title">	Discovery Kids	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154081	 "poster="	http://l3d.us:25461/images/47affc2830f35d11d5f0753bc20a580a.png	"></video> <h3 class="title">	Discovery Kids HD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154082	 "poster="	http://l3d.us:25461/images/47affc2830f35d11d5f0753bc20a580a.png	"></video> <h3 class="title">	Discovery Kids FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10971	 "poster="	http://l3d.us:25461/images/3d1769f694810e0791d31ce69cfc1568.png	"></video> <h3 class="title">	Disney Channel	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/87108	 "poster="	http://l3d.us:25461/images/3d1769f694810e0791d31ce69cfc1568.png	"></video> <h3 class="title">	Disney Channel HD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/148728	 "poster="	http://l3d.us:25461/images/3d1769f694810e0791d31ce69cfc1568.png	"></video> <h3 class="title">	Disney Channel FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10972	 "poster="	http://l3d.us:25461/images/00f35ded19532bcdc8d74f6837470eb7.png	"></video> <h3 class="title">	Disney Jr	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/28151	 "poster="	http://l3d.us:25461/images/00f35ded19532bcdc8d74f6837470eb7.png	"></video> <h3 class="title">	Disney Jr HD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154083	 "poster="	http://l3d.us:25461/images/00f35ded19532bcdc8d74f6837470eb7.png	"></video> <h3 class="title">	Disney Jr FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10975	 "poster="	http://l3d.us:25461/images/e147ba982294d12466372101f21fcecc.png	"></video> <h3 class="title">	Nick Jr	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/188849	 "poster="	http://l3d.us:25461/images/06d30a5ebf7321d10507207ccc7fcf6d.png	"></video> <h3 class="title">	Nick Jr HQ	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154089	 "poster="	http://l3d.us:25461/images/e147ba982294d12466372101f21fcecc.png	"></video> <h3 class="title">	Nick Jr FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10973	 "poster="	http://l3d.us:25461/images/c3aa1664ce427bd89fce33abc91a9f61.png	"></video> <h3 class="title">	Nickelodeon	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10982	 "poster="	http://l3d.us:25461/images/c3aa1664ce427bd89fce33abc91a9f61.png	"></video> <h3 class="title">	Nickelodeon HD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154090	 "poster="	http://l3d.us:25461/images/c3aa1664ce427bd89fce33abc91a9f61.png	"></video> <h3 class="title">	Nickelodeon FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10974	 "poster="	http://l3d.us:25461/images/b5fca8d1c503023a2684a896f0db3a7e.png	"></video> <h3 class="title">	Nicktoons	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154092	 "poster="	http://l3d.us:25461/images/b5fca8d1c503023a2684a896f0db3a7e.png	"></video> <h3 class="title">	Nicktoons HQ	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/148726	 "poster="	http://l3d.us:25461/images/a8958595d81e4c8df62388585dec7c20.png	"></video> <h3 class="title">	Once Niños	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10977	 "poster="	http://l3d.us:25461/images/b186c7aa38cd85347c2604c16d37ec94.png	"></video> <h3 class="title">	TeenNick	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154087	 "poster="	http://l3d.us:25461/images/b186c7aa38cd85347c2604c16d37ec94.png	"></video> <h3 class="title">	TeenNick FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10976	 "poster="	http://l3d.us:25461/images/a72c58505e4761dbb5ce0157e672164e.png	"></video> <h3 class="title">	Tooncast	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154094	 "poster="	http://l3d.us:25461/images/a72c58505e4761dbb5ce0157e672164e.png	"></video> <h3 class="title">	Tooncast HQ	<br><strong style=" font-size: 90%; color:#fffc00;">	NIÑOS	</strong>  </h3></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--    ###############################################   MOLDE PARA AGREGAR CANALES O PELICULAS 
+
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+
+
+
+
+
+        #########################################################################################################    -->
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script type="text/javascript">
+let listVideo = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video video');
+let title = document.querySelector('.main-video .title');
+
+listVideo.forEach(video =>{
+  video.onclick = () =>{
+    listVideo.forEach(vid => vid.classList.remove('active'));
+    video.classList.add('active');
+    if(video.classList.contains('active')){
+      let src = video.children[0].getAttribute('src');
+      mainVideo.src = src;
+      let text = video.children[1].innerHTML;
+      title.innerHTML = text;
+    };
+  };
+});
+</script>
+<script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+<script>//<![CDATA[
+const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+//]]></script>
+</body>
+</html>

@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CANALES LOBO</title>
+<!-- Responsive viewport -->
+<meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css"/>
+<style type="text/css">
+
+*{margin:0;padding:0;box-sizing:border-box;text-transform:capitalize;}
+body{background:#000;}
+
+
+
+
+
+body {
+
+    max-height: 100%;
+
+    margin: 0 auto;
+}
+
+.heading{color:#444;font-size:40px;text-align:center;padding:10px;}
+
+.container{    HEIGHT: 20EM;display:grid;grid-template-columns:1.5fr 1.5fr;gap:15px;align-items:flex-start;padding:5px 1%;}
+
+.container .main-video{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;padding:2px;}
+
+.container .main-video video{
+width:100%;
+border-radius:5px;}
+
+.container .main-video .title{
+color:#fff;font-size:23px;padding-top:15px;padding-bottom:15px;}
+
+.container .video-list{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;height:100%;overflow-y:scroll;}
+
+.container .video-list::-webkit-scrollbar{
+width:7px;}
+
+.container .video-list::-webkit-scrollbar-track{
+background:#000;border-radius:50px;}
+
+.container .video-list::-webkit-scrollbar-thumb{
+background:#00a7ad;border-radius:50px;}
+
+.container .video-list .vid video{
+width:100px;border-radius:5px;
+
+}
+
+.container .video-list .vid img{
+    border-radius:5px;
+    width: 100px;
+}
+
+h9{
+    position: absolute;
+    margin: -5px 8px 0px 3px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.container .video-list .vid {
+    background: #0980fc63;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+.container .video-list .vid:hover{
+background:#000;}
+
+.container .video-list .vid.active{
+background:#00a7ad;}
+
+.container .video-list .vid.active .title{
+color:#000;}
+
+.container .video-list .vid .title{
+color:#00fd01;font-size:17px;}
+
+.container .video-list .vid .title2{
+position: absolute;
+    right: 13px;
+    left: 127px;
+    top: 190px;
+    color: #00fd01;
+    font-size: 75%;
+}
+
+
+
+@media (max-width: 1390px){
+.container{grid-template-columns:2fr 1fr;padding:10px;}
+.container .video-list .vid .title {
+    color: #00fd01;
+    font-size: 90%;
+}
+
+
+}
+
+@media (max-width: 480px){
+.container{grid-template-columns:1fr;height:600px;}
+.container .video-list .vid .title {
+    color: #00fd01;
+    font-size: 80%;
+
+}
+
+}
+
+
+
+
+nav {
+    max-width: auto;
+    margin: auto;
+    background-color: #335;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.menu-horizontal {
+    position: relative;
+    z-index: 5;
+    list-style:none;
+    display:flex;
+flex-wrap: wrap;
+    justify-content: CENTER;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu-horizontal > li:hover{
+    background-color: red;
+
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+background-color: rgba(0, 0, 0, .5)
+
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+
+}
+
+.menu-vertical li:hover{
+    background-color: green;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: yellow;
+    padding: 5px 5px 5px 10px;
+    text-decoration:none;
+
+}
+
+.menu-horizontal li .active {
+    background: #ff0000;
+    box-shadow: 0 0 10px #ff0000, 0 0 60px #ff0000, 0 0 80px #ff0000;
+    transition-delay: 0.1s;
+}
+
+</style>
+</head>
+
+
+
+<body>
+
+<nav>
+
+      <!--   RESALTAR    class="active"     -->
+
+  <ul class="menu-horizontal">
+      <li>
+      <a href="./A">PELICULAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+       <li>
+      <a href="https://chanjdm.github.io/JDM/L3TR45/C4N41CU1TUR4">CANALES TOTALPLAY</a>
+         <ul class="menu-vertical">
+            <li><a href="https://chanjdm.github.io/JDM/L3TR45/C4N41CU1TUR4HD">HD</a></li>
+
+
+         </ul>
+      </li>
+
+       <li>
+      <a class="active">CANALES LOBO </a>
+      <!--     <ul class="menu-vertical">
+            <li><a href="./C4N41CU1TUR4HD">HD</a></li>
+
+
+         </ul>   -->
+      </li>
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0NIÑ.html">  NIÑOS </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a https://chanjdm.github.io/SER/SER/10B0CIN.html>  CINE</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+      <li>
+      <a class="active">  DEPORTES  </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0ENT.html">  ENTRETENIMIENTO  </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->  
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0LOC.html">  LOCALES </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0MUS.html">  MUSICA </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0CUL.html">  CULTURA </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0NOT.html">  NOTICIAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B02ME.html">  2 MEGAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </ul>
+
+
+</nav>
+
+
+<div class="container">
+<div class="main-video">
+<div class="video">
+<video class='js-player' poster="https://chanjdm.github.io/JDM/jdmflix.jpg" controls muted autoplay>
+<source src="https://www.udrop.com/file/6goa/1x1" type="application/x-mpegURL">
+</video>
+
+
+<!--<video src="" poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r48KQZbrv_w2zeTpEMqrIE0BysJMnmdydw&usqp=CAU" controls muted autoplay>-->
+<h3 class="title">CANALES LOBO</h3></div></div>
+
+                 
+   <!-- PARA AGREGAR MAS PELICULAS 
+<a href=" ## LINK ## " target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r48KQZbrv_w2zeTpEMqrIE0BysJMnmdydw&usqp=CAU"> <h3 class="title"> ### <br><strong style=" font-size: 90%; color:#fc0707;">		</strong>  </h3></div>           ########## -->
+
+
+<div class="video-list">
+<div class="vid active">
+
+
+
+<video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2144812	 "poster="	http://l3d.us:25461/images/032165835773df96b434dd68cc6a4990.png	"></video> <h3 class="title">	BEIN LA LIGA	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2144818	 "poster="	http://l3d.us:25461/images/032165835773df96b434dd68cc6a4990.png	"></video> <h3 class="title">	BEIN SPORTS EN ESPAÑOL	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2144843	 "poster="	http://l3d.us:25461/images/8b126acdeabb2bc757d68fb8b9b00005.png	"></video> <h3 class="title">	Teleantillas Canal 2	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/219775	 "poster="	http://l3d.us:25461/images/7f6972401eae2892e179aeff22e3f276.png	"></video> <h3 class="title">	TIGO SPORTS GUATEMALA	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2144844	 "poster="	http://l3d.us:25461/images/4a01b27fb34a5bf8b8d6012f74e30bfb.png	"></video> <h3 class="title">	Romana TV	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2144846	 "poster="	https://tvonline.com.do/wp-content/uploads/2021/08/tvo-romana-en-vivo-online.jpg	"></video> <h3 class="title">	Tvo	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2144839	 "poster="	http://l3d.us:25461/images/520efd4c91aca48c698954dd9a882db8.png	"></video> <h3 class="title">	CDN Deportes	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10960	 "poster="	http://l3d.us:25461/images/52b985145ae9fbd61c101003af8a1a81.png	"></video> <h3 class="title">	Adrenalina Sports	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/197768	 "poster="	http://l3d.us:25461/images/52b985145ae9fbd61c101003af8a1a81.png	"></video> <h3 class="title">	Adrenalina Sports HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155250	 "poster="	http://l3d.us:25461/images/52b985145ae9fbd61c101003af8a1a81.png	"></video> <h3 class="title">	Adrenalina Sports FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10914	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Afizzionados_Logo.svg/2560px-Afizzionados_Logo.svg.png	"></video> <h3 class="title">	Afizzionados 	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/202591	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Afizzionados_Logo.svg/2560px-Afizzionados_Logo.svg.png	"></video> <h3 class="title">	Afizzionados HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155471	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Afizzionados_Logo.svg/2560px-Afizzionados_Logo.svg.png	"></video> <h3 class="title">	Afizzionados FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155249	 "poster="	http://l3d.us:8080/images/fb4d63cd6ef71c0b404d8df224e872ae.png	"></video> <h3 class="title">	AyM Sports	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155625	 "poster="	http://l3d.us:25461/images/fb4d63cd6ef71c0b404d8df224e872ae.png	"></video> <h3 class="title">	AyM Sports HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10961	 "poster="	http://l3d.us:25461/images/fb4d63cd6ef71c0b404d8df224e872ae.png	"></video> <h3 class="title">	AyM Sports FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2144810	 "poster="	http://l3d.us:25461/images/032165835773df96b434dd68cc6a4990.png	"></video> <h3 class="title">	BEIN SPORTS	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/157370	 "poster="	http://l3d.us:25461/images/032165835773df96b434dd68cc6a4990.png	"></video> <h3 class="title">	beIN Sports en Español 	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/167174	 "poster="	http://l3d.us:25461/images/032165835773df96b434dd68cc6a4990.png	"></video> <h3 class="title">	beIN Sports en Español  HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10929	 "poster="	http://l3d.us:25461/images/032165835773df96b434dd68cc6a4990.png	"></video> <h3 class="title">	beIN Sports en Español FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10956	 "poster="	http://l3d.us:25461/images/032165835773df96b434dd68cc6a4990.png	"></video> <h3 class="title">	beIN Sports USA	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2123472	 "poster="	http://l3d.us:25461/images/032165835773df96b434dd68cc6a4990.png	"></video> <h3 class="title">	beIN Sports Ñ Latino	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10932	 "poster="	http://l3d.us:25461/images/e270be3f83015fc46a9fd7f678e0289b.png	"></video> <h3 class="title">	CDO Basico	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10924	 "poster="	http://l3d.us:25461/images/f5a1944259815fd00c2f57062e414b8a.png	"></video> <h3 class="title">	Claro Sports Latinoamerica	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/202070	 "poster="	http://l3d.us:25461/images/f5a1944259815fd00c2f57062e414b8a.png	"></video> <h3 class="title">	Claro Sports Latinoamerica HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10923	 "poster="	http://l3d.us:25461/images/f5a1944259815fd00c2f57062e414b8a.png	"></video> <h3 class="title">	Claro Sports Latinoamerica FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/223952	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/DAZN_F1_logo.svg/1200px-DAZN_F1_logo.svg.png	"></video> <h3 class="title">	DAZN F1	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2144851	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/DAZN_F1_logo.svg/1200px-DAZN_F1_logo.svg.png	"></video> <h3 class="title">	DAZN F1 SD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2144850	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/DAZN_F1_logo.svg/1200px-DAZN_F1_logo.svg.png	"></video> <h3 class="title">	DAZN F1 HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2144849	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/DAZN_F1_logo.svg/1200px-DAZN_F1_logo.svg.png	"></video> <h3 class="title">	DAZN F1 FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/202157	 "poster="	http://l3d.us:25461/images/706bde645b1385e141c934c6cfe3c429.png	"></video> <h3 class="title">	DIRECTV SPORTS	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/203185	 "poster="	http://l3d.us:25461/images/706bde645b1385e141c934c6cfe3c429.png	"></video> <h3 class="title">	DIRECTV SPORTS FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/203186	 "poster="	https://www.pngitem.com/pimgs/m/499-4995021_directv-sports-latin-america-directv-sports-2-logo.png	"></video> <h3 class="title">	DIRECTV SPORTS +	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/203187	 "poster="	https://upload.wikimedia.org/wikipedia/commons/0/0f/DirecTV_Sports_2_Latin_America_%282018%29.png	"></video> <h3 class="title">	DIRECTV SPORTS 2	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/181346	 "poster="	https://eadn-wc03-3367747.nxedge.io/wp-content/uploads/2020/03/ESPN-2.png	"></video> <h3 class="title">	Espn 2 | ARG	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/181332	 "poster="	https://eadn-wc03-3367747.nxedge.io/wp-content/uploads/2020/03/ESPN-2.png	"></video> <h3 class="title">	Espn 2 | ARG HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/181350	 "poster="	https://eadn-wc03-3367747.nxedge.io/wp-content/uploads/2020/03/ESPN-2.png	"></video> <h3 class="title">	Espn 2 | COL	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/202084	 "poster="	https://eadn-wc03-3367747.nxedge.io/wp-content/uploads/2020/03/ESPN-2.png	"></video> <h3 class="title">	Espn 2 | COL HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/181351	 "poster="	https://eadn-wc03-3367747.nxedge.io/wp-content/uploads/2020/03/ESPN-2.png	"></video> <h3 class="title">	Espn 2 | COL FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10939	 "poster="	https://eadn-wc03-3367747.nxedge.io/wp-content/uploads/2020/03/ESPN-2.png	"></video> <h3 class="title">	Espn 2 | MX	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155473	 "poster="	https://eadn-wc03-3367747.nxedge.io/wp-content/uploads/2020/03/ESPN-2.png	"></video> <h3 class="title">	Espn 2 | MX HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10962	 "poster="	https://eadn-wc03-3367747.nxedge.io/wp-content/uploads/2020/03/ESPN-2.png	"></video> <h3 class="title">	Espn 2 | MX FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/181348	 "poster="	http://l3d.us:25461/images/e748f3c03f7c4088e90a0ccb2588e0ed.png	"></video> <h3 class="title">	Espn 3 | ARG	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/181349	 "poster="	http://l3d.us:25461/images/e748f3c03f7c4088e90a0ccb2588e0ed.png	"></video> <h3 class="title">	Espn | ARG FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/181352	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/ESPN3_logo.svg/1280px-ESPN3_logo.svg.png	"></video> <h3 class="title">	Espn 3 | COL	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/202088	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/ESPN3_logo.svg/1280px-ESPN3_logo.svg.png	"></video> <h3 class="title">	Espn 3 | COL HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10941	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/ESPN3_logo.svg/1280px-ESPN3_logo.svg.png	"></video> <h3 class="title">	Espn 3 | MX	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155474	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/ESPN3_logo.svg/1280px-ESPN3_logo.svg.png	"></video> <h3 class="title">	Espn 3 | MX HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155475	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/ESPN3_logo.svg/1280px-ESPN3_logo.svg.png	"></video> <h3 class="title">	Espn 3 | MX FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2121660	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/2560px-ESPN_4_logo.svg.png	"></video> <h3 class="title">	ESPN 4 ARG	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2121680	 "poster="	https://logodownload.org/wp-content/uploads/2018/10/fox-sports-logo-8.png	"></video> <h3 class="title">	Fox Sports CL	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/202473	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Espn_deportes.svg/1200px-Espn_deportes.svg.png	"></video> <h3 class="title">	Espn Deportes	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/158472	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Espn_deportes.svg/1200px-Espn_deportes.svg.png	"></video> <h3 class="title">	Espn Deportes | HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/181370	 "poster="	https://espnpressroom.com/brazil/files/2018/07/RS3682_ESPN_EXTRA_Brasil_CLR_Pos-scr.jpg	"></video> <h3 class="title">	Espn EXTRA	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/181378	 "poster="	https://espnpressroom.com/brazil/files/2018/07/RS3682_ESPN_EXTRA_Brasil_CLR_Pos-scr.jpg	"></video> <h3 class="title">	Espn EXTRA FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2121734	 "poster="	https://logovectorseek.com/wp-content/uploads/2021/10/outside-tv-logo-vector.png	"></video> <h3 class="title">	Outside USA	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10942	 "poster="	https://espnpressroom.com/brazil/files/2018/07/RS3682_ESPN_EXTRA_Brasil_CLR_Pos-scr.jpg	"></video> <h3 class="title">	Espn Extra | MX HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10964	 "poster="	https://espnpressroom.com/brazil/files/2018/07/RS3682_ESPN_EXTRA_Brasil_CLR_Pos-scr.jpg	"></video> <h3 class="title">	Espn Extra | MX FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2121662	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/640px-ESPN_Premium_logo.svg.png	"></video> <h3 class="title">	ESPN Premium ARG	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/181047	 "poster="	http://l3d.us:25461/images/e748f3c03f7c4088e90a0ccb2588e0ed.png	"></video> <h3 class="title">	Espn | ARG	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/181016	 "poster="	http://l3d.us:25461/images/e748f3c03f7c4088e90a0ccb2588e0ed.png	"></video> <h3 class="title">	Espn | COL	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/181347	 "poster="	http://l3d.us:25461/images/e748f3c03f7c4088e90a0ccb2588e0ed.png	"></video> <h3 class="title">	Espn | COL HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10940	 "poster="	http://l3d.us:25461/images/e748f3c03f7c4088e90a0ccb2588e0ed.png	"></video> <h3 class="title">	Espn | MX	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155472	 "poster="	http://l3d.us:25461/images/e748f3c03f7c4088e90a0ccb2588e0ed.png	"></video> <h3 class="title">	Espn | MX HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10963	 "poster="	http://l3d.us:25461/images/e748f3c03f7c4088e90a0ccb2588e0ed.png	"></video> <h3 class="title">	Espn | MX FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/200284	 "poster="	https://upload.wikimedia.org/wikipedia/commons/3/3b/FOX_Deportes_logo.png	"></video> <h3 class="title">	FOX Deportes | USA	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10928	 "poster="	https://upload.wikimedia.org/wikipedia/commons/3/3b/FOX_Deportes_logo.png	"></video> <h3 class="title">	FOX Deportes | USA HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2090080	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Fox_Sports_Argentina_2023.svg/640px-Fox_Sports_Argentina_2023.svg.png	"></video> <h3 class="title">	Fox Sports | ARG	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/14651	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Fox_Sports_Argentina_2023.svg/640px-Fox_Sports_Argentina_2023.svg.png	"></video> <h3 class="title">	Fox Sports | ARG HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10959	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Fox_Sports_Argentina_2023.svg/640px-Fox_Sports_Argentina_2023.svg.png	"></video> <h3 class="title">	Fox Sports | ARG FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183215	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Fox_Sports_2_Argentina_2023.svg/1200px-Fox_Sports_2_Argentina_2023.svg.png	"></video> <h3 class="title">	Fox Sports 2 | ARG	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10957	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Fox_Sports_2_Argentina_2023.svg/1200px-Fox_Sports_2_Argentina_2023.svg.png	"></video> <h3 class="title">	Fox Sports 2 | ARG HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10958	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Fox_sports_3_logo.svg/1200px-Fox_sports_3_logo.svg.png	"></video> <h3 class="title">	Fox Sports 3 | ARG	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183332	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/2015_Fox_sports_logo.svg/1200px-2015_Fox_sports_logo.svg.png	"></video> <h3 class="title">	Fox Sports 2 | CL HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183333	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/2015_Fox_sports_logo.svg/1200px-2015_Fox_sports_logo.svg.png	"></video> <h3 class="title">	Fox Sports 2 | CL FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183334	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Fox_sports_3_logo.svg/1200px-Fox_sports_3_logo.svg.png	"></video> <h3 class="title">	Fox Sports 3 | CL	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183212	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/2015_Fox_sports_logo.svg/1200px-2015_Fox_sports_logo.svg.png	"></video> <h3 class="title">	Fox Sports 2 | COL	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183213	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/2015_Fox_sports_logo.svg/1200px-2015_Fox_sports_logo.svg.png	"></video> <h3 class="title">	Fox Sports 2 | COL FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/202097	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/2015_Fox_sports_logo.svg/1200px-2015_Fox_sports_logo.svg.png	"></video> <h3 class="title">	Fox Sports 2 | COL HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/202100	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Fox_sports_3_logo.svg/1200px-Fox_sports_3_logo.svg.png	"></video> <h3 class="title">	Fox Sports 3 | COL HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183214	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Fox_sports_3_logo.svg/1200px-Fox_sports_3_logo.svg.png	"></video> <h3 class="title">	Fox Sports 3 | COL FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10950	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/1200px-FOX_Sports_logo.svg.png	"></video> <h3 class="title">	Fox Sports | MX	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155648	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/1200px-FOX_Sports_logo.svg.png	"></video> <h3 class="title">	Fox Sports | MX HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10953	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/1200px-FOX_Sports_logo.svg.png	"></video> <h3 class="title">	Fox Sports | MX FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10949	 "poster="	http://l3d.us:25461/images/0d5e8cc590d7d27052d14c315bff72a8.png	"></video> <h3 class="title">	Fox Sports 2 | MX	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10952	 "poster="	http://l3d.us:25461/images/0d5e8cc590d7d27052d14c315bff72a8.png	"></video> <h3 class="title">	Fox Sports 2 | MX HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155649	 "poster="	http://l3d.us:25461/images/0d5e8cc590d7d27052d14c315bff72a8.png	"></video> <h3 class="title">	Fox Sports 2 | MX FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10945	 "poster="	http://l3d.us:25461/images/3eef4bb5d1313e72d7524946dd267452.png	"></video> <h3 class="title">	Fox Sports 3 | MX	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10951	 "poster="	http://l3d.us:25461/images/3eef4bb5d1313e72d7524946dd267452.png	"></video> <h3 class="title">	Fox Sports 3 | MX HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155650	 "poster="	http://l3d.us:25461/images/3eef4bb5d1313e72d7524946dd267452.png	"></video> <h3 class="title">	Fox Sports 3 | MX FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2106730	 "poster="	http://l3d.us:25461/images/4f8890c2fd53da87443d1f6f5e8857b7.png	"></video> <h3 class="title">	Fox Sports Premium | MX	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/195839	 "poster="	http://l3d.us:25461/images/0e1bb815eba0746f8685abb3ec5338a3.png	"></video> <h3 class="title">	FOX Sports Premium Arg	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/195840	 "poster="	http://l3d.us:25461/images/0e1bb815eba0746f8685abb3ec5338a3.png	"></video> <h3 class="title">	FOX Sports Premium Arg FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10915	 "poster="	http://l3d.us:25461/images/0e1bb815eba0746f8685abb3ec5338a3.png	"></video> <h3 class="title">	FOX Sports Premium Arg HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183331	 "poster="	http://l3d.us:25461/images/428cba7080d0aecba5f89ad6a2beee88.png	"></video> <h3 class="title">	Fox Sports | CL	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183329	 "poster="	http://l3d.us:25461/images/428cba7080d0aecba5f89ad6a2beee88.png	"></video> <h3 class="title">	Fox Sports | CL FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/183330	 "poster="	http://l3d.us:25461/images/428cba7080d0aecba5f89ad6a2beee88.png	"></video> <h3 class="title">	Fox Sports | CL HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155246	 "poster="	http://l3d.us:25461/images/cf0490aad367518586090a85387ead34.png	"></video> <h3 class="title">	FUTV CR	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/21798	 "poster="	http://l3d.us:25461/images/cf0490aad367518586090a85387ead34.png	"></video> <h3 class="title">	FUTV CR FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/158474	 "poster="	http://l3d.us:25461/images/a2b4b03dc625db35b1f753a70d9cc911.png	"></video> <h3 class="title">	Gol TV	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145544	 "poster="	http://l3d.us:25461/images/f07f1a3552ea650aad258f7ab02b6246.png	"></video> <h3 class="title">	Golf Channel AR	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/197233	 "poster="	http://l3d.us:25461/images/fb0ccc60384b35ba7b349f290db5cdc9.png	"></video> <h3 class="title">	DAZN LaLigaTV HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/157371	 "poster="	http://l3d.us:25461/images/d70276260299d4ef26f68e0e1aa822ae.png	"></video> <h3 class="title">	Liga de Campeones	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/157372	 "poster="	http://l3d.us:25461/images/d70276260299d4ef26f68e0e1aa822ae.png	"></video> <h3 class="title">	Liga de Campeones HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155633	 "poster="	http://l3d.us:25461/images/7f6972401eae2892e179aeff22e3f276.png	"></video> <h3 class="title">	Tigo Sports BO	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155634	 "poster="	http://l3d.us:8080/images/7f6972401eae2892e179aeff22e3f276.png	"></video> <h3 class="title">	Tigo Sports BO HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155635	 "poster="	http://l3d.us:25461/images/7f6972401eae2892e179aeff22e3f276.png	"></video> <h3 class="title">	Tigo Sports 2 BO	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155629	 "poster="	http://l3d.us:8080/images/7f6972401eae2892e179aeff22e3f276.png	"></video> <h3 class="title">	Tigo Sports 2 BO HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155636	 "poster="	http://l3d.us:25461/images/7f6972401eae2892e179aeff22e3f276.png	"></video> <h3 class="title">	Tigo Sports 3 BO	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155630	 "poster="	http://l3d.us:25461/images/7f6972401eae2892e179aeff22e3f276.png	"></video> <h3 class="title">	Tigo Sports 3 BO HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155627	 "poster="	http://l3d.us:25461/images/7f6972401eae2892e179aeff22e3f276.png	"></video> <h3 class="title">	Tigo Sports CR	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155641	 "poster="	http://l3d.us:25461/images/7f6972401eae2892e179aeff22e3f276.png	"></video> <h3 class="title">	Tigo Sports HN HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155631	 "poster="	http://l3d.us:25461/images/7f6972401eae2892e179aeff22e3f276.png	"></video> <h3 class="title">	Tigo Sports Paraguay HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155632	 "poster="	http://l3d.us:25461/images/7f6972401eae2892e179aeff22e3f276.png	"></video> <h3 class="title">	Tigo Sports Plus Paraguay HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155626	 "poster="	http://l3d.us:25461/images/7f6972401eae2892e179aeff22e3f276.png	"></video> <h3 class="title">	Tigo Sports Salvador	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/202259	 "poster="	http://l3d.us:25461/images/7f6972401eae2892e179aeff22e3f276.png	"></video> <h3 class="title">	Tigo Sports Salvador HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155677	 "poster="	http://l3d.us:25461/images/b66f0eaacf2659691f4766ee40839b67.png	"></video> <h3 class="title">	TNT Sports	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155247	 "poster="	http://l3d.us:25461/images/b66f0eaacf2659691f4766ee40839b67.png	"></video> <h3 class="title">	TNT Sports HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/17316	 "poster="	http://l3d.us:25461/images/b66f0eaacf2659691f4766ee40839b67.png	"></video> <h3 class="title">	TNT Sports FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/191356	 "poster="	http://l3d.us:25461/images/d18efef240bd161e863d4e8d34a7bae2.png	"></video> <h3 class="title">	TUDN	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155675	 "poster="	http://l3d.us:25461/images/d18efef240bd161e863d4e8d34a7bae2.png	"></video> <h3 class="title">	TUDN HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10955	 "poster="	http://l3d.us:25461/images/d18efef240bd161e863d4e8d34a7bae2.png	"></video> <h3 class="title">	TUDN FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/194924	 "poster="	http://l3d.us:25461/images/d18efef240bd161e863d4e8d34a7bae2.png	"></video> <h3 class="title">	TUDN US	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/169243	 "poster="	http://l3d.us:25461/images/d18efef240bd161e863d4e8d34a7bae2.png	"></video> <h3 class="title">	TUDN US HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2130323	 "poster="		"></video> <h3 class="title">	Zona TUDN MX	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10944	 "poster="	http://l3d.us:25461/images/b144097b072789019d0c2098c4007f69.png	"></video> <h3 class="title">	TVC Deportes	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145706	 "poster="	http://l3d.us:25461/images/b144097b072789019d0c2098c4007f69.png	"></video> <h3 class="title">	TVC Deportes HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/25279	 "poster="	http://l3d.us:25461/images/2aaf0c473413e80cde32fcf546039218.png	"></video> <h3 class="title">	TYC Sports	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/199511	 "poster="	http://l3d.us:25461/images/2aaf0c473413e80cde32fcf546039218.png	"></video> <h3 class="title">	TYC Sports HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10920	 "poster="	http://l3d.us:25461/images/2aaf0c473413e80cde32fcf546039218.png	"></video> <h3 class="title">	TyC Sports Internacional	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155679	 "poster="	http://l3d.us:25461/images/2aaf0c473413e80cde32fcf546039218.png	"></video> <h3 class="title">	TyC Sports Internacional HD	<br><strong style=" font-size: 90%; color:#fffc00;">	DEPORTES	</strong>  </h3></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--    ###############################################   MOLDE PARA AGREGAR CANALES O PELICULAS 
+
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+
+
+
+
+
+        #########################################################################################################    -->
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script type="text/javascript">
+let listVideo = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video video');
+let title = document.querySelector('.main-video .title');
+
+listVideo.forEach(video =>{
+  video.onclick = () =>{
+    listVideo.forEach(vid => vid.classList.remove('active'));
+    video.classList.add('active');
+    if(video.classList.contains('active')){
+      let src = video.children[0].getAttribute('src');
+      mainVideo.src = src;
+      let text = video.children[1].innerHTML;
+      title.innerHTML = text;
+    };
+  };
+});
+</script>
+<script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+<script>//<![CDATA[
+const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+//]]></script>
+</body>
+</html>

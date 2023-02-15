@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CANALES LOBO</title>
+<!-- Responsive viewport -->
+<meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css"/>
+<style type="text/css">
+
+*{margin:0;padding:0;box-sizing:border-box;text-transform:capitalize;}
+body{background:#000;}
+
+
+
+
+
+body {
+
+    max-height: 100%;
+
+    margin: 0 auto;
+}
+
+.heading{color:#444;font-size:40px;text-align:center;padding:10px;}
+
+.container{    HEIGHT: 20EM;display:grid;grid-template-columns:1.5fr 1.5fr;gap:15px;align-items:flex-start;padding:5px 1%;}
+
+.container .main-video{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;padding:2px;}
+
+.container .main-video video{
+width:100%;
+border-radius:5px;}
+
+.container .main-video .title{
+color:#fff;font-size:23px;padding-top:15px;padding-bottom:15px;}
+
+.container .video-list{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;height:100%;overflow-y:scroll;}
+
+.container .video-list::-webkit-scrollbar{
+width:7px;}
+
+.container .video-list::-webkit-scrollbar-track{
+background:#000;border-radius:50px;}
+
+.container .video-list::-webkit-scrollbar-thumb{
+background:#00a7ad;border-radius:50px;}
+
+.container .video-list .vid video{
+width:100px;border-radius:5px;
+
+}
+
+.container .video-list .vid img{
+    border-radius:5px;
+    width: 100px;
+}
+
+h9{
+    position: absolute;
+    margin: -5px 8px 0px 3px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.container .video-list .vid {
+    background: #0980fc63;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+.container .video-list .vid:hover{
+background:#000;}
+
+.container .video-list .vid.active{
+background:#00a7ad;}
+
+.container .video-list .vid.active .title{
+color:#000;}
+
+.container .video-list .vid .title{
+color:#00fd01;font-size:17px;}
+
+.container .video-list .vid .title2{
+position: absolute;
+    right: 13px;
+    left: 127px;
+    top: 190px;
+    color: #00fd01;
+    font-size: 75%;
+}
+
+
+
+@media (max-width: 1390px){
+.container{grid-template-columns:2fr 1fr;padding:10px;}
+.container .video-list .vid .title {
+    color: #00fd01;
+    font-size: 90%;
+}
+
+
+}
+
+@media (max-width: 480px){
+.container{grid-template-columns:1fr;height:600px;}
+.container .video-list .vid .title {
+    color: #00fd01;
+    font-size: 80%;
+
+}
+
+}
+
+
+
+
+nav {
+    max-width: auto;
+    margin: auto;
+    background-color: #335;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.menu-horizontal {
+    position: relative;
+    z-index: 5;
+    list-style:none;
+    display:flex;
+flex-wrap: wrap;
+    justify-content: CENTER;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu-horizontal > li:hover{
+    background-color: red;
+
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+background-color: rgba(0, 0, 0, .5)
+
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+
+}
+
+.menu-vertical li:hover{
+    background-color: green;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: yellow;
+    padding: 5px 5px 5px 10px;
+    text-decoration:none;
+
+}
+
+.menu-horizontal li .active {
+    background: #ff0000;
+    box-shadow: 0 0 10px #ff0000, 0 0 60px #ff0000, 0 0 80px #ff0000;
+    transition-delay: 0.1s;
+}
+
+</style>
+</head>
+
+
+
+<body>
+
+<nav>
+
+      <!--   RESALTAR    class="active"     -->
+
+  <ul class="menu-horizontal">
+      <li>
+      <a href="./A">PELICULAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+       <li>
+      <a href="https://chanjdm.github.io/JDM/L3TR45/C4N41CU1TUR4">CANALES TOTALPLAY</a>
+         <ul class="menu-vertical">
+            <li><a href="https://chanjdm.github.io/JDM/L3TR45/C4N41CU1TUR4HD">HD</a></li>
+
+
+         </ul>
+      </li>
+
+       <li>
+      <a class="active">CANALES LOBO </a>
+      <!--     <ul class="menu-vertical">
+            <li><a href="./C4N41CU1TUR4HD">HD</a></li>
+
+
+         </ul>   -->
+      </li>
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0NIÑ.html">  NIÑOS </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a https://chanjdm.github.io/SER/SER/10B0CIN.html>  CINE</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0DEP.html">  DEPORTES  </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0ENT.html">  ENTRETENIMIENTO  </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->  
+      </li>
+
+
+      <li>
+      <a  class="active">  LOCALES </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0MUS.html">  MUSICA </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0CUL.html">  CULTURA </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B0NOT.html">  NOTICIAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/10B02ME.html">  2 MEGAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </ul>
+
+
+</nav>
+
+
+<div class="container">
+<div class="main-video">
+<div class="video">
+<video class='js-player' poster="https://chanjdm.github.io/JDM/jdmflix.jpg" controls muted autoplay>
+<source src="https://www.udrop.com/file/6goa/1x1" type="application/x-mpegURL">
+</video>
+
+
+<!--<video src="" poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r48KQZbrv_w2zeTpEMqrIE0BysJMnmdydw&usqp=CAU" controls muted autoplay>-->
+<h3 class="title">CANALES LOBO</h3></div></div>
+
+                 
+   <!-- PARA AGREGAR MAS PELICULAS 
+<a href=" ## LINK ## " target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r48KQZbrv_w2zeTpEMqrIE0BysJMnmdydw&usqp=CAU"> <h3 class="title"> ### <br><strong style=" font-size: 90%; color:#fc0707;">		</strong>  </h3></div>           ########## -->
+
+
+<div class="video-list">
+<div class="vid active">
+
+
+ <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/76427	 "poster="	http://l3d.us:25461/images/c8948c20094f64200c2b8fba047bdb83.png	"></video> <h3 class="title">	,M | A+	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/76504	 "poster="	http://l3d.us:25461/images/c8948c20094f64200c2b8fba047bdb83.png	"></video> <h3 class="title">	,M | A+ HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154117	 "poster="	http://l3d.us:25461/images/c8948c20094f64200c2b8fba047bdb83.png	"></video> <h3 class="title">	,M | A+ FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154122	 "poster="	http://l3d.us:25461/images/e47965de2852d6b7c244d1fb621a12e2.png	"></video> <h3 class="title">	,M | Azteca 7	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10814	 "poster="	http://l3d.us:25461/images/e47965de2852d6b7c244d1fb621a12e2.png	"></video> <h3 class="title">	,M | Azteca 7 HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154123	 "poster="	http://l3d.us:25461/images/e47965de2852d6b7c244d1fb621a12e2.png	"></video> <h3 class="title">	,M | Azteca 7 FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/197238	 "poster="	http://l3d.us:25461/images/066a7327d012a2da742476bf34244871.png	"></video> <h3 class="title">	,M | Azteca Clic	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145513	 "poster="	http://l3d.us:25461/images/066a7327d012a2da742476bf34244871.png	"></video> <h3 class="title">	,M | Azteca Clic HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154119	 "poster="	http://l3d.us:25461/images/6487db6217746e6fbf3bc6f94409ccd9.png	"></video> <h3 class="title">	,M | Azteca Corazon	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/75648	 "poster="	http://l3d.us:25461/images/6487db6217746e6fbf3bc6f94409ccd9.png	"></video> <h3 class="title">	,M | Azteca Corazon HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/75649	 "poster="	http://l3d.us:25461/images/6487db6217746e6fbf3bc6f94409ccd9.png	"></video> <h3 class="title">	,M | Azteca Corazon FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/199505	 "poster="	http://l3d.us:25461/images/f6575de63bf8f3ca04b8b7c2aafcc793.png	"></video> <h3 class="title">	,M | Azteca HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10800	 "poster="	http://l3d.us:25461/images/c69c783b76c4bfdc3ac646fbef3a723d.png	"></video> <h3 class="title">	,M | Azteca Mundo	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154114	 "poster="	http://l3d.us:25461/images/c69c783b76c4bfdc3ac646fbef3a723d.png	"></video> <h3 class="title">	,M | Azteca Mundo HQ	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/101312	 "poster="	http://l3d.us:25461/images/c69c783b76c4bfdc3ac646fbef3a723d.png	"></video> <h3 class="title">	,M | Azteca Mundo FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10835	 "poster="	http://l3d.us:25461/images/9cf46c2570b498ae45c284d6a26acc32.png	"></video> <h3 class="title">	,M | Azteca Uno	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155185	 "poster="	http://l3d.us:25461/images/1f9d20cd0e5ef880530e9d821ebb1921.png	"></video> <h3 class="title">	,M | Azteca Uno HQ	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/203184	 "poster="	http://l3d.us:25461/images/9cf46c2570b498ae45c284d6a26acc32.png	"></video> <h3 class="title">	,M | Azteca Uno HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10816	 "poster="	http://l3d.us:25461/images/1f9d20cd0e5ef880530e9d821ebb1921.png	"></video> <h3 class="title">	,M | Azteca Uno FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2055627	 "poster="	http://l3d.us:25461/images/1f9d20cd0e5ef880530e9d821ebb1921.png	"></video> <h3 class="title">	,M | Azteca Uno -2 Horas	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/165124	 "poster="	http://l3d.us:25461/images/a1f9709e995842bb048bd9154c46754f.png	"></video> <h3 class="title">	,M | Canal 15 Fresnillo	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10823	 "poster="	http://l3d.us:25461/images/dfe5de137080b6340d68c03ce35e5ae7.png	"></video> <h3 class="title">	,M | CANAL 26 Aguascalientes	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145674	 "poster="		"></video> <h3 class="title">	,M | Canal 4 Guajuato HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2123314	 "poster="		"></video> <h3 class="title">	,M| Canal 4	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2123315	 "poster="	http://l3d.us:25461/images/6fc6f5100058852efd5f6c43ba9e6d6e.png	"></video> <h3 class="title">	,M| Canal 4 Guadalajara	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10826	 "poster="	http://xtream.host/imagenes/canales/canal4.png	"></video> <h3 class="title">	,M | Canal 4 FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10839	 "poster="	http://l3d.us:25461/images/daa2f5f764534c728802320fd2d9e91c.png	"></video> <h3 class="title">	,M | Canal 5	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155186	 "poster="	http://l3d.us:25461/images/daa2f5f764534c728802320fd2d9e91c.png	"></video> <h3 class="title">	,M | Canal 5 HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/27472	 "poster="	http://l3d.us:25461/images/daa2f5f764534c728802320fd2d9e91c.png	"></video> <h3 class="title">	,M | Canal 5 FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/212819	 "poster="	http://l3d.us:25461/images/97fc63bb4a6b8ee8bcce7fcc7a179ec4.png	"></video> <h3 class="title">	,M | Canal 6.2 Multimedios Saltillo	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/216022	 "poster="	http://l3d.us:25461/images/0e4113427f6f190c683df4c10ab655a7.png	"></video> <h3 class="title">	,M | Canal 7 SLP	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10820	 "poster="	http://l3d.us:25461/images/a0ae7345282046b685909d9a2e661dfa.png	"></video> <h3 class="title">	,M | Canal 8 - La Paz BCS	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145514	 "poster="	http://l3d.us:25461/images/d7a78c79f3cf4bdc68b3e58a7f76a1f8.png	"></video> <h3 class="title">	,M | Canal del Congreso	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10831	 "poster="	http://l3d.us:25461/images/1ea971aa0458c55bd8101fa812250f42.png	"></video> <h3 class="title">	,M | Canal Judicial HQ	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10836	 "poster="	http://l3d.us:25461/images/138621072e01da33afc8c06151e7de98.png	"></video> <h3 class="title">	,M | Canal Once	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154116	 "poster="	http://l3d.us:25461/images/138621072e01da33afc8c06151e7de98.png	"></video> <h3 class="title">	,M | Canal Once HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/84527	 "poster="	http://l3d.us:25461/images/138621072e01da33afc8c06151e7de98.png	"></video> <h3 class="title">	,M | Canal Once FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/165131	 "poster="	http://l3d.us:25461/images/7d6edc64054c469528af8838c37956d8.png	"></video> <h3 class="title">	,M | CANAL 12 Tijuana	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2123316	 "poster="	http://l3d.us:25461/images/7d6edc64054c469528af8838c37956d8.png	"></video> <h3 class="title">	,M| Canal 12 Tijuana	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/216025	 "poster="	http://l3d.us:25461/images/5435e2d4920562e2723b4e3c6b140aa7.png	"></video> <h3 class="title">	,M | Cortv Oaxaca	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10830	 "poster="	http://l3d.us:25461/images/bf81708ff203c6d0189a52ad6c471e65.png	"></video> <h3 class="title">	,M | HLN	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155178	 "poster="	http://l3d.us:25461/images/bf81708ff203c6d0189a52ad6c471e65.png	"></video> <h3 class="title">	,M | HLN HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10822	 "poster="	http://l3d.us:25461/images/8c373fd1a64c1a3083fff348caf4b4ab.png	"></video> <h3 class="title">	,M | Imagen TV	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155182	 "poster="	http://l3d.us:25461/images/8c373fd1a64c1a3083fff348caf4b4ab.png	"></video> <h3 class="title">	,M | Imagen TV HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155181	 "poster="	http://l3d.us:25461/images/8c373fd1a64c1a3083fff348caf4b4ab.png	"></video> <h3 class="title">	,M | Imagen TV FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/216023	 "poster="	http://l3d.us:25461/images/694cbd08dfbba54002b739a6ea302e71.png	"></video> <h3 class="title">	,M | Jalisco TV	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145666	 "poster="		"></video> <h3 class="title">	,M | Justicia TV HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2153486	 "poster="	http://l3d.us:25461/images/9a011921b3b0aeb2038c56a20012a515.png	"></video> <h3 class="title">	,M | Las Estrellas -1 Hora	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154121	 "poster="	http://l3d.us:25461/images/9a011921b3b0aeb2038c56a20012a515.png	"></video> <h3 class="title">	,M | Las Estrellas	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10840	 "poster="	http://l3d.us:25461/images/9a011921b3b0aeb2038c56a20012a515.png	"></video> <h3 class="title">	,M | Las Estrellas HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/27471	 "poster="	http://l3d.us:25461/images/9a011921b3b0aeb2038c56a20012a515.png	"></video> <h3 class="title">	,M | Las Estrellas FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/212817	 "poster="	http://l3d.us:25461/images/9a011921b3b0aeb2038c56a20012a515.png	"></video> <h3 class="title">	,M | Las Estrellas -2 Horas	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145668	 "poster="		"></video> <h3 class="title">	,M | MN Mega Noticias HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145707	 "poster="		"></video> <h3 class="title">	,M| Mexiquense	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10821	 "poster="	http://l3d.us:25461/images/3803057a7b9b860f32516a17291cf063.png	"></video> <h3 class="title">	,M | Multimedios	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/199373	 "poster="	http://l3d.us:25461/images/97fc63bb4a6b8ee8bcce7fcc7a179ec4.png	"></video> <h3 class="title">	,M | Multimedios HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155188	 "poster="	http://l3d.us:25461/images/3803057a7b9b860f32516a17291cf063.png	"></video> <h3 class="title">	,M | Multimedios FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/165126	 "poster="	http://l3d.us:25461/images/3803057a7b9b860f32516a17291cf063.png	"></video> <h3 class="title">	,M | Multimedios Guadalajara	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/165127	 "poster="	http://l3d.us:25461/images/3803057a7b9b860f32516a17291cf063.png	"></video> <h3 class="title">	,M | Multimedios Laguna	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10834	 "poster="	http://l3d.us:25461/images/3803057a7b9b860f32516a17291cf063.png	"></video> <h3 class="title">	,M | Multimedios Plus	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/202592	 "poster="	http://l3d.us:25461/images/97fc63bb4a6b8ee8bcce7fcc7a179ec4.png	"></video> <h3 class="title">	,M | Multimedios Plus HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/165129	 "poster="	http://l3d.us:25461/images/09f95194dd1c222b79b5b78add7f9d55.png	"></video> <h3 class="title">	,M | MVM Noticias Oaxaca	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/76078	 "poster="	http://l3d.us:25461/images/68ad985e21342c4d442c0320b7e6025d.png	"></video> <h3 class="title">	,M | MVS TV	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154118	 "poster="	http://l3d.us:25461/images/68ad985e21342c4d442c0320b7e6025d.png	"></video> <h3 class="title">	,M | MVS TV HQ	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2113879	 "poster="		"></video> <h3 class="title">	,M | N+	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154124	 "poster="	http://l3d.us:25461/images/002f93898b52417e1afcff1124c33fa3.png	"></video> <h3 class="title">	,M | Nu9ve	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155183	 "poster="	http://l3d.us:25461/images/002f93898b52417e1afcff1124c33fa3.png	"></video> <h3 class="title">	,M | Nu9ve TV HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10837	 "poster="	http://l3d.us:25461/images/002f93898b52417e1afcff1124c33fa3.png	"></video> <h3 class="title">	,M | Nu9ve FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/165132	 "poster="	http://l3d.us:25461/images/17a0f3411968040fe641e02c17d04334.png	"></video> <h3 class="title">	,M | RCG 3 Saltillo	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/165133	 "poster="	http://l3d.us:25461/images/3d307fbfc89a2ba3340c76f969c8d21e.png	"></video> <h3 class="title">	,M | RTQ Queretaro	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/216024	 "poster="	http://l3d.us:25461/images/cdaeeeba9b4a4c5ebf042c0215a7bb0e.png	"></video> <h3 class="title">	,M | SET Puebla	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/165134	 "poster="	http://l3d.us:25461/images/25b4e918939eb41e0422eba9fd71cc1a.png	"></video> <h3 class="title">	,M | Sipse TV Cancun	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/97293	 "poster="	http://l3d.us:25461/images/cc0cc7b6352e7429d68e55dcc8cdd75d.png	"></video> <h3 class="title">	,M | Telemax	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/165136	 "poster="	http://l3d.us:25461/images/cc0cc7b6352e7429d68e55dcc8cdd75d.png	"></video> <h3 class="title">	,M | Telemax Hermosillo	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10832	 "poster="	http://l3d.us:25461/images/3dc0bf7f0a9fee0dddd9b37610ff3f08.png	"></video> <h3 class="title">	,M | TeleVer	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10827	 "poster="	http://l3d.us:25461/images/d17324013830447a4464aba670f87a27.png	"></video> <h3 class="title">	,M | Televisa (Leon) FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/154120	 "poster="	http://l3d.us:25461/images/e6737ab2d84c66cc7a6c64d58e917891.png	"></video> <h3 class="title">	,M | Televisa Monterrey	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/27495	 "poster="	http://l3d.us:25461/images/e6737ab2d84c66cc7a6c64d58e917891.png	"></video> <h3 class="title">	,M | Televisa Monterrey FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145665	 "poster="		"></video> <h3 class="title">	,M | Televisa Noticias Deportes HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/224164	 "poster="	http://l3d.us:25461/images/378bce1f1b3b4e25cf94959740f95e33.png	"></video> <h3 class="title">	,M | Televisa Puebla	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145663	 "poster="	http://l3d.us:25461/images/378bce1f1b3b4e25cf94959740f95e33.png	"></video> <h3 class="title">	,M | Televisa Puebla HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/165138	 "poster="	http://l3d.us:25461/images/500b8afdc35b66099d38010dc4e0efb7.png	"></video> <h3 class="title">	,M | TRC TV Campeche	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10817	 "poster="	http://l3d.us:25461/images/2b47c785e5a31bc292cbb31af31e69c2.png	"></video> <h3 class="title">	,M | TV MAS	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10829	 "poster="	http://l3d.us:25461/images/2b47c785e5a31bc292cbb31af31e69c2.png	"></video> <h3 class="title">	,M | TV MAS FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145787	 "poster="		"></video> <h3 class="title">	,M | TVP Culiacan	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2123294	 "poster="	http://l3d.us:25461/images/86ba81dea51e6f11b2e937d93144b346.png	"></video> <h3 class="title">	,M| TVT Tabasco	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2141352	 "poster="		"></video> <h3 class="title">	,LA | Telemundo Tampa HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/215768	 "poster="	http://l3d.us:25461/images/2b0cf16a51985217cbec219c4cfcc71a.png	"></video> <h3 class="title">	,LA | Telemundo Washington	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10889	 "poster="	http://l3d.us:25461/images/f06039b14c6a0dfef86b4f26c3f85c91.png	"></video> <h3 class="title">	,LA| Estrella TV	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155512	 "poster="	http://l3d.us:25461/images/f06039b14c6a0dfef86b4f26c3f85c91.png	"></video> <h3 class="title">	,LA| Estrella TV HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/202644	 "poster="	http://l3d.us:25461/images/f06039b14c6a0dfef86b4f26c3f85c91.png	"></video> <h3 class="title">	,LA| Estrella TV FHD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/18095	 "poster="	http://l3d.us:25461/images/7a145880ffb91024db895dc9a821b3e9.png	"></video> <h3 class="title">	,LA| Galavision HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/212690	 "poster="	http://l3d.us:25461/images/91805ec00ad20b85226bec0bacf843d3.png	"></video> <h3 class="title">	,LA| Mega TV Miami	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/187234	 "poster="	http://l3d.us:25461/images/0053a36b4c1be3c5dc3a0e82264878f3.png	"></video> <h3 class="title">	,LA| NBC Universo HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10910	 "poster="	http://l3d.us:25461/images/42ea033f4086d655bca2bb34a4b69667.png	"></video> <h3 class="title">	,LA| Telemundo 47 NY HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10894	 "poster="	http://l3d.us:25461/images/59cd073aec41b25be5539282bbe94a2a.png	"></video> <h3 class="title">	,LA| Telemundo 52	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/210958	 "poster="	http://l3d.us:25461/images/0387fab2851a328454596b2671a89fff.png	"></video> <h3 class="title">	,LA| Telemundo Boston	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10895	 "poster="	http://l3d.us:25461/images/ebac19b6803c2af102cac4e89a5c3ba3.png	"></video> <h3 class="title">	,LA| Telemundo Chicago	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/210290	 "poster="	http://l3d.us:8080/images/ebac19b6803c2af102cac4e89a5c3ba3.png	"></video> <h3 class="title">	,LA| Telemundo Chicago HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2124664	 "poster="	http://l3d.us:25461/images/0387fab2851a328454596b2671a89fff.png	"></video> <h3 class="title">	,LA| Telemundo Dallas	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/169839	 "poster="	http://l3d.us:25461/images/6d9b81c81c1b194f8d4f74c3b44c053f.png	"></video> <h3 class="title">	,LA| Telemundo Fresno HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10911	 "poster="	http://l3d.us:25461/images/cbcab54af0430893361a0f23a3939dfb.png	"></video> <h3 class="title">	,LA| Telemundo Internacional	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10908	 "poster="	http://l3d.us:25461/images/b87ec641532e9493a87f882d22daa672.png	"></video> <h3 class="title">	,LA| Telemundo Las Vegas	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10893	 "poster="	http://l3d.us:25461/images/e2ae2e14e89086178e6bf15e076cbc68.png	"></video> <h3 class="title">	,LA| Telemundo Miami	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/212026	 "poster="	http://l3d.us:25461/images/e2ae2e14e89086178e6bf15e076cbc68.png	"></video> <h3 class="title">	,LA| Telemundo Miami HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/204088	 "poster="	http://l3d.us:25461/images/09beb93cd4605f4b1f5ff9b5d26a32a3.png	"></video> <h3 class="title">	,LA| Telemundo Orlando	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10900	 "poster="	http://l3d.us:25461/images/132a2f58814ad3529202979b2ea8db68.png	"></video> <h3 class="title">	,LA| Unimas Dallas	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10896	 "poster="	http://l3d.us:25461/images/132a2f58814ad3529202979b2ea8db68.png	"></video> <h3 class="title">	,LA| Unimas Los Angeles	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10888	 "poster="	http://l3d.us:25461/images/72133b54ada6b97de3ddfd20790cbed7.png	"></video> <h3 class="title">	,LA| Univision	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2145568	 "poster="	http://l3d.us:25461/images/72133b54ada6b97de3ddfd20790cbed7.png	"></video> <h3 class="title">	,LA| Univision 14 Washington (WFCD)	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/28162	 "poster="	http://l3d.us:25461/images/72133b54ada6b97de3ddfd20790cbed7.png	"></video> <h3 class="title">	,LA| Univision Chicago	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/155511	 "poster="	http://l3d.us:25461/images/72133b54ada6b97de3ddfd20790cbed7.png	"></video> <h3 class="title">	,LA| Univision Chicago HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10899	 "poster="	http://l3d.us:25461/images/72133b54ada6b97de3ddfd20790cbed7.png	"></video> <h3 class="title">	,LA| Univision Dallas	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/2139327	 "poster="	https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Logo_Univision_2019.svg/490px-Logo_Univision_2019.svg.png	"></video> <h3 class="title">	,LA| Univision Denver HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/169824	 "poster="	http://l3d.us:25461/images/679378a70e450c5520d55e3c08b09b28.png	"></video> <h3 class="title">	,LA| Univision Fresno HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10890	 "poster="	http://l3d.us:25461/images/72133b54ada6b97de3ddfd20790cbed7.png	"></video> <h3 class="title">	,LA| Univision HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10906	 "poster="	http://l3d.us:25461/images/72133b54ada6b97de3ddfd20790cbed7.png	"></video> <h3 class="title">	,LA| Univision HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/210957	 "poster="	http://l3d.us:25461/images/679378a70e450c5520d55e3c08b09b28.png	"></video> <h3 class="title">	,LA| Univision Houston	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10901	 "poster="	http://l3d.us:25461/images/25223ff5df78eefb9b6cf41289eb7af3.png	"></video> <h3 class="title">	,LA| Univision Los Angeles	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10898	 "poster="	http://l3d.us:25461/images/25223ff5df78eefb9b6cf41289eb7af3.png	"></video> <h3 class="title">	,LA| Univision Los Angeles HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10905	 "poster="	http://l3d.us:25461/images/42e358958f9044ec370dadd69e21bf34.png	"></video> <h3 class="title">	,LA| Univision Miami	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/201924	 "poster="	http://l3d.us:25461/images/42e358958f9044ec370dadd69e21bf34.png	"></video> <h3 class="title">	,LA| Univision Miami HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/126150	 "poster="	http://l3d.us:25461/images/7371e92decaeb220715b10c5e8b90e8e.png	"></video> <h3 class="title">	,LA| Univision NY 	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/201923	 "poster="	http://l3d.us:25461/images/7371e92decaeb220715b10c5e8b90e8e.png	"></video> <h3 class="title">	,LA| Univision NY HD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/180143	 "poster="	http://l3d.us:25461/images/b21d94a6f50372eeec6463f01e324110.png	"></video> <h3 class="title">	,LA| Univision Salt Lake	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+<div class="vid"> <video src="	http://lobo-tv.live:25461/UzielLCH/123456789/10892	 "poster="	http://l3d.us:25461/images/72133b54ada6b97de3ddfd20790cbed7.png	"></video> <h3 class="title">	,LA| Univision SD	<br><strong style=" font-size: 90%; color:#fffc00;">	LOCAL	</strong>  </h3></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--    ###############################################   MOLDE PARA AGREGAR CANALES O PELICULAS 
+
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+
+
+
+
+
+        #########################################################################################################    -->
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script type="text/javascript">
+let listVideo = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video video');
+let title = document.querySelector('.main-video .title');
+
+listVideo.forEach(video =>{
+  video.onclick = () =>{
+    listVideo.forEach(vid => vid.classList.remove('active'));
+    video.classList.add('active');
+    if(video.classList.contains('active')){
+      let src = video.children[0].getAttribute('src');
+      mainVideo.src = src;
+      let text = video.children[1].innerHTML;
+      title.innerHTML = text;
+    };
+  };
+});
+</script>
+<script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+<script>//<![CDATA[
+const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+//]]></script>
+</body>
+</html>
