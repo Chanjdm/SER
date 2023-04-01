@@ -1,0 +1,451 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CANALES VIX</title>
+<!-- Responsive viewport -->
+<meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css"/>
+<style type="text/css">
+
+*{margin:0;padding:0;box-sizing:border-box;text-transform:capitalize;}
+body{background:#000;}
+
+
+
+
+
+body {
+
+    max-height: 100%;
+
+    margin: 0 auto;
+}
+
+.heading{color:#444;font-size:40px;text-align:center;padding:10px;}
+
+.container{    HEIGHT: 20EM;display:grid;grid-template-columns:1.5fr 1.5fr;gap:15px;align-items:flex-start;padding:5px 1%;}
+
+.container .main-video{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;padding:2px;}
+
+.container .main-video video{
+width:100%;
+border-radius:5px;}
+
+.container .main-video .title{
+color:#fff;font-size:23px;padding-top:15px;padding-bottom:15px;}
+
+.container .video-list{
+    position: relative;
+    top: 10px;
+background:#151515;border-radius:5px;height:100%;overflow-y:scroll;}
+
+.container .video-list::-webkit-scrollbar{
+width:7px;}
+
+.container .video-list::-webkit-scrollbar-track{
+background:#000;border-radius:50px;}
+
+.container .video-list::-webkit-scrollbar-thumb{
+background:#00a7ad;border-radius:50px;}
+
+.container .video-list .vid video{
+width:100px;border-radius:5px;
+
+}
+
+.container .video-list .vid img{
+    border-radius:5px;
+    width: 100px;
+}
+
+h9{
+    position: absolute;
+    margin: -5px 8px 0px 3px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.container .video-list .vid {
+    background: #0980fc63;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+.container .video-list .vid:hover{
+background:#000;}
+
+.container .video-list .vid.active{
+background:#00a7ad;}
+
+.container .video-list .vid.active .title{
+color:#000;}
+
+.container .video-list .vid .title{
+color:#00fd01;font-size:17px;}
+
+.container .video-list .vid .title2{
+position: absolute;
+    right: 13px;
+    left: 127px;
+    top: 190px;
+    color: #00fd01;
+    font-size: 75%;
+}
+
+
+
+@media (max-width: 1390px){
+.container{grid-template-columns:2fr 1fr;padding:10px;}
+.container .video-list .vid .title {
+    color: #00fd01;
+    font-size: 90%;
+}
+
+
+}
+
+@media (max-width: 480px){
+.container{grid-template-columns:1fr;height:600px;}
+.container .video-list .vid .title {
+    color: #00fd01;
+    font-size: 80%;
+
+}
+
+}
+
+
+
+
+nav {
+    max-width: auto;
+    margin: auto;
+    background-color: #335;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.menu-horizontal {
+    position: relative;
+    z-index: 5;
+    list-style:none;
+    display:flex;
+flex-wrap: wrap;
+    justify-content: CENTER;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu-horizontal > li:hover{
+    background-color: red;
+
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+background-color: rgba(0, 0, 0, .5)
+
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+
+}
+
+.menu-vertical li:hover{
+    background-color: green;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: yellow;
+    padding: 5px 5px 5px 10px;
+    text-decoration:none;
+
+}
+
+.menu-horizontal li .active {
+    background: #ff0000;
+    box-shadow: 0 0 10px #ff0000, 0 0 60px #ff0000, 0 0 80px #ff0000;
+    transition-delay: 0.1s;
+}
+
+</style>
+</head>
+
+
+
+<body>
+
+<nav>
+  <!--  
+      <!--   RESALTAR    class="active"     -->
+
+  <ul class="menu-horizontal">
+      <li>
+      <a href="./A">PELICULAS</a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+       <li>
+      <a href="https://chanjdm.github.io/JDM/L3TR45/C4N41CU1TUR4">TOTALPLAY </a>
+      <!--     <ul class="menu-vertical">
+            <li><a href="./C4N41CU1TUR4HD">HD</a></li>
+
+
+         </ul>   -->
+      </li>
+
+       <li>
+      <a  href="https://chanjdm.github.io/SER/SER/9LUT0M3XIC0.html">PLUTO MEXICO </a>
+      <!--     <ul class="menu-vertical">
+            <li><a href="#">HD</a></li>
+
+
+         </ul>   -->
+      </li>
+
+      <li>
+      <a href="https://chanjdm.github.io/SER/SER/35P4ñ4.html"> PLUTO ESPAÑA </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+      <li>
+      <a  class="active" https://chanjdm.github.io/SER/SER/V1X.html>  VIX </a>
+  <!--       <ul class="menu-vertical">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul>   -->
+      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </ul>
+  -->
+
+</nav>
+
+
+<div class="container">
+<div class="main-video">
+<div class="video">
+<video class='js-player' poster="https://chanjdm.github.io/JDM/jdmflix.jpg" controls muted autoplay>
+<source src="https://www.udrop.com/file/6goa/1x1" type="application/x-mpegURL">
+</video>
+
+
+<!--<video src="" poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r48KQZbrv_w2zeTpEMqrIE0BysJMnmdydw&usqp=CAU" controls muted autoplay>-->
+<h3 class="title">CANALES LOBO</h3></div></div>
+
+                 
+   <!-- PARA AGREGAR MAS PELICULAS 
+<a href=" ## LINK ## " target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r48KQZbrv_w2zeTpEMqrIE0BysJMnmdydw&usqp=CAU"> <h3 class="title"> ### <br><strong style=" font-size: 90%; color:#fc0707;">		</strong>  </h3></div>           ########## -->
+
+
+<div class="video-list">
+<div class="vid active">
+
+
+ <video src="	https://linear-46.frequency.stream/dist/localnow/46/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Videos Chistosos 	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-310.frequency.stream/dist/vix/310/hls/master/playlist.m3u8 	 " poster="	https://images.vix.com/prd/channel/62063c0a7ccf2d563f082b98/430b850443879b4216ec1c2ddda89792?tr=q-80&w=750	"></video> <h3 class="title">	Jajaja	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-311.frequency.stream/311/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/620c55b0361b2ef2e9203666/5b41ec01d91a07dc7b942f02ace880da?tr=q-80&w=750	"></video> <h3 class="title">	La Familia P.Luche	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-312.frequency.stream/dist/localnow/312/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Durmiendo con mi Jefe	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-313.frequency.stream/313/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62092e4ded79ffe2abed2d2b/9537b38562ae7da1935283163ee5cdbd?tr=q-80&w=750	"></video> <h3 class="title">	Risas de Oro	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-314.frequency.stream/314/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/6209318522bbc72ac5ec12ee/ad895f26368f89f4b0a7786b97636891?tr=q-80&w=750	"></video> <h3 class="title">	Vecinos	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-323.frequency.stream/323/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62063f4749d9bc7e66aa9d1b/e0e9822f4056a475c0091eb9f6fa3ccf?tr=q-80&w=750	"></video> <h3 class="title">	Los Héroes del Norte	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-340.frequency.stream/340/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/6205718ffe7e9549a39d4e5e/1715238f49a3915a2653c015792e692e?tr=q-80&w=750	"></video> <h3 class="title">	40 Y 20	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-341.frequency.stream/341/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/620578052c4f1e83d7f84410/3619af4946202836a2b28f01f84aa178?tr=q-80&w=750	"></video> <h3 class="title">	Como dice el dicho	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-448.frequency.stream/448/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/6235c66611732377769fe87f/d7c3abe71788f8bfbc047b5082f91522?tr=q-80&w=1920	"></video> <h3 class="title">	La Usurpadora	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-450.frequency.stream/dist/vix/450/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/623696ed4fa9c22d4088a341/6c001fa87b8af3f0bee0f985c23c8f30?tr=q-80&w=750	"></video> <h3 class="title">	Una Familia de Diez	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-451.frequency.stream/451/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/6235cadd0b340c1e57510092/830313c05f63359c94d066194e1035c5?tr=q-80&w=750	"></video> <h3 class="title">	Nosotros los Guapos	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-460.frequency.stream/dist/vix/460/hls/master/playlist.m3u	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 LOS GUAPOS 	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-468.frequency.stream/468/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62792bcf1aa44a0794223434/fa524bcd863336dd90769bed87cb8baf?tr=q-80&w=750	"></video> <h3 class="title">	La Parodia	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-483.frequency.stream/dist/vix/483/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 MIEMBROS AL AIRE	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+
+<div class="vid"> <video src="	https://linear-192.frequency.stream/192/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Cine Club	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-307.frequency.stream/307/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62274e72ed9b67bf206f1a5e/239fe6fbfe883777cfb427e23256f1fc?tr=q-80&w=1920	"></video> <h3 class="title">	Cine Retro	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-308.frequency.stream/308/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62274abded9b67e9806eef58/e589cadaabcf0bf7291bd08048006fd2?tr=q-80&w=1920	"></video> <h3 class="title">	Cine de Oro	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-309.frequency.stream/309/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Moovi Mex	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-408.frequency.stream/408/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Golden Multiplex -1 hora	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-410.frequency.stream/dist/vix/410/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Golden Plus	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-411.frequency.stream/dist/vix/411/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Golden Premier	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-193.frequency.stream/193/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/61b520dadf627aa84bbf2500/67ccdc39989cef73134b31df1eb03c0f?tr=q-80&w=750	"></video> <h3 class="title">	Lo Mejor de la Liga MX USA	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-256.frequency.stream/dist/vix/256/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/61bceb9bb6d51a2a70333c1d/3af9a923631cd0b8db1486cc6e5fda32?tr=q-80&w=750	"></video> <h3 class="title">	beIn Sports XTRA ñ	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-348.frequency.stream/dist/vix/348/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Afizzionados	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-439.frequency.stream/439/hls/master/playlist.m3u8	 " poster="	https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt37afb73ea6a565b3/62463aaf0c8230128a03e18d/descarga.jpg	"></video> <h3 class="title">	TUDN 	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-452.frequency.stream/452/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/61b520dadf627aa84bbf2500/67ccdc39989cef73134b31df1eb03c0f?tr=q-80&w=750	"></video> <h3 class="title">	Lo Mejor Liga MX	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-489.frequency.stream/dist/vix/489/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 FUTBOL ESPAÑA 	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-490.frequency.stream/dist/vix/490/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 FUTBOL ESPAÑA 2	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-491.frequency.stream/dist/vix/491/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 REAL MADRID TV	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-506.frequency.stream/dist/vix/506/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 FUTBOL ESPAÑA 3	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-507.frequency.stream/dist/vix/507/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 FUTBOL ESPAÑA 4	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-556.frequency.stream/dist/vix/556/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 TIGO SPORTS	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-261.frequency.stream/dist/vix/261/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/620acca701543284acec0500/cdb7c9d736ce123925a82b5504cead09?tr=q-80&w=750	"></video> <h3 class="title">	My Time Original	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-262.frequency.stream/dist/vix/262/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/623a8773900f85b88093acfc/8f7d48dec6e7efc0b79692cf0efefc2e?tr=q-80&w=750	"></video> <h3 class="title">	Nuestra Vision	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-304.frequency.stream/304/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/6237e40c284b55f29fd0613c/08b7062c3223bb43d5c502a1939056a9?tr=q-80&w=750	"></video> <h3 class="title">	Fuakata!	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-315.frequency.stream/315/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/61f837ca7716417b6a47c256/0f07f9aacadcc250f4e31e82717274a3?tr=q-80&w=1920	"></video> <h3 class="title">	Crónicas	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://channel01-notusa.akamaized.net/hls/live/2022749-b/event01/index_6.m3u8?hdnea=exp=1664336881~acl=/*~hmac=1ec2d2fbd8abe6748c87141ee89bc75436f4eec73a5811fe4190ce6cc435f208	 " poster="	https://images.vix.com/prd/channel/62bb79a9e887494aeb7b53d7/e22297a85b98822efbb3ad61ec2ae898?tr=q-80&w=1920	"></video> <h3 class="title">	Las Estrellas	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-416.frequency.stream/dist/vix/416/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62bb79a9e887494aeb7b53d7/e22297a85b98822efbb3ad61ec2ae898?tr=q-80&w=1920	"></video> <h3 class="title">	Las Estrellas Latam	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-424.frequency.stream/dist/vix/424/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62d8abe1b8305ca6df23c635/2ba67e8e8796799a3af2e197f932eec1?tr=q-80&w=1920	"></video> <h3 class="title">	Univision Latam	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-496.frequency.stream/dist/vix/496/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 SN TV	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-495.frequency.stream/dist/vix/495/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 SN TV 2	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-553.frequency.stream/dist/vix/553/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62bb79a9e887494aeb7b53d7/e22297a85b98822efbb3ad61ec2ae898?tr=q-80&w=1920	"></video> <h3 class="title">	Las Estrellas	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-142.frequency.stream/dist/vix/142/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Retrix Latin X	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-388.frequency.stream/388/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	VEVO Latino	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-389.frequency.stream/389/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	VEVO Reggaeton y Trap	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-494.frequency.stream/494/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 VEVO LATINO	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-495.frequency.stream/dist/vix/495/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 VEVO	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-194.frequency.stream/194/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Novelas de Romance	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-195.frequency.stream/195/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62092cdfb0742315039cb363/1a02c8ded45dc86458a0eff7e355703f?tr=q-80&w=750	"></video> <h3 class="title">	Novelas en Familia 	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-196.frequency.stream/196/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62067bafe60b4f65c744443e/ddac3d628e29430d0af295b7f9d1621e?tr=q-80&w=750	"></video> <h3 class="title">	Novelas de Oro	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-305.frequency.stream/305/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Amores Verdaderos	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-316.frequency.stream/316/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Cuidado con el Angel	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-317.frequency.stream/317/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/6237e4b64fa9c2ad3f8deadc/f8516dae0d177dc46046647538bc7476?tr=q-80&w=1920	"></video> <h3 class="title">	Cocina TV	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-318.frequency.stream/dist/vix/318/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/6215020129e374a01b6c3c04/cc8d5643616bf5cabbf38095a2410ce3?tr=q-80&w=750	"></video> <h3 class="title">	Grandes Parejas	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-319.frequency.stream/319/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Alegrijes Y Rebujos	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-321.frequency.stream/321/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Angelique	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-325.frequency.stream/325/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62157d10eb81d29539bf7cb6/8ab1a3ec81c556fafe809ae04e46e395?tr=q-80&w=750	"></video> <h3 class="title">	Galanes	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-327.frequency.stream/327/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/61f976b5602cef3f0c72ce9f/6c6d92df15493a140c0ff852a551059c?tr=q-80&w=1920	"></video> <h3 class="title">	Juana la Virgen	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-328.frequency.stream/328/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62063db449d9bc6554aa9d12/4b60d07f9840c3807d1b910d845dbc8d?tr=q-80&w=750	"></video> <h3 class="title">	Las 3 Marias	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-330.frequency.stream/dist/vix/330/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/61f970bb602cef693b729fbc/09a46d15972a1b45ad51b1faf76cf21f?tr=q-80&w=1920	"></video> <h3 class="title">	Mi Gorda Bella	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-334.frequency.stream/334/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62e7fb1ed8fbd158a5ac0bc9/88f19f2f8de0185baf6435a2759b4ec5?tr=q-80&w=1920	"></video> <h3 class="title">	RCTV Novelas	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-335.frequency.stream/335/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Rebelde	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-337.frequency.stream/337/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Sortilegio	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-338.frequency.stream/338/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Triunfo del Amor	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-339.frequency.stream/dist/vix/339/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Villanos de Novela	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-342.frequency.stream/342/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62092fc84375522eedbdd675/41cd4ccd9c9025dbd8e074b1e638957a?tr=q-80&w=750	"></video> <h3 class="title">	Teresa	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-343.frequency.stream/343/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/61fc63d1ba45d434e073a2e1/548a0ff4f919f30969953253c17bcc2a?tr=q-80&w=1920	"></video> <h3 class="title">	La Promesa	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-344.frequency.stream/dist/vix/344/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/61b75fb008f1b309bf36f659/bb3fa20e860e35705f5e06b179ba9e69?tr=q-80&w=750	"></video> <h3 class="title">	La Rosa de Guadalupe	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-429.frequency.stream/429/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62067bafe60b4f65c744443e/ddac3d628e29430d0af295b7f9d1621e?tr=q-80&w=750	"></video> <h3 class="title">	Novelas de Oro	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-447.frequency.stream/447/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/6235c3b13bef6caae937b824/86c4687f5c02234d8646d1577045ef85?tr=q-80&w=750	"></video> <h3 class="title">	Hasta que el dinero nos separe	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-478.frequency.stream/dist/vix/478/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 NOVELAS	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-479.frequency.stream/dist/vix/479/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 NOVELAS	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-480.frequency.stream/dist/vix/480/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 NOVELAS	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-481.frequency.stream/dist/vix/481/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 NOVELAS	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-482.frequency.stream/dist/vix/482/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 NOVELAS	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-484.frequency.stream/dist/vix/484/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 NOVELAS	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-487.frequency.stream/dist/vix/487/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 NOVELAS	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-355.frequency.stream/355/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/6243691b46504feea6e98b31/266b4b48327b68bf53f39786805511f1?tr=q-80&w=1920	"></video> <h3 class="title">	Pinkfong Baby Shark	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-254.frequency.stream/dist/vix/254/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/61f83680771641ece747bada/2be1ed9ee95b850da79c61a42e426d3d?tr=q-80&w=750	"></video> <h3 class="title">	Noticias Univision 24/7	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-255.frequency.stream/dist/vix/255/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/61f83716771641f4fc47bd86/471578cf6a4cd5fef1471695cd092009?tr=q-80&w=750	"></video> <h3 class="title">	Euronews	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-258.frequency.stream/dist/vix/258/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	ATV+	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-259.frequency.stream/dist/vix/259/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/61bb608bf63835f5747e03ed/ca8c095a17414bf01b5e2e2bead21559?tr=q-80&w=750	"></video> <h3 class="title">	TN23	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-260.frequency.stream/dist/vix/260/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/629e346fabe49aa6dabae0bc/babc25e785c404ff7618e9413da4d0cf?tr=q-80&w=750	"></video> <h3 class="title">	vivo play	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-286.frequency.stream/dist/vix/286/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 RCN NOTICIAS	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-300.frequency.stream/dist/vix/300/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 ForoTV	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-301.frequency.stream/301/hls/master/playlist.m3u8	 " poster="	https://images.vix.com/prd/channel/62265c89ed9b67ef3762225b/78969543cb7e397d4c545cb9e6a70a84?tr=q-80&w=750	"></video> <h3 class="title">	N+ Media	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-306.frequency.stream/306/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	Aqui Y Ahora	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-431.frequency.stream/dist/vix/431/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	 WHEATHER CHANNEL ESPAÑOL	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+<div class="vid"> <video src="	https://linear-453.frequency.stream/453/hls/master/playlist.m3u8	 " poster="	https://i.ibb.co/VNPbHtC/vix.png	"></video> <h3 class="title">	The Weather Channel Español	<br><strong style=" font-size: 90%; color:#fffc00;">	VIX	</strong>  </h3></div>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--    ###############################################   MOLDE PARA AGREGAR CANALES O PELICULAS 
+
+
+
+
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+<a href="  ## LINK ##   " poster="  ## IMAGEN ##  "> <h3 class="title">   ## TITULO ##         <br><strong style=" font-size: 90%; color:#fc0707;">     ## GENERO ##       </strong>  </h3></div>
+
+
+
+
+
+
+        #########################################################################################################    -->
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script type="text/javascript">
+let listVideo = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video video');
+let title = document.querySelector('.main-video .title');
+
+listVideo.forEach(video =>{
+  video.onclick = () =>{
+    listVideo.forEach(vid => vid.classList.remove('active'));
+    video.classList.add('active');
+    if(video.classList.contains('active')){
+      let src = video.children[0].getAttribute('src');
+      mainVideo.src = src;
+      let text = video.children[1].innerHTML;
+      title.innerHTML = text;
+    };
+  };
+});
+</script>
+<script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+<script>//<![CDATA[
+const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+//]]></script>
+</body>
+</html>
