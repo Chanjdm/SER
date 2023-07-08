@@ -56,22 +56,44 @@ $(".box").hide();}});}).change();});
 </script>
 <style type="text/css">
 /*Img Sinopsis*/
-*{user-select:none;margin:0;padding:0;box-sizing:border-box;outline:none;user-select:none;}
+/*{user-select:none;margin:0;padding:0;box-sizing:border-box;outline:none;user-select:none;}   */
 body{background:black;font-family:'PT Sans', sans-serif;}
 play{background:transparent;color:#fff;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;padding:7px;}
-play,a{color:#008cf7;font-size:18px;margin-top:-5px;}
+play,a{color:#008cf7;font-size:18px;margin-top:-42px;}
 menu{background:transparent;color:#fff;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;padding:10px;}
 menu,a{background:transparent;color:#fff;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;padding:10px;}
 info{background:transparent;color:green;font-family:'PT Sans', sans-serif;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;}
 info,a{color:fff;font-size:18px;margin-top:-5px;}
-.titulo{
+ #reproductor {
+    position: fixed;
+    top: 0em;
+    z-index: 999;
+}
+
+.titulo   {
+    position: relative;
+    z-index: 2;
     color: #62ff06;
     font-family: 'Kanit', sans-serif;
     font-size: 35px;
-    padding: 0px;
     margin-left: 1em;
+    top: -14em;
 }
-.sinopsis{color:#fff;font-family:'PT Sans', sans-serif;font-size:15px;padding:10px;}
+p {
+    margin: 0px;
+}
+ .sinopsis h9 {
+    bottom: 5em;
+    background: #00000075;
+    position: absolute;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 17px;
+    padding: 10px;
+    z-index: 2;
+}
+
+
 .bt1{background:red;color:#fff;font-size:14px;text-align:center;padding:5px;border:0px solid #fff;border-radius:10px;font-family:'Kanit', sans-serif;width:100%;height:30px;margin:3px;}
 .container{}
 .container img{display:block;margin:auto;border-radius:7px;margin-top:5px;}
@@ -94,7 +116,7 @@ select{
 .green{background:#228B22;}
 .blue{background:#0000ff;}
 /*Carda Capitulos*/
-.xaviplus{background:#fff;color:#fff;border-radius:3px;width:80px;height:20px;line-height:18px;color:white;font-size:16px;font-family:'PT Sans', sans-serif;font-weight:300;position:absolute;top:76%;right:3%;transform:translate(-50%,-50%) 
+.xaviplus{background:#fff;color:#fff;border-radius:3px;width:80px;height:20px;line-height:18px;color:white;font-size:16px;font-family:'PT Sans', sans-serif;font-weight:300;position:absolute;top:58%;right:3%;transform:translate(-50%,-50%) 
 go:0;}
 .pnt{width:150px;border-radius:7px;height:120px;margin:0px;margin-top:2px;}
 h5{background:red;}
@@ -111,11 +133,27 @@ div.scrollmenu a{display:inline-block;color:white;text-align:center;padding:2.5p
 .breakpoint  {
     display: none;
 }
+body .temp {
+    top: 2em;
+    position: relative;
+}
 
 @media screen and (max-width: 400px) {
   .container  {
     margin: 0.2em 0.2em;
 }
+body .temp {
+    top: 9em;
+    position: relative;
+}
+
+
+play, a {
+    color: #008cf7;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
  img {
     width: 100%;
 }
@@ -125,6 +163,7 @@ div.scrollmenu a{display:inline-block;color:white;text-align:center;padding:2.5p
     margin: auto;
     border-radius: 7px;
     margin-top: 5px;
+    Z-index:1;
 }
 .titulo {
     position: absolute;
@@ -133,14 +172,9 @@ div.scrollmenu a{display:inline-block;color:white;text-align:center;padding:2.5p
     font-size: 20px;
     padding: 0px;
     margin-left: 20px;
-    top: 1em;
+    top: 0.5em;
 }
-.sinopsis {
-    color: #fff;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 15px;
-    padding: 5px;
-}
+
 
 #video {
     display: inline;
@@ -155,6 +189,13 @@ div.scrollmenu a{display:inline-block;color:white;text-align:center;padding:2.5p
     top: 25px;
     border-style: double;
 }
+
+h9 {
+    overflow-y: scroll;
+    height: 145px;
+    left: 3%;
+    top: 8em;
+}
 }
 /* 1 columna para smartphones */
 breakpoint  {
@@ -162,12 +203,11 @@ max-width: 100%;
 display: inline-block;
 }
 
+
 }
 
 
-::-webkit-scrollbar {
-    background:transparent;
-}
+
 
 
 #reproductor{
@@ -193,7 +233,9 @@ display: inline-block;
 
 
 
-
+::-webkit-scrollbar {
+    background:transparent;
+}
 </style>
 </head>
 <body>
@@ -207,14 +249,10 @@ display: inline-block;
 </div>
 
 
-<div>
-<img class="breakpoint" src="https://www.themoviedb.org/t/p/w260_and_h390_bestv2/vSkSSmkyBDoW0iROmBCrr7HtjK9.jpg" width="960" height="640" />
-
-</div>
 
    <!--   #########################################   IMAGEN DE PORTADA    ######################################  -->
 <div class="container">
-<img src="https://www.themoviedb.org/t/p/w1066_and_h600_bestv2/thLAoL6VeZGmCyDpCOeoxLvA8yS.jpg" width="80%" height="300px">
+<img src="https://www.themoviedb.org/t/p/w1066_and_h600_bestv2/thLAoL6VeZGmCyDpCOeoxLvA8yS.jpg" width="100%" height="500px">
 </div>
 
    <!--   #########################################   TITULO    ######################################  -->
@@ -224,12 +262,15 @@ display: inline-block;
 </div>
    <!--   #########################################   SINOPSIS  ######################################  -->
 <div class="sinopsis">
-<p>
+<h9>
+La serie tiene lugar en un mundo en el que los superhéroes representan el lado oscuro de la celebridad y la fama. Un grupo de vigilantes que se hacen llamar "The Boys" decide hacer todo lo posible por frenar a los superhéroes que están perjudicando a la sociedad, independientemente de los riesgos que ello conlleva.
 La serie tiene lugar en un mundo en el que los superhéroes representan el lado oscuro de la celebridad y la fama. Un grupo de vigilantes que se hacen llamar "The Boys" decide hacer todo lo posible por frenar a los superhéroes que están perjudicando a la sociedad, independientemente de los riesgos que ello conlleva.
 
-</p></div>
+</h9></div>
 </head>
 <body>
+
+<div class="temp">
 <play>
 <span>Elegir temporada</span>
 <select>
@@ -250,6 +291,7 @@ La serie tiene lugar en un mundo en el que los superhéroes representan el lado 
 <a href="http://series.tuxchannel.mx/series/the_boys/s_01_e_06.mkv"><div class="xs"><img class="pnt" src="https://www.themoviedb.org/t/p/w200/pqz0Xvf7gpXwagUoaHxBqmyv6D5.jpg"><h5 class="xaviplus" style="color:black">Capitulo 6</h5></div></a>
 <a href="http://series.tuxchannel.mx/series/the_boys/s_01_e_07.mkv"><div class="xs"><img class="pnt" src="https://www.themoviedb.org/t/p/w200/cx7dCZVzCX9pAyC6zE6lC6jkuyF.jpg"><h5 class="xaviplus" style="color:black">Capitulo 7</h5></div></a>
 <a href="http://series.tuxchannel.mx/series/the_boys/s_01_e_08.mkv"><div class="xs"><img class="pnt" src="https://www.themoviedb.org/t/p/w200/vNYs1oSMXa1V3KKWLPvtOy6UQWC.jpg"><h5 class="xaviplus" style="color:black">Capitulo 8</h5></div></a>
+
 </div>
 </div>
 
@@ -279,6 +321,7 @@ La serie tiene lugar en un mundo en el que los superhéroes representan el lado 
 <a href="https://archive.org/download/05_20220701/06.mp4"><div class="xs"><img class="pnt" src="https://www.themoviedb.org/t/p/w200/xmGw9EVZ6jSeWz0K9vyfim3KvhZ.jpg"><h5 class="xaviplus" style="color:black">Capitulo 6</h5></div></a>
 <a href="https://archive.org/download/05_20220701/07.mp4"><div class="xs"><img class="pnt" src="https://www.themoviedb.org/t/p/w200/cG7G0XyW0KQ1oeYY06KnaP1n8PR.jpg"><h5 class="xaviplus" style="color:black">Capitulo 7</h5></div></a>
 <a href="https://archive.org/download/08_20220714/08.mp4"><div class="xs"><img class="pnt" src="https://www.themoviedb.org/t/p/w200/kteLc9xtCOOjwvVNHjxNqJxu0OA.jpg"><h5 class="xaviplus" style="color:black">Capitulo 8</h5></div></a>
+</div>
 </div>
 </div>
 
