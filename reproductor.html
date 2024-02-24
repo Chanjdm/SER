@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor IPTV</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        #videoPlayer {
+            width: 95%; /* Ajusta el ancho al 85% */
+            height: 95%; /* Permite que la altura se ajuste automáticamente */
+        }
+
+
+/* Estilos para pantallas medianas (tabletas) */
+@media screen and (max-width: 420px) {
+#videoPlayer {
+    width: 95%;
+    height: 49%;
+}
+}
+    </style>
+</head>
+<body>
+    <video id="videoPlayer" controls autoplay></video>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var videoUrl = urlParams.get('url');
+
+        function cargarYReproducir() {
+            if (Hls.isSupported()) {
+                var video = document.getElementById('videoPlayer');
+                var hls = new Hls();
+                hls.loadSource(videoUrl);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                    video.play();
+                });
+                video.addEventListener('ended', function() {
+                    // Reproduce automáticamente cuando termina la reproducción
+                    cargarYReproducir();
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                var video = document.getElementById('videoPlayer');
+                video.src = videoUrl;
+                video.addEventListener('ended', function() {
+                    // Reproduce automáticamente cuando termina la reproducción
+                    cargarYReproducir();
+                });
+                video.addEventListener('loadedmetadata', function() {
+                    video.play();
+                });
+            }
+        }
+
+        cargarYReproducir();
+    </script>
+</body>
+</html>
