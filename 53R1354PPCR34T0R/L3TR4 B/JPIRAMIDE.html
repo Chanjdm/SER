@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de tu Serie</title>
+    <style>
+        /* Estilos CSS aquí */
+/* Estilos para el encabezado */
+
+body {
+    text-align: center;
+    padding: 20px;
+background: #f9f8f8;
+}
+header {
+    text-align: center;
+    padding: 0px;
+}
+
+header a:hover {
+    background-color: #49ff00;
+    color: black;
+    border-bottom: solid 3px black;
+    box-shadow: 0px 8px 16px #ff0000;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid 3px black;
+    box-shadow: 0px 12px 16px black;
+}
+
+h1 {
+    text-align: center;
+    color: aqua;
+    -webkit-text-stroke-width: 1.3px;
+    -webkit-text-stroke-color: black;
+}
+
+header h1 {
+    font-family: Times, serif;
+    font-size: 38px;
+    color: #f00;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+    overflow-x: scroll;
+    height: 200px;
+}
+
+header a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Estilos para la lista de capítulos */
+#lista-capitulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.capitulo {
+    width: 45%; /* Ajusta el ancho de cada capítulo según tu preferencia */
+    margin-bottom: 20px;
+}
+
+.capitulo h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.capitulo iframe {
+    width: 100%;
+    height: 300px; /* Puedes ajustar este valor según tus necesidades */
+    border: none;
+    border-radius: 10px;
+}
+.embed-responsive-item {
+    height: 300px; /* Puedes ajustar este valor según tus necesidades */
+}
+
+
+
+    /* ############################################################################################  */
+    @media screen and (max-width: 480px) {
+
+
+#lista-capitulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+    flex-direction: column;
+}
+.capitulo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+header p {
+    font-size: 19px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+    overflow-x: scroll;
+    height: 200px;
+}
+
+
+}
+
+::-webkit-scrollbar {
+    background:transparent;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/7ub1xwDvrFuF3WQlsEQvYAQpm8Y.jpg" alt="Imagen de la Serie">
+        <h1>El Juego de la Pirámide (2024)</h1>
+        <p>La escuela Baekyeon ya de por sí es difícil para la nueva estudiante Su-ji, pero descubre un sistema de clasificación mediante votación en su clase y debe decidir si acepta o se rebela.  si recibe una calificación de suspenso, se convierte en víctima legítima de la violencia escolar.</p>
+        <a href="https://www.youtube.com/embed/BcYin0vw1yc" target="_blank">Ver Trailer</a>
+    </header>
+
+    <div id="lista-capitulos">
+        <!-- Aquí se mostrarán los capitulos -->
+        <div class="capitulo">
+            <h2>Capítulo 1</h2>
+<iframe class="embed-responsive-item" scrolling="no" width="100%" src="https://www.doramasyt.com/reproductor?url=aHR0cHM6Ly9kb29kc3RyZWFtLmNvbS9lL2E0dXh3MDhoNDF2ag==" frameborder="0" allowfullscreen style="height: 300;">
+</iframe>
+        </div>
+        <div class="capitulo">
+            <h2>Capítulo 2</h2>
+            <iframe class="embed-responsive-item" scrolling="no" width="100%" src="https://www.doramasyt.com/reproductor?url=aHR0cHM6Ly9sdWx1dmRvLmNvbS9lLzNmNGlhNHBseW15dA==" frameborder="0" allowfullscreen style="height: 300px;">
+</iframe>
+        </div>
+
+        <div class="capitulo">
+            <h2>Capítulo 3</h2>
+<iframe class="embed-responsive-item" scrolling="no" width="100%" src="https://www.doramasyt.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lLzFiZmh3ZW9oeWVydg==" frameborder="0" allowfullscreen style="height: 300px;">
+</iframe>
+        </div>
+
+        <div class="capitulo">
+            <h2>Capítulo 4 </h2>
+<iframe class="embed-responsive-item" scrolling="no" width="100%" src="https://www.doramasyt.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lLzViZXNmYTE3ejBtZQ==" frameborder="0" allowfullscreen style="height: 300px;">
+</iframe>
+        </div>
+
+        <div class="capitulo">
+            <h2>Capítulo  5</h2>
+<iframe class="embed-responsive-item" scrolling="no" width="100%" src="https://www.doramasyt.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL3VudXZpdzJ3cjFqYQ==" frameborder="0" allowfullscreen style="height: 300px;">
+</iframe>
+        </div>
+
+        <div class="capitulo">
+            <h2>Capítulo  6</h2>
+<iframe class="embed-responsive-item" scrolling="no" width="100%" src="https://www.doramasyt.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL29qdHZxemNlM3Z4OQ==" frameborder="0" allowfullscreen style="height: 300px;">…</iframe>
+</iframe>
+        </div>
+
+        <div class="capitulo">
+            <h2>Capítulo 7 </h2>
+<iframe class="embed-responsive-item" scrolling="no" width="100%" src="https://www.doramasyt.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL3diY2J5dWc3ZWxzMA==" frameborder="0" allowfullscreen style="height: 300px;">…</iframe>
+</iframe>
+        </div>
+
+        <div class="capitulo">
+            <h2>Capítulo  8</h2>
+<iframe class="embed-responsive-item" scrolling="no" width="100%" src="https://www.doramasyt.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2FiN3hmbjh0eXYybA==" frameborder="0" allowfullscreen style="height: 300px;">
+</iframe>
+        </div>
+
+
+        <div class="capitulo">
+            <h2>Capítulo  9</h2>
+<iframe class="embed-responsive-item" scrolling="no" width="100%" src="https://www.doramasyt.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2tlZmg3ajIwZWw4cA==" frameborder="0" allowfullscreen style="height: 300px;">
+</iframe>
+        </div>
+
+
+        <div class="capitulo">
+            <h2>Capítulo  10</h2>
+<iframe class="embed-responsive-item" scrolling="no" width="100%" src="https://www.doramasyt.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lLzBvcGkxcTR2cHpvNA==" frameborder="0" allowfullscreen style="height: 300px;">
+</iframe>
+        </div>
+
+
+
+<!--
+        <div class="capitulo">
+            <h2>Capítulo  </h2>
+
+</iframe>
+        </div>
+
+-->
+
+
+
+        <!-- Agrega más capítulos aquí si es necesario -->
+    </div>
+
+<script>
+    // Función para interceptar eventos de apertura de nuevas ventanas
+    function bloquearPopups(event) {
+        // Evitar que se abra una nueva ventana (pop-up)
+        event.preventDefault();
+        // Puedes agregar aquí cualquier lógica adicional que desees para manejar la detección de pop-ups
+    }
+
+    // Función para interceptar clics en enlaces
+    function interceptarClicEnlace(evento) {
+        // Evitar que se abra el enlace
+        evento.preventDefault();
+        // Puedes agregar aquí cualquier lógica adicional que desees para manejar el clic en el enlace
+    }
+
+    // Función para bloquear la apertura de nuevas ventanas
+    function bloquearVentanasEmergentes(event) {
+        // Evitar que se abra una nueva ventana emergente
+        event.preventDefault();
+        // Puedes agregar aquí cualquier lógica adicional que desees para manejar la detección de ventanas emergentes
+    }
+
+    // Obtener todos los iframes en la página
+    var iframes = document.querySelectorAll('iframe');
+    iframes.forEach(function(iframe) {
+        // Agregar un event listener para el evento 'load' en cada iframe
+        iframe.addEventListener('load', function() {
+            // Obtener el documento dentro del iframe
+            var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            // Agregar un event listener para el evento 'click' en cada enlace dentro del iframe
+            var enlaces = iframeDoc.querySelectorAll('a');
+            enlaces.forEach(function(enlace) {
+                enlace.addEventListener('click', interceptarClicEnlace);
+            });
+            // Agregar un event listener para el evento 'beforeunload' para bloquear pop-ups
+            iframeDoc.addEventListener('beforeunload', bloquearPopups);
+            // Agregar un event listener para el evento 'click' en el contenido del iframe para bloquear ventanas emergentes
+            iframe.contentWindow.document.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A' && event.target.getAttribute('target') === '_blank') {
+                    // Bloquear la apertura de la nueva ventana emergente
+                    bloquearVentanasEmergentes(event);
+                }
+            });
+        });
+    });
+
+
+
+
+
+</script>
+
+<script>
+  // Detectar y bloquear anuncios
+  var adBlocker = function() {
+    var ads = document.querySelectorAll('div.ad, div.ads, img.ad, img.ads');
+    ads.forEach(function(ad) {
+      ad.parentNode.removeChild(ad);
+    });
+  };
+  adBlocker();
+</script>
+
+</body>
+</html>
+
+
+
